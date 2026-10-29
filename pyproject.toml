@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "worldquant-labs"
+version = "0.1.0"
+description = "Reproducible exchange simulation and Monte Carlo numerical experiments"
+requires-python = ">=3.11"
+dependencies = ["numpy>=2.0,<3", "scipy>=1.13,<2", "plotly>=5,<8", "streamlit>=1.40,<2"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10", "QuantLib>=1.36,<2"]
+
+[project.scripts]
+exchangelab = "exchangelab.cli:main"
+risklab = "risklab.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["exchangelab*", "risklab*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

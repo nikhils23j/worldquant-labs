@@ -1,0 +1,260 @@
+{
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "numpy": "2.5.4",
+    "cpu": "Apple M2"
+  },
+  "seed": 42,
+  "generation_seconds": 1.6043757499428466,
+  "warmup": {
+    "commands": 1000000,
+    "seconds": 2.347654957906343,
+    "commands_per_second": 425956.973205214,
+    "p95_us": null,
+    "rejections": {
+      "unknown_order": 178787
+    },
+    "command_mix": {
+      "market": 199664,
+      "limit": 600193,
+      "cancel": 200143
+    },
+    "trades": 697820,
+    "volume": 2124639,
+    "state_sha256": "fe5aa05d638d37a21fe4c1c46f7304ef1ce04cd22c673b65b8e96b59c9e4a949",
+    "peak_live_orders_sampled": 1000,
+    "peak_price_levels_sampled": 143,
+    "peak_process_rss_mib": 285.515625
+  },
+  "runs": [
+    {
+      "commands": 1000000,
+      "seconds": 2.5316602080129087,
+      "commands_per_second": 394997.7160579921,
+      "p95_us": null,
+      "rejections": {
+        "unknown_order": 178787
+      },
+      "command_mix": {
+        "market": 199664,
+        "limit": 600193,
+        "cancel": 200143
+      },
+      "trades": 697820,
+      "volume": 2124639,
+      "state_sha256": "fe5aa05d638d37a21fe4c1c46f7304ef1ce04cd22c673b65b8e96b59c9e4a949",
+      "peak_live_orders_sampled": 1000,
+      "peak_price_levels_sampled": 143,
+      "peak_process_rss_mib": 286.8125
+    },
+    {
+      "commands": 1000000,
+      "seconds": 2.450480292085558,
+      "commands_per_second": 408083.26564786147,
+      "p95_us": null,
+      "rejections": {
+        "unknown_order": 178787
+      },
+      "command_mix": {
+        "market": 199664,
+        "limit": 600193,
+        "cancel": 200143
+      },
+      "trades": 697820,
+      "volume": 2124639,
+      "state_sha256": "fe5aa05d638d37a21fe4c1c46f7304ef1ce04cd22c673b65b8e96b59c9e4a949",
+      "peak_live_orders_sampled": 1000,
+      "peak_price_levels_sampled": 143,
+      "peak_process_rss_mib": 286.8125
+    },
+    {
+      "commands": 1000000,
+      "seconds": 2.365328833926469,
+      "commands_per_second": 422774.19767465914,
+      "p95_us": null,
+      "rejections": {
+        "unknown_order": 178787
+      },
+      "command_mix": {
+        "market": 199664,
+        "limit": 600193,
+        "cancel": 200143
+      },
+      "trades": 697820,
+      "volume": 2124639,
+      "state_sha256": "fe5aa05d638d37a21fe4c1c46f7304ef1ce04cd22c673b65b8e96b59c9e4a949",
+      "peak_live_orders_sampled": 1000,
+      "peak_price_levels_sampled": 143,
+      "peak_process_rss_mib": 286.8125
+    },
+    {
+      "commands": 1000000,
+      "seconds": 2.353685958078131,
+      "commands_per_second": 424865.51639052806,
+      "p95_us": null,
+      "rejections": {
+        "unknown_order": 178787
+      },
+      "command_mix": {
+        "market": 199664,
+        "limit": 600193,
+        "cancel": 200143
+      },
+      "trades": 697820,
+      "volume": 2124639,
+      "state_sha256": "fe5aa05d638d37a21fe4c1c46f7304ef1ce04cd22c673b65b8e96b59c9e4a949",
+      "peak_live_orders_sampled": 1000,
+      "peak_price_levels_sampled": 143,
+      "peak_process_rss_mib": 286.8125
+    },
+    {
+      "commands": 1000000,
+      "seconds": 2.370794582995586,
+      "commands_per_second": 421799.51277620316,
+      "p95_us": null,
+      "rejections": {
+        "unknown_order": 178787
+      },
+      "command_mix": {
+        "market": 199664,
+        "limit": 600193,
+        "cancel": 200143
+      },
+      "trades": 697820,
+      "volume": 2124639,
+      "state_sha256": "fe5aa05d638d37a21fe4c1c46f7304ef1ce04cd22c673b65b8e96b59c9e4a949",
+      "peak_live_orders_sampled": 1000,
+      "peak_price_levels_sampled": 143,
+      "peak_process_rss_mib": 286.8125
+    }
+  ],
+  "median_seconds": 2.370794582995586,
+  "stress": {
+    "commands": 1000000,
+    "seconds": 2.7285633329302073,
+    "commands_per_second": 366493.2339782265,
+    "p95_us": null,
+    "rejections": {
+      "unknown_order": 178787
+    },
+    "command_mix": {
+      "market": 199664,
+      "limit": 600193,
+      "cancel": 200143
+    },
+    "trades": 697820,
+    "volume": 2124639,
+    "state_sha256": "fe5aa05d638d37a21fe4c1c46f7304ef1ce04cd22c673b65b8e96b59c9e4a949",
+    "peak_live_orders_sampled": 1000,
+    "peak_price_levels_sampled": 143,
+    "peak_process_rss_mib": 286.8125
+  },
+  "instrumented": {
+    "commands": 100000,
+    "seconds": 0.25042687507811934,
+    "commands_per_second": 399318.16411000426,
+    "p95_us": 5.25,
+    "rejections": {
+      "unknown_order": 17803
+    },
+    "command_mix": {
+      "market": 20237,
+      "limit": 59844,
+      "cancel": 19919
+    },
+    "trades": 69050,
+    "volume": 211066,
+    "state_sha256": "9c3821459c8a143a159867d60fcb49f4f0ac2f80296abc970ab3c3e2c02cc922",
+    "peak_live_orders_sampled": 505,
+    "peak_price_levels_sampled": 130,
+    "peak_process_rss_mib": 286.8125
+  },
+  "comparison": {
+    "10000": {
+      "indexed": {
+        "commands": 10000,
+        "seconds": 0.02486600005067885,
+        "commands_per_second": 402155.55294857314,
+        "p95_us": null,
+        "rejections": {
+          "unknown_order": 1728
+        },
+        "command_mix": {
+          "market": 1998,
+          "limit": 6048,
+          "cancel": 1954
+        },
+        "trades": 6645,
+        "volume": 20541,
+        "state_sha256": "e1d369583ca249cf7efb3e1055348b9af47c78525f0b48da25c1390f1651feb5",
+        "peak_live_orders_sampled": 287,
+        "peak_price_levels_sampled": 121,
+        "peak_process_rss_mib": 286.8125
+      },
+      "reference": {
+        "commands": 10000,
+        "seconds": 0.14302399998996407,
+        "commands_per_second": 69918.33538917731,
+        "p95_us": null,
+        "rejections": {
+          "unknown_order": 1728
+        },
+        "command_mix": {
+          "market": 1998,
+          "limit": 6048,
+          "cancel": 1954
+        },
+        "trades": 6645,
+        "volume": 20541,
+        "state_sha256": "e1d369583ca249cf7efb3e1055348b9af47c78525f0b48da25c1390f1651feb5",
+        "peak_live_orders_sampled": 0,
+        "peak_price_levels_sampled": 0,
+        "peak_process_rss_mib": 286.8125
+      }
+    },
+    "100000": {
+      "indexed": {
+        "commands": 100000,
+        "seconds": 0.2919871669728309,
+        "commands_per_second": 342480.8050187524,
+        "p95_us": null,
+        "rejections": {
+          "unknown_order": 17803
+        },
+        "command_mix": {
+          "market": 20237,
+          "limit": 59844,
+          "cancel": 19919
+        },
+        "trades": 69050,
+        "volume": 211066,
+        "state_sha256": "9c3821459c8a143a159867d60fcb49f4f0ac2f80296abc970ab3c3e2c02cc922",
+        "peak_live_orders_sampled": 505,
+        "peak_price_levels_sampled": 130,
+        "peak_process_rss_mib": 286.8125
+      },
+      "reference": {
+        "commands": 100000,
+        "seconds": 2.995233832974918,
+        "commands_per_second": 33386.37501322501,
+        "p95_us": null,
+        "rejections": {
+          "unknown_order": 17803
+        },
+        "command_mix": {
+          "market": 20237,
+          "limit": 59844,
+          "cancel": 19919
+        },
+        "trades": 69050,
+        "volume": 211066,
+        "state_sha256": "9c3821459c8a143a159867d60fcb49f4f0ac2f80296abc970ab3c3e2c02cc922",
+        "peak_live_orders_sampled": 0,
+        "peak_price_levels_sampled": 0,
+        "peak_process_rss_mib": 286.8125
+      }
+    }
+  },
+  "end_to_end_seconds": 22.57751550001558
+}

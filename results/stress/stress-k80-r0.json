@@ -1,0 +1,36 @@
+{
+  "estimate": 21.4279515707485,
+  "standard_error": 0.0006030823983109152,
+  "ci95": [
+    21.426769550968103,
+    21.4291335905289
+  ],
+  "half_width": 0.0011820197803994333,
+  "sample_variance": 0.36370837915244536,
+  "independent_units": 1000000,
+  "paths": 1000000,
+  "pilot_paths": 10000,
+  "total_generated_paths": 1010000,
+  "control_coefficient": 1.0243569744552363,
+  "method": "control",
+  "seed": 42,
+  "batch_size": 10000,
+  "seconds": 2.107731750002131,
+  "contract": {
+    "kind": "asian",
+    "strike": 80.0,
+    "maturity": 1.0,
+    "fixings": 252,
+    "call": true
+  },
+  "model": {
+    "spot": 100.0,
+    "volatility": 0.3,
+    "rate": 0.03,
+    "dividend": 0.0
+  },
+  "interval_note": "Normal-approximation Monte Carlo interval; excludes model error.",
+  "peak_rss_mib": 54.625,
+  "precision_target_met": true,
+  "memory_target_met": true
+}

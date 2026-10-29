@@ -1,0 +1,2153 @@
+{
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "QuantLib": "1.44",
+    "hardware": "Apple M2, 8 GiB"
+  },
+  "analytic_checks": [
+    {
+      "contract": {
+        "kind": "european",
+        "strike": 80,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "error": 9.592326932761353e-14,
+      "reference": {
+        "estimate": 21.231422869444987,
+        "standard_error": 0.0,
+        "QuantLib_version": "1.44",
+        "calendar_time": 0.6904109589041096,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      }
+    },
+    {
+      "contract": {
+        "kind": "geometric",
+        "strike": 80,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "error": 1.4210854715202004e-14,
+      "reference": {
+        "estimate": 20.353915921032282,
+        "standard_error": 0.0,
+        "QuantLib_version": "1.44",
+        "calendar_time": 0.6904109589041096,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      }
+    },
+    {
+      "contract": {
+        "kind": "european",
+        "strike": 80,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "error": 6.750155989720952e-14,
+      "reference": {
+        "estimate": 22.612922155076294,
+        "standard_error": 0.0,
+        "QuantLib_version": "1.44",
+        "calendar_time": 1.3808219178082193,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      }
+    },
+    {
+      "contract": {
+        "kind": "geometric",
+        "strike": 80,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "error": 3.552713678800501e-15,
+      "reference": {
+        "estimate": 20.704380981173756,
+        "standard_error": 0.0,
+        "QuantLib_version": "1.44",
+        "calendar_time": 1.3808219178082193,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      }
+    },
+    {
+      "contract": {
+        "kind": "european",
+        "strike": 80,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "error": 3.552713678800501e-15,
+      "reference": {
+        "estimate": 22.42195929796766,
+        "standard_error": 0.0,
+        "QuantLib_version": "1.44",
+        "calendar_time": 0.6904109589041096,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      }
+    },
+    {
+      "contract": {
+        "kind": "geometric",
+        "strike": 80,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "error": 7.105427357601002e-15,
+      "reference": {
+        "estimate": 20.21239572071399,
+        "standard_error": 0.0,
+        "QuantLib_version": "1.44",
+        "calendar_time": 0.6904109589041096,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      }
+    },
+    {
+      "contract": {
+        "kind": "european",
+        "strike": 80,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "error": 3.552713678800501e-14,
+      "reference": {
+        "estimate": 25.283974930378108,
+        "standard_error": 0.0,
+        "QuantLib_version": "1.44",
+        "calendar_time": 1.3808219178082193,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      }
+    },
+    {
+      "contract": {
+        "kind": "geometric",
+        "strike": 80,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "error": 3.552713678800501e-15,
+      "reference": {
+        "estimate": 20.792679042456804,
+        "standard_error": 0.0,
+        "QuantLib_version": "1.44",
+        "calendar_time": 1.3808219178082193,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      }
+    },
+    {
+      "contract": {
+        "kind": "european",
+        "strike": 90,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "error": 1.1368683772161603e-13,
+      "reference": {
+        "estimate": 11.97883040893971,
+        "standard_error": 0.0,
+        "QuantLib_version": "1.44",
+        "calendar_time": 0.6904109589041096,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      }
+    },
+    {
+      "contract": {
+        "kind": "geometric",
+        "strike": 90,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "error": 1.7763568394002505e-15,
+      "reference": {
+        "estimate": 10.580269379619088,
+        "standard_error": 0.0,
+        "QuantLib_version": "1.44",
+        "calendar_time": 0.6904109589041096,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      }
+    },
+    {
+      "contract": {
+        "kind": "european",
+        "strike": 90,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "error": 4.440892098500626e-14,
+      "reference": {
+        "estimate": 14.059177146845423,
+        "standard_error": 0.0,
+        "QuantLib_version": "1.44",
+        "calendar_time": 1.3808219178082193,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      }
+    },
+    {
+      "contract": {
+        "kind": "geometric",
+        "strike": 90,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "error": 1.7763568394002505e-15,
+      "reference": {
+        "estimate": 11.311026178415975,
+        "standard_error": 0.0,
+        "QuantLib_version": "1.44",
+        "calendar_time": 1.3808219178082193,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      }
+    },
+    {
+      "contract": {
+        "kind": "european",
+        "strike": 90,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "error": 1.2434497875801753e-14,
+      "reference": {
+        "estimate": 14.88070720566498,
+        "standard_error": 0.0,
+        "QuantLib_version": "1.44",
+        "calendar_time": 0.6904109589041096,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      }
+    },
+    {
+      "contract": {
+        "kind": "geometric",
+        "strike": 90,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "error": 1.2434497875801753e-14,
+      "reference": {
+        "estimate": 11.402538856211303,
+        "standard_error": 0.0,
+        "QuantLib_version": "1.44",
+        "calendar_time": 0.6904109589041096,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      }
+    },
+    {
+      "contract": {
+        "kind": "european",
+        "strike": 90,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "error": 4.618527782440651e-14,
+      "reference": {
+        "estimate": 18.60625125940698,
+        "standard_error": 0.0,
+        "QuantLib_version": "1.44",
+        "calendar_time": 1.3808219178082193,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      }
+    },
+    {
+      "contract": {
+        "kind": "geometric",
+        "strike": 90,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "error": 3.552713678800501e-15,
+      "reference": {
+        "estimate": 12.929983785546233,
+        "standard_error": 0.0,
+        "QuantLib_version": "1.44",
+        "calendar_time": 1.3808219178082193,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      }
+    },
+    {
+      "contract": {
+        "kind": "european",
+        "strike": 100,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "error": 6.217248937900877e-14,
+      "reference": {
+        "estimate": 4.984227649183693,
+        "standard_error": 0.0,
+        "QuantLib_version": "1.44",
+        "calendar_time": 0.6904109589041096,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      }
+    },
+    {
+      "contract": {
+        "kind": "geometric",
+        "strike": 100,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "error": 1.199040866595169e-14,
+      "reference": {
+        "estimate": 2.7611130138162165,
+        "standard_error": 0.0,
+        "QuantLib_version": "1.44",
+        "calendar_time": 0.6904109589041096,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      }
+    },
+    {
+      "contract": {
+        "kind": "european",
+        "strike": 100,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "error": 2.930988785010413e-14,
+      "reference": {
+        "estimate": 7.485087593912616,
+        "standard_error": 0.0,
+        "QuantLib_version": "1.44",
+        "calendar_time": 1.3808219178082193,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      }
+    },
+    {
+      "contract": {
+        "kind": "geometric",
+        "strike": 100,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "error": 4.440892098500626e-15,
+      "reference": {
+        "estimate": 4.066926686195817,
+        "standard_error": 0.0,
+        "QuantLib_version": "1.44",
+        "calendar_time": 1.3808219178082193,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      }
+    },
+    {
+      "contract": {
+        "kind": "european",
+        "strike": 100,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "error": 8.881784197001252e-15,
+      "reference": {
+        "estimate": 9.149398577659646,
+        "standard_error": 0.0,
+        "QuantLib_version": "1.44",
+        "calendar_time": 0.6904109589041096,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      }
+    },
+    {
+      "contract": {
+        "kind": "geometric",
+        "strike": 100,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "error": 2.6645352591003757e-15,
+      "reference": {
+        "estimate": 5.0225212257254555,
+        "standard_error": 0.0,
+        "QuantLib_version": "1.44",
+        "calendar_time": 0.6904109589041096,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      }
+    },
+    {
+      "contract": {
+        "kind": "european",
+        "strike": 100,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "error": 3.907985046680551e-14,
+      "reference": {
+        "estimate": 13.283308397880912,
+        "standard_error": 0.0,
+        "QuantLib_version": "1.44",
+        "calendar_time": 1.3808219178082193,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      }
+    },
+    {
+      "contract": {
+        "kind": "geometric",
+        "strike": 100,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "error": 8.881784197001252e-16,
+      "reference": {
+        "estimate": 7.117225539407026,
+        "standard_error": 0.0,
+        "QuantLib_version": "1.44",
+        "calendar_time": 1.3808219178082193,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      }
+    },
+    {
+      "contract": {
+        "kind": "european",
+        "strike": 110,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "error": 2.0650148258027912e-14,
+      "reference": {
+        "estimate": 1.4292122853490645,
+        "standard_error": 0.0,
+        "QuantLib_version": "1.44",
+        "calendar_time": 0.6904109589041096,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      }
+    },
+    {
+      "contract": {
+        "kind": "geometric",
+        "strike": 110,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "error": 2.942091015256665e-15,
+      "reference": {
+        "estimate": 0.21145023080764053,
+        "standard_error": 0.0,
+        "QuantLib_version": "1.44",
+        "calendar_time": 0.6904109589041096,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      }
+    },
+    {
+      "contract": {
+        "kind": "european",
+        "strike": 110,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "error": 3.1530333899354446e-14,
+      "reference": {
+        "estimate": 3.3811627312188195,
+        "standard_error": 0.0,
+        "QuantLib_version": "1.44",
+        "calendar_time": 1.3808219178082193,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      }
+    },
+    {
+      "contract": {
+        "kind": "geometric",
+        "strike": 110,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "error": 9.2148511043888e-15,
+      "reference": {
+        "estimate": 0.8211772222030088,
+        "standard_error": 0.0,
+        "QuantLib_version": "1.44",
+        "calendar_time": 1.3808219178082193,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      }
+    },
+    {
+      "contract": {
+        "kind": "european",
+        "strike": 110,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "error": 7.993605777301127e-15,
+      "reference": {
+        "estimate": 5.239505678484881,
+        "standard_error": 0.0,
+        "QuantLib_version": "1.44",
+        "calendar_time": 0.6904109589041096,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      }
+    },
+    {
+      "contract": {
+        "kind": "geometric",
+        "strike": 110,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "error": 3.3306690738754696e-15,
+      "reference": {
+        "estimate": 1.6801393032498617,
+        "standard_error": 0.0,
+        "QuantLib_version": "1.44",
+        "calendar_time": 0.6904109589041096,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      }
+    },
+    {
+      "contract": {
+        "kind": "european",
+        "strike": 110,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "error": 2.6645352591003757e-14,
+      "reference": {
+        "estimate": 9.240026713649945,
+        "standard_error": 0.0,
+        "QuantLib_version": "1.44",
+        "calendar_time": 1.3808219178082193,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      }
+    },
+    {
+      "contract": {
+        "kind": "geometric",
+        "strike": 110,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "error": 3.552713678800501e-15,
+      "reference": {
+        "estimate": 3.4758860270705614,
+        "standard_error": 0.0,
+        "QuantLib_version": "1.44",
+        "calendar_time": 1.3808219178082193,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      }
+    },
+    {
+      "contract": {
+        "kind": "european",
+        "strike": 120,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "error": 7.605027718682322e-15,
+      "reference": {
+        "estimate": 0.2822694328632642,
+        "standard_error": 0.0,
+        "QuantLib_version": "1.44",
+        "calendar_time": 0.6904109589041096,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      }
+    },
+    {
+      "contract": {
+        "kind": "geometric",
+        "strike": 120,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "error": 7.095019016745141e-16,
+      "reference": {
+        "estimate": 0.00411368842860612,
+        "standard_error": 0.0,
+        "QuantLib_version": "1.44",
+        "calendar_time": 0.6904109589041096,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      }
+    },
+    {
+      "contract": {
+        "kind": "european",
+        "strike": 120,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "error": 1.4432899320127035e-14,
+      "reference": {
+        "estimate": 1.3070031196948686,
+        "standard_error": 0.0,
+        "QuantLib_version": "1.44",
+        "calendar_time": 1.3808219178082193,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      }
+    },
+    {
+      "contract": {
+        "kind": "geometric",
+        "strike": 120,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "error": 1.5681900222830336e-15,
+      "reference": {
+        "estimate": 0.09073583989794834,
+        "standard_error": 0.0,
+        "QuantLib_version": "1.44",
+        "calendar_time": 1.3808219178082193,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      }
+    },
+    {
+      "contract": {
+        "kind": "european",
+        "strike": 120,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "error": 1.3322676295501878e-15,
+      "reference": {
+        "estimate": 2.8185067463712348,
+        "standard_error": 0.0,
+        "QuantLib_version": "1.44",
+        "calendar_time": 0.6904109589041096,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      }
+    },
+    {
+      "contract": {
+        "kind": "geometric",
+        "strike": 120,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "error": 1.3822276656583199e-14,
+      "reference": {
+        "estimate": 0.43184008740672547,
+        "standard_error": 0.0,
+        "QuantLib_version": "1.44",
+        "calendar_time": 0.6904109589041096,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      }
+    },
+    {
+      "contract": {
+        "kind": "european",
+        "strike": 120,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "error": 2.7533531010703882e-14,
+      "reference": {
+        "estimate": 6.290199116055112,
+        "standard_error": 0.0,
+        "QuantLib_version": "1.44",
+        "calendar_time": 1.3808219178082193,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      }
+    },
+    {
+      "contract": {
+        "kind": "geometric",
+        "strike": 120,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "error": 6.661338147750939e-15,
+      "reference": {
+        "estimate": 1.5232625102571737,
+        "standard_error": 0.0,
+        "QuantLib_version": "1.44",
+        "calendar_time": 1.3808219178082193,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      }
+    }
+  ],
+  "asian_checks": [
+    {
+      "local": {
+        "estimate": 21.426699005833495,
+        "standard_error": 0.0013386095141873647,
+        "ci95": [
+          21.424075379396324,
+          21.429322632270665
+        ],
+        "half_width": 0.002623626437169893,
+        "sample_variance": 0.3583750862945865,
+        "independent_units": 200000,
+        "paths": 200000,
+        "pilot_paths": 10000,
+        "total_generated_paths": 210000,
+        "control_coefficient": 1.0243569744552363,
+        "method": "control",
+        "seed": 42,
+        "batch_size": 10000,
+        "seconds": 0.4486013340065256,
+        "contract": {
+          "kind": "asian",
+          "strike": 80,
+          "maturity": 1.0,
+          "fixings": 252,
+          "call": true
+        },
+        "model": {
+          "spot": 100.0,
+          "volatility": 0.3,
+          "rate": 0.03,
+          "dividend": 0.0
+        },
+        "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+      },
+      "reference": {
+        "estimate": 21.42697412803226,
+        "standard_error": 0.0016392910916426804,
+        "QuantLib_version": "1.44",
+        "calendar_time": 1.3808219178082193,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      },
+      "difference_in_combined_se": 0.12999534345043146
+    },
+    {
+      "local": {
+        "estimate": 7.540948591388995,
+        "standard_error": 0.001068189550098369,
+        "ci95": [
+          7.53885497834214,
+          7.543042204435849
+        ],
+        "half_width": 0.002093613046854847,
+        "sample_variance": 0.22820578298787114,
+        "independent_units": 200000,
+        "paths": 200000,
+        "pilot_paths": 10000,
+        "total_generated_paths": 210000,
+        "control_coefficient": 1.052138065378033,
+        "method": "control",
+        "seed": 42,
+        "batch_size": 10000,
+        "seconds": 0.4324042910011485,
+        "contract": {
+          "kind": "asian",
+          "strike": 100,
+          "maturity": 1.0,
+          "fixings": 252,
+          "call": true
+        },
+        "model": {
+          "spot": 100.0,
+          "volatility": 0.3,
+          "rate": 0.03,
+          "dividend": 0.0
+        },
+        "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+      },
+      "reference": {
+        "estimate": 7.540482176409988,
+        "standard_error": 0.001719740407360073,
+        "QuantLib_version": "1.44",
+        "calendar_time": 1.3808219178082193,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      },
+      "difference_in_combined_se": 0.23038707619689813
+    },
+    {
+      "local": {
+        "estimate": 1.7480804507334244,
+        "standard_error": 0.0009221176550537476,
+        "ci95": [
+          1.7462731333400106,
+          1.7498877681268383
+        ],
+        "half_width": 0.0018073173934138743,
+        "sample_variance": 0.17006019395236446,
+        "independent_units": 200000,
+        "paths": 200000,
+        "pilot_paths": 10000,
+        "total_generated_paths": 210000,
+        "control_coefficient": 1.1107669636999458,
+        "method": "control",
+        "seed": 42,
+        "batch_size": 10000,
+        "seconds": 0.4594354999717325,
+        "contract": {
+          "kind": "asian",
+          "strike": 120,
+          "maturity": 1.0,
+          "fixings": 252,
+          "call": true
+        },
+        "model": {
+          "spot": 100.0,
+          "volatility": 0.3,
+          "rate": 0.03,
+          "dividend": 0.0
+        },
+        "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+      },
+      "reference": {
+        "estimate": 1.7485177149999165,
+        "standard_error": 0.0016379939375845544,
+        "QuantLib_version": "1.44",
+        "calendar_time": 1.3808219178082193,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      },
+      "difference_in_combined_se": 0.2326227513934631
+    },
+    {
+      "local": {
+        "estimate": 6.064829074620883,
+        "standard_error": 0.000706902839230514,
+        "ci95": [
+          6.063443570515422,
+          6.066214578726345
+        ],
+        "half_width": 0.0013855041054609155,
+        "sample_variance": 0.09994232482243239,
+        "independent_units": 200000,
+        "paths": 200000,
+        "pilot_paths": 10000,
+        "total_generated_paths": 210000,
+        "control_coefficient": 0.9609372069443444,
+        "method": "control",
+        "seed": 42,
+        "batch_size": 10000,
+        "seconds": 0.44881658302620053,
+        "contract": {
+          "kind": "asian",
+          "strike": 100,
+          "maturity": 1.0,
+          "fixings": 252,
+          "call": false
+        },
+        "model": {
+          "spot": 100.0,
+          "volatility": 0.3,
+          "rate": 0.03,
+          "dividend": 0.0
+        },
+        "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+      },
+      "reference": {
+        "estimate": 6.0637960420056825,
+        "standard_error": 0.001044172652034546,
+        "QuantLib_version": "1.44",
+        "calendar_time": 1.3808219178082193,
+        "rate_time_scale": 0.7242063492063492,
+        "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"
+      },
+      "difference_in_combined_se": 0.8192460535935303
+    }
+  ],
+  "coverage": {
+    "truth": 7.117225539407025,
+    "nominal": 0.95,
+    "covered": 98,
+    "runs": [
+      {
+        "seed": 0,
+        "estimate": 7.188618691554858,
+        "ci95": [
+          6.9661380870384555,
+          7.41109929607126
+        ],
+        "covers": true
+      },
+      {
+        "seed": 1,
+        "estimate": 7.078792845535545,
+        "ci95": [
+          6.859462788921356,
+          7.298122902149733
+        ],
+        "covers": true
+      },
+      {
+        "seed": 2,
+        "estimate": 6.999462355092251,
+        "ci95": [
+          6.781092244889189,
+          7.217832465295313
+        ],
+        "covers": true
+      },
+      {
+        "seed": 3,
+        "estimate": 7.028040919226528,
+        "ci95": [
+          6.8120498219165855,
+          7.24403201653647
+        ],
+        "covers": true
+      },
+      {
+        "seed": 4,
+        "estimate": 7.193830713532616,
+        "ci95": [
+          6.971143212288865,
+          7.416518214776367
+        ],
+        "covers": true
+      },
+      {
+        "seed": 5,
+        "estimate": 6.999483938924967,
+        "ci95": [
+          6.784641811760848,
+          7.214326066089086
+        ],
+        "covers": true
+      },
+      {
+        "seed": 6,
+        "estimate": 7.089374513472409,
+        "ci95": [
+          6.870245217799066,
+          7.308503809145752
+        ],
+        "covers": true
+      },
+      {
+        "seed": 7,
+        "estimate": 7.124558174446822,
+        "ci95": [
+          6.9053060357961025,
+          7.343810313097541
+        ],
+        "covers": true
+      },
+      {
+        "seed": 8,
+        "estimate": 7.265877763497079,
+        "ci95": [
+          7.041171795476588,
+          7.490583731517569
+        ],
+        "covers": true
+      },
+      {
+        "seed": 9,
+        "estimate": 7.082749503403208,
+        "ci95": [
+          6.8630276249157545,
+          7.302471381890661
+        ],
+        "covers": true
+      },
+      {
+        "seed": 10,
+        "estimate": 7.093791054697905,
+        "ci95": [
+          6.873751149376399,
+          7.313830960019412
+        ],
+        "covers": true
+      },
+      {
+        "seed": 11,
+        "estimate": 7.220445755980013,
+        "ci95": [
+          6.999861721212634,
+          7.4410297907473915
+        ],
+        "covers": true
+      },
+      {
+        "seed": 12,
+        "estimate": 6.88985222273412,
+        "ci95": [
+          6.6727129408876,
+          7.106991504580641
+        ],
+        "covers": false
+      },
+      {
+        "seed": 13,
+        "estimate": 7.10213424132562,
+        "ci95": [
+          6.883239922893874,
+          7.321028559757367
+        ],
+        "covers": true
+      },
+      {
+        "seed": 14,
+        "estimate": 7.16761751007363,
+        "ci95": [
+          6.945523267864791,
+          7.389711752282469
+        ],
+        "covers": true
+      },
+      {
+        "seed": 15,
+        "estimate": 6.957709788727265,
+        "ci95": [
+          6.7409307070212465,
+          7.174488870433284
+        ],
+        "covers": true
+      },
+      {
+        "seed": 16,
+        "estimate": 7.332327387250279,
+        "ci95": [
+          7.107457756568695,
+          7.5571970179318635
+        ],
+        "covers": true
+      },
+      {
+        "seed": 17,
+        "estimate": 7.092324844485676,
+        "ci95": [
+          6.871838054916304,
+          7.3128116340550475
+        ],
+        "covers": true
+      },
+      {
+        "seed": 18,
+        "estimate": 7.265006141043603,
+        "ci95": [
+          7.042784750055914,
+          7.487227532031292
+        ],
+        "covers": true
+      },
+      {
+        "seed": 19,
+        "estimate": 7.143681358313685,
+        "ci95": [
+          6.922102857800215,
+          7.365259858827156
+        ],
+        "covers": true
+      },
+      {
+        "seed": 20,
+        "estimate": 7.043219496877765,
+        "ci95": [
+          6.825890129655941,
+          7.260548864099589
+        ],
+        "covers": true
+      },
+      {
+        "seed": 21,
+        "estimate": 7.180588934744994,
+        "ci95": [
+          6.961918013104944,
+          7.399259856385044
+        ],
+        "covers": true
+      },
+      {
+        "seed": 22,
+        "estimate": 7.033222694089444,
+        "ci95": [
+          6.81686501177766,
+          7.249580376401228
+        ],
+        "covers": true
+      },
+      {
+        "seed": 23,
+        "estimate": 7.086065510987563,
+        "ci95": [
+          6.86678969165731,
+          7.305341330317816
+        ],
+        "covers": true
+      },
+      {
+        "seed": 24,
+        "estimate": 7.179153975890832,
+        "ci95": [
+          6.956579717335214,
+          7.401728234446449
+        ],
+        "covers": true
+      },
+      {
+        "seed": 25,
+        "estimate": 7.113107720361947,
+        "ci95": [
+          6.893073605810287,
+          7.333141834913608
+        ],
+        "covers": true
+      },
+      {
+        "seed": 26,
+        "estimate": 7.320543127579473,
+        "ci95": [
+          7.09623229212102,
+          7.544853963037926
+        ],
+        "covers": true
+      },
+      {
+        "seed": 27,
+        "estimate": 7.076550948096855,
+        "ci95": [
+          6.856090679109827,
+          7.297011217083884
+        ],
+        "covers": true
+      },
+      {
+        "seed": 28,
+        "estimate": 7.114218663551923,
+        "ci95": [
+          6.894274888104774,
+          7.334162438999072
+        ],
+        "covers": true
+      },
+      {
+        "seed": 29,
+        "estimate": 7.19272384860547,
+        "ci95": [
+          6.9737494087643475,
+          7.411698288446593
+        ],
+        "covers": true
+      },
+      {
+        "seed": 30,
+        "estimate": 7.100184501139679,
+        "ci95": [
+          6.878684267101605,
+          7.321684735177753
+        ],
+        "covers": true
+      },
+      {
+        "seed": 31,
+        "estimate": 7.054573363213145,
+        "ci95": [
+          6.833955045493249,
+          7.275191680933042
+        ],
+        "covers": true
+      },
+      {
+        "seed": 32,
+        "estimate": 7.293614385022546,
+        "ci95": [
+          7.070556657868025,
+          7.516672112177067
+        ],
+        "covers": true
+      },
+      {
+        "seed": 33,
+        "estimate": 7.132488235619766,
+        "ci95": [
+          6.91393359078957,
+          7.3510428804499615
+        ],
+        "covers": true
+      },
+      {
+        "seed": 34,
+        "estimate": 7.081297785631464,
+        "ci95": [
+          6.858994545349553,
+          7.303601025913375
+        ],
+        "covers": true
+      },
+      {
+        "seed": 35,
+        "estimate": 7.036565710800877,
+        "ci95": [
+          6.820647650779512,
+          7.252483770822242
+        ],
+        "covers": true
+      },
+      {
+        "seed": 36,
+        "estimate": 7.162619219725515,
+        "ci95": [
+          6.942318367230253,
+          7.382920072220778
+        ],
+        "covers": true
+      },
+      {
+        "seed": 37,
+        "estimate": 7.237517019921739,
+        "ci95": [
+          7.016285644900469,
+          7.45874839494301
+        ],
+        "covers": true
+      },
+      {
+        "seed": 38,
+        "estimate": 7.29779689617634,
+        "ci95": [
+          7.073232124933154,
+          7.522361667419527
+        ],
+        "covers": true
+      },
+      {
+        "seed": 39,
+        "estimate": 7.152630282492538,
+        "ci95": [
+          6.932194588554921,
+          7.373065976430155
+        ],
+        "covers": true
+      },
+      {
+        "seed": 40,
+        "estimate": 7.202556137099948,
+        "ci95": [
+          6.981008740615978,
+          7.424103533583917
+        ],
+        "covers": true
+      },
+      {
+        "seed": 41,
+        "estimate": 7.168576092076868,
+        "ci95": [
+          6.948251271536041,
+          7.388900912617695
+        ],
+        "covers": true
+      },
+      {
+        "seed": 42,
+        "estimate": 6.971362553481375,
+        "ci95": [
+          6.753326096051977,
+          7.189399010910772
+        ],
+        "covers": true
+      },
+      {
+        "seed": 43,
+        "estimate": 7.06333137939685,
+        "ci95": [
+          6.844737092439717,
+          7.281925666353983
+        ],
+        "covers": true
+      },
+      {
+        "seed": 44,
+        "estimate": 7.039215542839687,
+        "ci95": [
+          6.815517413921042,
+          7.262913671758333
+        ],
+        "covers": true
+      },
+      {
+        "seed": 45,
+        "estimate": 7.241562308093626,
+        "ci95": [
+          7.0190596811479,
+          7.464064935039352
+        ],
+        "covers": true
+      },
+      {
+        "seed": 46,
+        "estimate": 7.0359738966623,
+        "ci95": [
+          6.817669444692184,
+          7.2542783486324165
+        ],
+        "covers": true
+      },
+      {
+        "seed": 47,
+        "estimate": 7.020783212966178,
+        "ci95": [
+          6.799862480573645,
+          7.241703945358711
+        ],
+        "covers": true
+      },
+      {
+        "seed": 48,
+        "estimate": 7.0473099534818875,
+        "ci95": [
+          6.8326531710548055,
+          7.2619667359089695
+        ],
+        "covers": true
+      },
+      {
+        "seed": 49,
+        "estimate": 7.209206170622727,
+        "ci95": [
+          6.986320864527275,
+          7.4320914767181785
+        ],
+        "covers": true
+      },
+      {
+        "seed": 50,
+        "estimate": 7.148626427423138,
+        "ci95": [
+          6.926867331916303,
+          7.370385522929973
+        ],
+        "covers": true
+      },
+      {
+        "seed": 51,
+        "estimate": 6.981188793105158,
+        "ci95": [
+          6.762857367974503,
+          7.199520218235813
+        ],
+        "covers": true
+      },
+      {
+        "seed": 52,
+        "estimate": 7.173160686570992,
+        "ci95": [
+          6.950885100940484,
+          7.395436272201501
+        ],
+        "covers": true
+      },
+      {
+        "seed": 53,
+        "estimate": 7.095644530522732,
+        "ci95": [
+          6.8767775480580555,
+          7.314511512987408
+        ],
+        "covers": true
+      },
+      {
+        "seed": 54,
+        "estimate": 7.112570444876536,
+        "ci95": [
+          6.893375313294306,
+          7.331765576458767
+        ],
+        "covers": true
+      },
+      {
+        "seed": 55,
+        "estimate": 7.021723327640952,
+        "ci95": [
+          6.802660375546382,
+          7.240786279735523
+        ],
+        "covers": true
+      },
+      {
+        "seed": 56,
+        "estimate": 7.268455624045822,
+        "ci95": [
+          7.043491883809155,
+          7.493419364282488
+        ],
+        "covers": true
+      },
+      {
+        "seed": 57,
+        "estimate": 7.163444570726063,
+        "ci95": [
+          6.940732868569422,
+          7.386156272882704
+        ],
+        "covers": true
+      },
+      {
+        "seed": 58,
+        "estimate": 7.233130187553615,
+        "ci95": [
+          7.0129230679306875,
+          7.453337307176543
+        ],
+        "covers": true
+      },
+      {
+        "seed": 59,
+        "estimate": 7.153040201958662,
+        "ci95": [
+          6.932346279496428,
+          7.3737341244208965
+        ],
+        "covers": true
+      },
+      {
+        "seed": 60,
+        "estimate": 6.95777048419731,
+        "ci95": [
+          6.74063172076759,
+          7.1749092476270295
+        ],
+        "covers": true
+      },
+      {
+        "seed": 61,
+        "estimate": 7.025701938451705,
+        "ci95": [
+          6.805248692316465,
+          7.246155184586946
+        ],
+        "covers": true
+      },
+      {
+        "seed": 62,
+        "estimate": 7.191003158484683,
+        "ci95": [
+          6.9699261684778175,
+          7.412080148491549
+        ],
+        "covers": true
+      },
+      {
+        "seed": 63,
+        "estimate": 7.169799493246808,
+        "ci95": [
+          6.948771275177212,
+          7.390827711316404
+        ],
+        "covers": true
+      },
+      {
+        "seed": 64,
+        "estimate": 7.122643286855865,
+        "ci95": [
+          6.903764654506623,
+          7.341521919205108
+        ],
+        "covers": true
+      },
+      {
+        "seed": 65,
+        "estimate": 7.191716641203485,
+        "ci95": [
+          6.969639274645471,
+          7.4137940077615
+        ],
+        "covers": true
+      },
+      {
+        "seed": 66,
+        "estimate": 7.2007556302238225,
+        "ci95": [
+          6.980364669476348,
+          7.421146590971297
+        ],
+        "covers": true
+      },
+      {
+        "seed": 67,
+        "estimate": 7.262124265812285,
+        "ci95": [
+          7.039521034138479,
+          7.484727497486091
+        ],
+        "covers": true
+      },
+      {
+        "seed": 68,
+        "estimate": 7.006172643370791,
+        "ci95": [
+          6.788403580424946,
+          7.223941706316635
+        ],
+        "covers": true
+      },
+      {
+        "seed": 69,
+        "estimate": 7.133726570190978,
+        "ci95": [
+          6.9128918710063845,
+          7.354561269375572
+        ],
+        "covers": true
+      },
+      {
+        "seed": 70,
+        "estimate": 7.1171167150028385,
+        "ci95": [
+          6.896973431264101,
+          7.337259998741576
+        ],
+        "covers": true
+      },
+      {
+        "seed": 71,
+        "estimate": 7.176038070992143,
+        "ci95": [
+          6.955587303163962,
+          7.396488838820324
+        ],
+        "covers": true
+      },
+      {
+        "seed": 72,
+        "estimate": 6.9999431556455765,
+        "ci95": [
+          6.784490449039696,
+          7.215395862251457
+        ],
+        "covers": true
+      },
+      {
+        "seed": 73,
+        "estimate": 7.156308498316838,
+        "ci95": [
+          6.933473089424357,
+          7.379143907209318
+        ],
+        "covers": true
+      },
+      {
+        "seed": 74,
+        "estimate": 7.138450782636702,
+        "ci95": [
+          6.915244784020473,
+          7.361656781252931
+        ],
+        "covers": true
+      },
+      {
+        "seed": 75,
+        "estimate": 6.949966841338066,
+        "ci95": [
+          6.73557932378123,
+          7.164354358894902
+        ],
+        "covers": true
+      },
+      {
+        "seed": 76,
+        "estimate": 7.05455506686779,
+        "ci95": [
+          6.837186310384039,
+          7.271923823351541
+        ],
+        "covers": true
+      },
+      {
+        "seed": 77,
+        "estimate": 7.075949097006965,
+        "ci95": [
+          6.856642365157461,
+          7.295255828856469
+        ],
+        "covers": true
+      },
+      {
+        "seed": 78,
+        "estimate": 7.137630289286947,
+        "ci95": [
+          6.915401677690929,
+          7.359858900882965
+        ],
+        "covers": true
+      },
+      {
+        "seed": 79,
+        "estimate": 7.126591565086505,
+        "ci95": [
+          6.904997430057954,
+          7.348185700115056
+        ],
+        "covers": true
+      },
+      {
+        "seed": 80,
+        "estimate": 7.0225259241065245,
+        "ci95": [
+          6.806871303380212,
+          7.238180544832837
+        ],
+        "covers": true
+      },
+      {
+        "seed": 81,
+        "estimate": 7.0013919602024455,
+        "ci95": [
+          6.785477639705787,
+          7.217306280699104
+        ],
+        "covers": true
+      },
+      {
+        "seed": 82,
+        "estimate": 7.099592832321431,
+        "ci95": [
+          6.881910376432364,
+          7.317275288210498
+        ],
+        "covers": true
+      },
+      {
+        "seed": 83,
+        "estimate": 7.1327082292187916,
+        "ci95": [
+          6.915465428478676,
+          7.349951029958907
+        ],
+        "covers": true
+      },
+      {
+        "seed": 84,
+        "estimate": 7.072514519485415,
+        "ci95": [
+          6.854187187644465,
+          7.290841851326364
+        ],
+        "covers": true
+      },
+      {
+        "seed": 85,
+        "estimate": 7.076114034229319,
+        "ci95": [
+          6.855820767518518,
+          7.296407300940121
+        ],
+        "covers": true
+      },
+      {
+        "seed": 86,
+        "estimate": 7.1062219122990395,
+        "ci95": [
+          6.886530136475599,
+          7.32591368812248
+        ],
+        "covers": true
+      },
+      {
+        "seed": 87,
+        "estimate": 6.9029397428506405,
+        "ci95": [
+          6.687910844967227,
+          7.117968640734054
+        ],
+        "covers": true
+      },
+      {
+        "seed": 88,
+        "estimate": 6.996416430257083,
+        "ci95": [
+          6.780408607979707,
+          7.2124242525344595
+        ],
+        "covers": true
+      },
+      {
+        "seed": 89,
+        "estimate": 7.0488893594845825,
+        "ci95": [
+          6.829480469148082,
+          7.268298249821083
+        ],
+        "covers": true
+      },
+      {
+        "seed": 90,
+        "estimate": 7.054300323740681,
+        "ci95": [
+          6.838558294465895,
+          7.270042353015467
+        ],
+        "covers": true
+      },
+      {
+        "seed": 91,
+        "estimate": 7.257216161035274,
+        "ci95": [
+          7.032644446500107,
+          7.481787875570441
+        ],
+        "covers": true
+      },
+      {
+        "seed": 92,
+        "estimate": 7.141267607669818,
+        "ci95": [
+          6.919441561215598,
+          7.363093654124037
+        ],
+        "covers": true
+      },
+      {
+        "seed": 93,
+        "estimate": 6.895076306734092,
+        "ci95": [
+          6.676137753938511,
+          7.114014859529672
+        ],
+        "covers": false
+      },
+      {
+        "seed": 94,
+        "estimate": 7.057972830665702,
+        "ci95": [
+          6.8402854772219435,
+          7.27566018410946
+        ],
+        "covers": true
+      },
+      {
+        "seed": 95,
+        "estimate": 6.917839676879091,
+        "ci95": [
+          6.699610459593976,
+          7.1360688941642065
+        ],
+        "covers": true
+      },
+      {
+        "seed": 96,
+        "estimate": 7.2140039704807295,
+        "ci95": [
+          6.995090458458111,
+          7.432917482503348
+        ],
+        "covers": true
+      },
+      {
+        "seed": 97,
+        "estimate": 7.25774230948622,
+        "ci95": [
+          7.03933543391475,
+          7.47614918505769
+        ],
+        "covers": true
+      },
+      {
+        "seed": 98,
+        "estimate": 7.137719529063962,
+        "ci95": [
+          6.914999149472107,
+          7.360439908655818
+        ],
+        "covers": true
+      },
+      {
+        "seed": 99,
+        "estimate": 7.246202915495185,
+        "ci95": [
+          7.023730888551053,
+          7.468674942439317
+        ],
+        "covers": true
+      }
+    ]
+  },
+  "greeks": {
+    "analytic": {
+      "delta": 0.5987063256829237,
+      "vega_per_vol_point": 0.3866681168028493
+    },
+    "bump_runs": [
+      {
+        "delta": {
+          "estimate": 0.5982271074372467,
+          "standard_error": 0.0014404798243019662,
+          "ci95": [
+            0.5954038188388885,
+            0.601050396035605
+          ]
+        },
+        "vega_per_vol_point": {
+          "estimate": 0.38650503922818435,
+          "standard_error": 0.0018870863040577335,
+          "ci95": [
+            0.38280641800733817,
+            0.39020366044903054
+          ]
+        },
+        "configuration": {
+          "paths": 200000,
+          "seed": 7,
+          "spot_bump": 0.5,
+          "vol_bump": 0.005,
+          "batch_size": 10000
+        }
+      },
+      {
+        "delta": {
+          "estimate": 0.5982454025975943,
+          "standard_error": 0.0014434225695748695,
+          "ci95": [
+            0.5954163463244401,
+            0.6010744588707485
+          ]
+        },
+        "vega_per_vol_point": {
+          "estimate": 0.3865001916777979,
+          "standard_error": 0.0018871237415486238,
+          "ci95": [
+            0.3828014970808173,
+            0.39019888627477856
+          ]
+        },
+        "configuration": {
+          "paths": 200000,
+          "seed": 7,
+          "spot_bump": 0.1,
+          "vol_bump": 0.001,
+          "batch_size": 10000
+        }
+      },
+      {
+        "delta": {
+          "estimate": 0.5982641629793585,
+          "standard_error": 0.0014440015260031042,
+          "ci95": [
+            0.5954339719724473,
+            0.6010943539862696
+          ]
+        },
+        "vega_per_vol_point": {
+          "estimate": 0.38650136975902705,
+          "standard_error": 0.0018871288659424862,
+          "ci95": [
+            0.3828026651184189,
+            0.39020007439963517
+          ]
+        },
+        "configuration": {
+          "paths": 200000,
+          "seed": 7,
+          "spot_bump": 0.02,
+          "vol_bump": 0.0002,
+          "batch_size": 10000
+        }
+      }
+    ]
+  },
+  "scalar_vector": {
+    "shape": [
+      10000,
+      252
+    ],
+    "max_errors": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scalar_seconds": 0.48400650010444224,
+    "vector_seconds": 0.011924457969143987
+  }
+}

@@ -1,0 +1,343 @@
+{
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "QuantLib": "1.44",
+    "hardware": "Apple M2, 8 GiB"
+  },
+  "runs": [
+    {
+      "estimate": 21.4279515707485,
+      "standard_error": 0.0006030823983109152,
+      "ci95": [
+        21.426769550968103,
+        21.4291335905289
+      ],
+      "half_width": 0.0011820197803994333,
+      "sample_variance": 0.36370837915244536,
+      "independent_units": 1000000,
+      "paths": 1000000,
+      "pilot_paths": 10000,
+      "total_generated_paths": 1010000,
+      "control_coefficient": 1.0243569744552363,
+      "method": "control",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 2.107731750002131,
+      "contract": {
+        "kind": "asian",
+        "strike": 80.0,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error.",
+      "peak_rss_mib": 54.625,
+      "precision_target_met": true,
+      "memory_target_met": true
+    },
+    {
+      "estimate": 21.427577734970306,
+      "standard_error": 0.000600332201207269,
+      "ci95": [
+        21.42640110547718,
+        21.428754364463433
+      ],
+      "half_width": 0.0011766294931259004,
+      "sample_variance": 0.36039875180636494,
+      "independent_units": 1000000,
+      "paths": 1000000,
+      "pilot_paths": 10000,
+      "total_generated_paths": 1010000,
+      "control_coefficient": 1.0267457797194945,
+      "method": "control",
+      "seed": 43,
+      "batch_size": 10000,
+      "seconds": 2.1203190840315074,
+      "contract": {
+        "kind": "asian",
+        "strike": 80.0,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error.",
+      "peak_rss_mib": 54.75,
+      "precision_target_met": true,
+      "memory_target_met": true
+    },
+    {
+      "estimate": 21.4281802221291,
+      "standard_error": 0.0005996001317057205,
+      "ci95": [
+        21.42700502746583,
+        21.42935541679237
+      ],
+      "half_width": 0.001175194663268685,
+      "sample_variance": 0.3595203179415174,
+      "independent_units": 1000000,
+      "paths": 1000000,
+      "pilot_paths": 10000,
+      "total_generated_paths": 1010000,
+      "control_coefficient": 1.0263376091461789,
+      "method": "control",
+      "seed": 44,
+      "batch_size": 10000,
+      "seconds": 2.0745509170228615,
+      "contract": {
+        "kind": "asian",
+        "strike": 80.0,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error.",
+      "peak_rss_mib": 54.734375,
+      "precision_target_met": true,
+      "memory_target_met": true
+    },
+    {
+      "estimate": 7.541875845060427,
+      "standard_error": 0.0004814525466649885,
+      "ci95": [
+        7.540932215408699,
+        7.5428194747121555
+      ],
+      "half_width": 0.0009436296517284672,
+      "sample_variance": 0.2317965546902029,
+      "independent_units": 1000000,
+      "paths": 1000000,
+      "pilot_paths": 10000,
+      "total_generated_paths": 1010000,
+      "control_coefficient": 1.052138065378033,
+      "method": "control",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 2.2876456660451367,
+      "contract": {
+        "kind": "asian",
+        "strike": 100.0,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error.",
+      "peak_rss_mib": 54.8125,
+      "precision_target_met": true,
+      "memory_target_met": true
+    },
+    {
+      "estimate": 7.541593420316702,
+      "standard_error": 0.0004790097253028741,
+      "ci95": [
+        7.540654578506864,
+        7.5425322621265405
+      ],
+      "half_width": 0.0009388418098380579,
+      "sample_variance": 0.22945031693473492,
+      "independent_units": 1000000,
+      "paths": 1000000,
+      "pilot_paths": 10000,
+      "total_generated_paths": 1010000,
+      "control_coefficient": 1.0543388434314909,
+      "method": "control",
+      "seed": 43,
+      "batch_size": 10000,
+      "seconds": 2.0905403749784455,
+      "contract": {
+        "kind": "asian",
+        "strike": 100.0,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error.",
+      "peak_rss_mib": 54.828125,
+      "precision_target_met": true,
+      "memory_target_met": true
+    },
+    {
+      "estimate": 7.5412960180822965,
+      "standard_error": 0.00047852152136825226,
+      "ci95": [
+        7.540358133134587,
+        7.542233903030006
+      ],
+      "half_width": 0.0009378849477090883,
+      "sample_variance": 0.2289828464125867,
+      "independent_units": 1000000,
+      "paths": 1000000,
+      "pilot_paths": 10000,
+      "total_generated_paths": 1010000,
+      "control_coefficient": 1.0538679182943336,
+      "method": "control",
+      "seed": 44,
+      "batch_size": 10000,
+      "seconds": 2.0918374579632655,
+      "contract": {
+        "kind": "asian",
+        "strike": 100.0,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error.",
+      "peak_rss_mib": 54.6875,
+      "precision_target_met": true,
+      "memory_target_met": true
+    },
+    {
+      "estimate": 1.749587270993153,
+      "standard_error": 0.00041775264371853266,
+      "ci95": [
+        1.7487684908570182,
+        1.7504060511292878
+      ],
+      "half_width": 0.0008187801361347169,
+      "sample_variance": 0.17451727133382328,
+      "independent_units": 1000000,
+      "paths": 1000000,
+      "pilot_paths": 10000,
+      "total_generated_paths": 1010000,
+      "control_coefficient": 1.1107669636999458,
+      "method": "control",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 2.1213277500355616,
+      "contract": {
+        "kind": "asian",
+        "strike": 120.0,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error.",
+      "peak_rss_mib": 54.609375,
+      "precision_target_met": true,
+      "memory_target_met": true
+    },
+    {
+      "estimate": 1.749266822247236,
+      "standard_error": 0.00041602145822889296,
+      "ci95": [
+        1.7484514351723115,
+        1.7500822093221606
+      ],
+      "half_width": 0.0008153870749244647,
+      "sample_variance": 0.17307385370689451,
+      "independent_units": 1000000,
+      "paths": 1000000,
+      "pilot_paths": 10000,
+      "total_generated_paths": 1010000,
+      "control_coefficient": 1.1107777575418174,
+      "method": "control",
+      "seed": 43,
+      "batch_size": 10000,
+      "seconds": 2.1079990420257673,
+      "contract": {
+        "kind": "asian",
+        "strike": 120.0,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error.",
+      "peak_rss_mib": 54.71875,
+      "precision_target_met": true,
+      "memory_target_met": true
+    },
+    {
+      "estimate": 1.7491712867141254,
+      "standard_error": 0.0004168931341896606,
+      "ci95": [
+        1.7483541911857117,
+        1.749988382242539
+      ],
+      "half_width": 0.0008170955284137587,
+      "sample_variance": 0.17379988533447838,
+      "independent_units": 1000000,
+      "paths": 1000000,
+      "pilot_paths": 10000,
+      "total_generated_paths": 1010000,
+      "control_coefficient": 1.1134110890237168,
+      "method": "control",
+      "seed": 44,
+      "batch_size": 10000,
+      "seconds": 2.116755875060335,
+      "contract": {
+        "kind": "asian",
+        "strike": 120.0,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error.",
+      "peak_rss_mib": 54.859375,
+      "precision_target_met": true,
+      "memory_target_met": true
+    }
+  ],
+  "max_half_width": 0.0011820197803994333,
+  "max_peak_rss_mib": 54.859375,
+  "median_seconds_by_strike": {
+    "80": 2.107731750002131,
+    "100": 2.0918374579632655,
+    "120": 2.116755875060335
+  }
+}

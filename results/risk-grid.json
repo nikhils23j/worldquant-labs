@@ -1,0 +1,1994 @@
+{
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "QuantLib": "1.44",
+    "hardware": "Apple M2, 8 GiB"
+  },
+  "rows": [
+    {
+      "estimate": 20.444801431279384,
+      "standard_error": 0.019329930109421276,
+      "ci95": [
+        20.40691546444124,
+        20.482687398117527
+      ],
+      "half_width": 0.03788596683814209,
+      "sample_variance": 37.36461980351112,
+      "independent_units": 100000,
+      "paths": 100000,
+      "pilot_paths": 0,
+      "total_generated_paths": 100000,
+      "control_coefficient": 0.0,
+      "method": "plain",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.21372895792592317,
+      "contract": {
+        "kind": "asian",
+        "strike": 80,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 20.447319361798748,
+      "standard_error": 0.0014471127360036423,
+      "ci95": [
+        20.44448307295461,
+        20.450155650642884
+      ],
+      "half_width": 0.002836288844136358,
+      "sample_variance": 0.10470676353519738,
+      "independent_units": 50000,
+      "paths": 100000,
+      "pilot_paths": 0,
+      "total_generated_paths": 100000,
+      "control_coefficient": 0.0,
+      "method": "antithetic",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.14598441601265222,
+      "contract": {
+        "kind": "asian",
+        "strike": 80,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 20.447318122796563,
+      "standard_error": 0.0002804137312817234,
+      "ci95": [
+        20.44676852198248,
+        20.447867723610646
+      ],
+      "half_width": 0.0005496008140826707,
+      "sample_variance": 0.007076867462220472,
+      "independent_units": 90000,
+      "paths": 90000,
+      "pilot_paths": 10000,
+      "total_generated_paths": 100000,
+      "control_coefficient": 1.0028295002580137,
+      "method": "control",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.20288499991875142,
+      "contract": {
+        "kind": "asian",
+        "strike": 80,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 20.886610635681187,
+      "standard_error": 0.027170479827827308,
+      "ci95": [
+        20.833357473775973,
+        20.9398637975864
+      ],
+      "half_width": 0.05325316190521357,
+      "sample_variance": 73.82349740743706,
+      "independent_units": 100000,
+      "paths": 100000,
+      "pilot_paths": 0,
+      "total_generated_paths": 100000,
+      "control_coefficient": 0.0,
+      "method": "plain",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.2026922079967335,
+      "contract": {
+        "kind": "asian",
+        "strike": 80,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 20.889589757497443,
+      "standard_error": 0.0030733927667262744,
+      "ci95": [
+        20.883566018364313,
+        20.895613496630574
+      ],
+      "half_width": 0.00602373913312941,
+      "sample_variance": 0.4722871549282691,
+      "independent_units": 50000,
+      "paths": 100000,
+      "pilot_paths": 0,
+      "total_generated_paths": 100000,
+      "control_coefficient": 0.0,
+      "method": "antithetic",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.1492900000885129,
+      "contract": {
+        "kind": "asian",
+        "strike": 80,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 20.88973947334115,
+      "standard_error": 0.0005554741402338817,
+      "ci95": [
+        20.88865076403195,
+        20.890828182650353
+      ],
+      "half_width": 0.0010887093092017597,
+      "sample_variance": 0.027769636842171305,
+      "independent_units": 90000,
+      "paths": 90000,
+      "pilot_paths": 10000,
+      "total_generated_paths": 100000,
+      "control_coefficient": 1.0064099908493798,
+      "method": "control",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.20505187497474253,
+      "contract": {
+        "kind": "asian",
+        "strike": 80,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 20.55271829719068,
+      "standard_error": 0.03813279389731957,
+      "ci95": [
+        20.477979394522045,
+        20.627457199859315
+      ],
+      "half_width": 0.07473890266863513,
+      "sample_variance": 145.41099704154527,
+      "independent_units": 100000,
+      "paths": 100000,
+      "pilot_paths": 0,
+      "total_generated_paths": 100000,
+      "control_coefficient": 0.0,
+      "method": "plain",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.21069704100955278,
+      "contract": {
+        "kind": "asian",
+        "strike": 80,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 20.555388578270644,
+      "standard_error": 0.007850872935822817,
+      "ci95": [
+        20.54000115006923,
+        20.57077600647206
+      ],
+      "half_width": 0.01538742820141296,
+      "sample_variance": 3.0818102927217597,
+      "independent_units": 50000,
+      "paths": 100000,
+      "pilot_paths": 0,
+      "total_generated_paths": 100000,
+      "control_coefficient": 0.0,
+      "method": "antithetic",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.1490791660035029,
+      "contract": {
+        "kind": "asian",
+        "strike": 80,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 20.55790640470108,
+      "standard_error": 0.0010413070092360525,
+      "ci95": [
+        20.555865480466128,
+        20.55994732893603
+      ],
+      "half_width": 0.00204092423495178,
+      "sample_variance": 0.09758882587357193,
+      "independent_units": 90000,
+      "paths": 90000,
+      "pilot_paths": 10000,
+      "total_generated_paths": 100000,
+      "control_coefficient": 1.0108948230137966,
+      "method": "control",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.21084758290089667,
+      "contract": {
+        "kind": "asian",
+        "strike": 80,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 21.417001725417187,
+      "standard_error": 0.05228051453562993,
+      "ci95": [
+        21.31453379983413,
+        21.519469651000243
+      ],
+      "half_width": 0.10246792558305745,
+      "sample_variance": 273.32522001102126,
+      "independent_units": 100000,
+      "paths": 100000,
+      "pilot_paths": 0,
+      "total_generated_paths": 100000,
+      "control_coefficient": 0.0,
+      "method": "plain",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.2092038340633735,
+      "contract": {
+        "kind": "asian",
+        "strike": 80,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 21.424166756497282,
+      "standard_error": 0.017732596237113096,
+      "ci95": [
+        21.38941150652015,
+        21.458922006474413
+      ],
+      "half_width": 0.034755249977132155,
+      "sample_variance": 15.722248465423878,
+      "independent_units": 50000,
+      "paths": 100000,
+      "pilot_paths": 0,
+      "total_generated_paths": 100000,
+      "control_coefficient": 0.0,
+      "method": "antithetic",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.14614237507339567,
+      "contract": {
+        "kind": "asian",
+        "strike": 80,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 21.425442014514022,
+      "standard_error": 0.0020000811927801867,
+      "ci95": [
+        21.421521927410016,
+        21.42936210161803
+      ],
+      "half_width": 0.003920087104005079,
+      "sample_variance": 0.3600292299941713,
+      "independent_units": 90000,
+      "paths": 90000,
+      "pilot_paths": 10000,
+      "total_generated_paths": 100000,
+      "control_coefficient": 1.0243569744552363,
+      "method": "control",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.20330170798115432,
+      "contract": {
+        "kind": "asian",
+        "strike": 80,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 10.664781681547645,
+      "standard_error": 0.018865545203649477,
+      "ci95": [
+        10.62780589239978,
+        10.70175747069551
+      ],
+      "half_width": 0.03697578914786533,
+      "sample_variance": 35.59087958309417,
+      "independent_units": 100000,
+      "paths": 100000,
+      "pilot_paths": 0,
+      "total_generated_paths": 100000,
+      "control_coefficient": 0.0,
+      "method": "plain",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.2041577500058338,
+      "contract": {
+        "kind": "asian",
+        "strike": 90,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 10.665604721123406,
+      "standard_error": 0.0028220308232319645,
+      "ci95": [
+        10.66007364234661,
+        10.671135799900203
+      ],
+      "half_width": 0.00553107877679657,
+      "sample_variance": 0.398192898363564,
+      "independent_units": 50000,
+      "paths": 100000,
+      "pilot_paths": 0,
+      "total_generated_paths": 100000,
+      "control_coefficient": 0.0,
+      "method": "antithetic",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.14835862501058728,
+      "contract": {
+        "kind": "asian",
+        "strike": 90,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 10.66696411838798,
+      "standard_error": 0.0002540774444118989,
+      "ci95": [
+        10.66646613574765,
+        10.667462101028311
+      ],
+      "half_width": 0.0004979826403312995,
+      "sample_variance": 0.0058099812982993415,
+      "independent_units": 90000,
+      "paths": 90000,
+      "pilot_paths": 10000,
+      "total_generated_paths": 100000,
+      "control_coefficient": 1.0054324593687798,
+      "method": "control",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.20321904204320163,
+      "contract": {
+        "kind": "asian",
+        "strike": 90,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 11.470360554543717,
+      "standard_error": 0.02564422793477625,
+      "ci95": [
+        11.42009879138022,
+        11.520622317707215
+      ],
+      "half_width": 0.050261763163497425,
+      "sample_variance": 65.76264263707586,
+      "independent_units": 100000,
+      "paths": 100000,
+      "pilot_paths": 0,
+      "total_generated_paths": 100000,
+      "control_coefficient": 0.0,
+      "method": "plain",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.21025083307176828,
+      "contract": {
+        "kind": "asian",
+        "strike": 90,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 11.472821648559675,
+      "standard_error": 0.0065433394047414275,
+      "ci95": [
+        11.45999693898776,
+        11.48564635813159
+      ],
+      "half_width": 0.012824709571914953,
+      "sample_variance": 2.1407645282820953,
+      "independent_units": 50000,
+      "paths": 100000,
+      "pilot_paths": 0,
+      "total_generated_paths": 100000,
+      "control_coefficient": 0.0,
+      "method": "antithetic",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.14915741595905274,
+      "contract": {
+        "kind": "asian",
+        "strike": 90,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 11.473651957757124,
+      "standard_error": 0.00048455316089948615,
+      "ci95": [
+        11.472702251013166,
+        11.474601664501082
+      ],
+      "half_width": 0.0009497067439580347,
+      "sample_variance": 0.021131258916391497,
+      "independent_units": 90000,
+      "paths": 90000,
+      "pilot_paths": 10000,
+      "total_generated_paths": 100000,
+      "control_coefficient": 1.0118077307846676,
+      "method": "control",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.20352604100480676,
+      "contract": {
+        "kind": "asian",
+        "strike": 90,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 11.677450328028554,
+      "standard_error": 0.03414793719832234,
+      "ci95": [
+        11.610521600973506,
+        11.744379055083602
+      ],
+      "half_width": 0.06692872705504739,
+      "sample_variance": 116.60816149005664,
+      "independent_units": 100000,
+      "paths": 100000,
+      "pilot_paths": 0,
+      "total_generated_paths": 100000,
+      "control_coefficient": 0.0,
+      "method": "plain",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.21371283300686628,
+      "contract": {
+        "kind": "asian",
+        "strike": 90,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 11.688555541951159,
+      "standard_error": 0.014214454027707702,
+      "ci95": [
+        11.660695723996952,
+        11.716415359905366
+      ],
+      "half_width": 0.027859817954207406,
+      "sample_variance": 10.102535165290785,
+      "independent_units": 50000,
+      "paths": 100000,
+      "pilot_paths": 0,
+      "total_generated_paths": 100000,
+      "control_coefficient": 0.0,
+      "method": "antithetic",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.1461350000463426,
+      "contract": {
+        "kind": "asian",
+        "strike": 90,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 11.681711085234944,
+      "standard_error": 0.000884992157081393,
+      "ci95": [
+        11.679976532480465,
+        11.683445637989424
+      ],
+      "half_width": 0.0017345527544799443,
+      "sample_variance": 0.07048900062860192,
+      "independent_units": 90000,
+      "paths": 90000,
+      "pilot_paths": 10000,
+      "total_generated_paths": 100000,
+      "control_coefficient": 1.0203846142977528,
+      "method": "control",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.20294916594866663,
+      "contract": {
+        "kind": "asian",
+        "strike": 90,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 13.446997428416855,
+      "standard_error": 0.04643980789588708,
+      "ci95": [
+        13.355977077491957,
+        13.538017779341754
+      ],
+      "half_width": 0.0910203509248975,
+      "sample_variance": 215.66557574068958,
+      "independent_units": 100000,
+      "paths": 100000,
+      "pilot_paths": 0,
+      "total_generated_paths": 100000,
+      "control_coefficient": 0.0,
+      "method": "plain",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.20254370907787234,
+      "contract": {
+        "kind": "asian",
+        "strike": 90,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 13.46540119353559,
+      "standard_error": 0.024890695980131862,
+      "ci95": [
+        13.416616325864394,
+        13.514186061206784
+      ],
+      "half_width": 0.04878486767119435,
+      "sample_variance": 30.977337318767624,
+      "independent_units": 50000,
+      "paths": 100000,
+      "pilot_paths": 0,
+      "total_generated_paths": 100000,
+      "control_coefficient": 0.0,
+      "method": "antithetic",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.14605149999260902,
+      "contract": {
+        "kind": "asian",
+        "strike": 90,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 13.455502787093478,
+      "standard_error": 0.0017696554693448286,
+      "ci95": [
+        13.452034326108517,
+        13.458971248078438
+      ],
+      "half_width": 0.00346846098496019,
+      "sample_variance": 0.2818512432163859,
+      "independent_units": 90000,
+      "paths": 90000,
+      "pilot_paths": 10000,
+      "total_generated_paths": 100000,
+      "control_coefficient": 1.036259491513211,
+      "method": "control",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.20300941599998623,
+      "contract": {
+        "kind": "asian",
+        "strike": 90,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 2.811157392417344,
+      "standard_error": 0.012552781518498458,
+      "ci95": [
+        2.786554392735287,
+        2.835760392099401
+      ],
+      "half_width": 0.024602999682056988,
+      "sample_variance": 15.757232385115646,
+      "independent_units": 100000,
+      "paths": 100000,
+      "pilot_paths": 0,
+      "total_generated_paths": 100000,
+      "control_coefficient": 0.0,
+      "method": "plain",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.2061435419600457,
+      "contract": {
+        "kind": "asian",
+        "strike": 100,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 2.8181965010153274,
+      "standard_error": 0.008865512869762535,
+      "ci95": [
+        2.8008204150861165,
+        2.8355725869445383
+      ],
+      "half_width": 0.01737608592921091,
+      "sample_variance": 3.929865922196257,
+      "independent_units": 50000,
+      "paths": 100000,
+      "pilot_paths": 0,
+      "total_generated_paths": 100000,
+      "control_coefficient": 0.0,
+      "method": "antithetic",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.1507179168984294,
+      "contract": {
+        "kind": "asian",
+        "strike": 100,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 2.8156625553954817,
+      "standard_error": 0.0001872076918619814,
+      "ci95": [
+        2.8152956350618035,
+        2.81602947572916
+      ],
+      "half_width": 0.0003669203336783557,
+      "sample_variance": 0.003154204790306152,
+      "independent_units": 90000,
+      "paths": 90000,
+      "pilot_paths": 10000,
+      "total_generated_paths": 100000,
+      "control_coefficient": 1.0169665329754143,
+      "method": "control",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.2046085000038147,
+      "contract": {
+        "kind": "asian",
+        "strike": 100,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 4.176190725016823,
+      "standard_error": 0.018391678939224186,
+      "ci95": [
+        4.1401436966807195,
+        4.212237753352926
+      ],
+      "half_width": 0.03604702833610323,
+      "sample_variance": 33.825385420350244,
+      "independent_units": 100000,
+      "paths": 100000,
+      "pilot_paths": 0,
+      "total_generated_paths": 100000,
+      "control_coefficient": 0.0,
+      "method": "plain",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.20619070902466774,
+      "contract": {
+        "kind": "asian",
+        "strike": 100,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 4.185966776785149,
+      "standard_error": 0.012819966383023854,
+      "ci95": [
+        4.160840104391408,
+        4.21109344917889
+      ],
+      "half_width": 0.025126672393740977,
+      "sample_variance": 8.217576903093086,
+      "independent_units": 50000,
+      "paths": 100000,
+      "pilot_paths": 0,
+      "total_generated_paths": 100000,
+      "control_coefficient": 0.0,
+      "method": "antithetic",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.14702079095877707,
+      "contract": {
+        "kind": "asian",
+        "strike": 100,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 4.182541752463477,
+      "standard_error": 0.0003943312589304286,
+      "ci95": [
+        4.181768877397995,
+        4.183314627528959
+      ],
+      "half_width": 0.0007728750654819786,
+      "sample_variance": 0.013994742759269103,
+      "independent_units": 90000,
+      "paths": 90000,
+      "pilot_paths": 10000,
+      "total_generated_paths": 100000,
+      "control_coefficient": 1.0248411807730593,
+      "method": "control",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.2072507090633735,
+      "contract": {
+        "kind": "asian",
+        "strike": 100,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 5.216918030481444,
+      "standard_error": 0.02537282431478367,
+      "ci95": [
+        5.1671882086384056,
+        5.266647852324482
+      ],
+      "half_width": 0.04972982184303817,
+      "sample_variance": 64.37802137088774,
+      "independent_units": 100000,
+      "paths": 100000,
+      "pilot_paths": 0,
+      "total_generated_paths": 100000,
+      "control_coefficient": 0.0,
+      "method": "plain",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.20331962499767542,
+      "contract": {
+        "kind": "asian",
+        "strike": 100,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 5.232218467506481,
+      "standard_error": 0.019254111127679906,
+      "ci95": [
+        5.1944811031418965,
+        5.269955831871066
+      ],
+      "half_width": 0.037737364364584504,
+      "sample_variance": 18.536039765852358,
+      "independent_units": 50000,
+      "paths": 100000,
+      "pilot_paths": 0,
+      "total_generated_paths": 100000,
+      "control_coefficient": 0.0,
+      "method": "antithetic",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.14901675004512072,
+      "contract": {
+        "kind": "asian",
+        "strike": 100,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 5.227186464228366,
+      "standard_error": 0.0007532463574846938,
+      "ci95": [
+        5.2257101284962095,
+        5.228662799960522
+      ],
+      "half_width": 0.0014763357321559824,
+      "sample_variance": 0.051064206755756326,
+      "independent_units": 90000,
+      "paths": 90000,
+      "pilot_paths": 10000,
+      "total_generated_paths": 100000,
+      "control_coefficient": 1.0351367870341386,
+      "method": "control",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.20762200001627207,
+      "contract": {
+        "kind": "asian",
+        "strike": 100,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 7.523982561370893,
+      "standard_error": 0.03742119761116844,
+      "ci95": [
+        7.450638361794646,
+        7.59732676094714
+      ],
+      "half_width": 0.07334419957624644,
+      "sample_variance": 140.03460306541186,
+      "independent_units": 100000,
+      "paths": 100000,
+      "pilot_paths": 0,
+      "total_generated_paths": 100000,
+      "control_coefficient": 0.0,
+      "method": "plain",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.21802091703284532,
+      "contract": {
+        "kind": "asian",
+        "strike": 100,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 7.545729474372983,
+      "standard_error": 0.028833593241622234,
+      "ci95": [
+        7.489216670074526,
+        7.60224227867144
+      ],
+      "half_width": 0.056512804298457085,
+      "sample_variance": 41.568804961166165,
+      "independent_units": 50000,
+      "paths": 100000,
+      "pilot_paths": 0,
+      "total_generated_paths": 100000,
+      "control_coefficient": 0.0,
+      "method": "antithetic",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.1478749579982832,
+      "contract": {
+        "kind": "asian",
+        "strike": 100,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 7.539403771998482,
+      "standard_error": 0.0015969549358793014,
+      "ci95": [
+        7.536273797839225,
+        7.542533746157739
+      ],
+      "half_width": 0.003129974159256902,
+      "sample_variance": 0.22952385605063375,
+      "independent_units": 90000,
+      "paths": 90000,
+      "pilot_paths": 10000,
+      "total_generated_paths": 100000,
+      "control_coefficient": 1.052138065378033,
+      "method": "control",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.2079848749563098,
+      "contract": {
+        "kind": "asian",
+        "strike": 100,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 0.22702021689789853,
+      "standard_error": 0.003510619585722862,
+      "ci95": [
+        0.2201395289464608,
+        0.23390090484933626
+      ],
+      "half_width": 0.006880687951437735,
+      "sample_variance": 1.232444987566096,
+      "independent_units": 100000,
+      "paths": 100000,
+      "pilot_paths": 0,
+      "total_generated_paths": 100000,
+      "control_coefficient": 0.0,
+      "method": "plain",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.20675058395136148,
+      "contract": {
+        "kind": "asian",
+        "strike": 110,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 0.22666582988889428,
+      "standard_error": 0.00341520231841167,
+      "ci95": [
+        0.2199721563448897,
+        0.23335950343289885
+      ],
+      "half_width": 0.006693673544004567,
+      "sample_variance": 0.5831803437842222,
+      "independent_units": 50000,
+      "paths": 100000,
+      "pilot_paths": 0,
+      "total_generated_paths": 100000,
+      "control_coefficient": 0.0,
+      "method": "antithetic",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.15073758293874562,
+      "contract": {
+        "kind": "asian",
+        "strike": 110,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 0.22841041280073243,
+      "standard_error": 0.0001396853899235572,
+      "ci95": [
+        0.22813663446731583,
+        0.22868419113414903
+      ],
+      "half_width": 0.00027377833341660625,
+      "sample_variance": 0.001756080734228659,
+      "independent_units": 90000,
+      "paths": 90000,
+      "pilot_paths": 10000,
+      "total_generated_paths": 100000,
+      "control_coefficient": 1.056692145156446,
+      "method": "control",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.2124377079308033,
+      "contract": {
+        "kind": "asian",
+        "strike": 110,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 0.8813406820971889,
+      "standard_error": 0.008648180963509786,
+      "ci95": [
+        0.8643905588769247,
+        0.898290805317453
+      ],
+      "half_width": 0.016950123220264082,
+      "sample_variance": 7.479103397761303,
+      "independent_units": 100000,
+      "paths": 100000,
+      "pilot_paths": 0,
+      "total_generated_paths": 100000,
+      "control_coefficient": 0.0,
+      "method": "plain",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.20787637506145984,
+      "contract": {
+        "kind": "asian",
+        "strike": 110,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 0.8856194805307532,
+      "standard_error": 0.008164453672409944,
+      "ci95": [
+        0.869617445379384,
+        0.9016215156821225
+      ],
+      "half_width": 0.016002035151369273,
+      "sample_variance": 3.3329151884464117,
+      "independent_units": 50000,
+      "paths": 100000,
+      "pilot_paths": 0,
+      "total_generated_paths": 100000,
+      "control_coefficient": 0.0,
+      "method": "antithetic",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.1500211659586057,
+      "contract": {
+        "kind": "asian",
+        "strike": 110,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 0.8821402626545349,
+      "standard_error": 0.00033480766274365657,
+      "ci95": [
+        0.8814840516938094,
+        0.8827964736152605
+      ],
+      "half_width": 0.0006562109607255997,
+      "sample_variance": 0.010088655392868308,
+      "independent_units": 90000,
+      "paths": 90000,
+      "pilot_paths": 10000,
+      "total_generated_paths": 100000,
+      "control_coefficient": 1.055793856031215,
+      "method": "control",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.206714375060983,
+      "contract": {
+        "kind": "asian",
+        "strike": 110,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 1.8104312273255145,
+      "standard_error": 0.015369823698617092,
+      "ci95": [
+        1.7803069264274949,
+        1.8405555282235342
+      ],
+      "half_width": 0.030124300898019707,
+      "sample_variance": 23.62314805265716,
+      "independent_units": 100000,
+      "paths": 100000,
+      "pilot_paths": 0,
+      "total_generated_paths": 100000,
+      "control_coefficient": 0.0,
+      "method": "plain",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.20537041604984552,
+      "contract": {
+        "kind": "asian",
+        "strike": 110,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 1.819870529049011,
+      "standard_error": 0.014230380313852934,
+      "ci95": [
+        1.7919794961475515,
+        1.8477615619504704
+      ],
+      "half_width": 0.027891032901459542,
+      "sample_variance": 10.125186193844657,
+      "independent_units": 50000,
+      "paths": 100000,
+      "pilot_paths": 0,
+      "total_generated_paths": 100000,
+      "control_coefficient": 0.0,
+      "method": "antithetic",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.14543808298185468,
+      "contract": {
+        "kind": "asian",
+        "strike": 110,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 1.8118887866825804,
+      "standard_error": 0.0006670823487163739,
+      "ci95": [
+        1.8105813293043738,
+        1.813196244060787
+      ],
+      "half_width": 0.001307457378206482,
+      "sample_variance": 0.040049897397205846,
+      "independent_units": 90000,
+      "paths": 90000,
+      "pilot_paths": 10000,
+      "total_generated_paths": 100000,
+      "control_coefficient": 1.0616558370921878,
+      "method": "control",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.20348741696216166,
+      "contract": {
+        "kind": "asian",
+        "strike": 110,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 3.7913856516091147,
+      "standard_error": 0.027520006601244696,
+      "ci95": [
+        3.7374474298163705,
+        3.845323873401859
+      ],
+      "half_width": 0.05393822179274414,
+      "sample_variance": 75.73507633325518,
+      "independent_units": 100000,
+      "paths": 100000,
+      "pilot_paths": 0,
+      "total_generated_paths": 100000,
+      "control_coefficient": 0.0,
+      "method": "plain",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.2047997919144109,
+      "contract": {
+        "kind": "asian",
+        "strike": 110,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 3.807924110778136,
+      "standard_error": 0.024716145242876634,
+      "ci95": [
+        3.759481356265437,
+        3.856366865290835
+      ],
+      "half_width": 0.048442754512699186,
+      "sample_variance": 30.54439178334866,
+      "independent_units": 50000,
+      "paths": 100000,
+      "pilot_paths": 0,
+      "total_generated_paths": 100000,
+      "control_coefficient": 0.0,
+      "method": "antithetic",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.14542083302512765,
+      "contract": {
+        "kind": "asian",
+        "strike": 110,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 3.796594900533726,
+      "standard_error": 0.0014719041503831211,
+      "ci95": [
+        3.79371002141028,
+        3.799479779657172
+      ],
+      "half_width": 0.002884879123445945,
+      "sample_variance": 0.1949851645123552,
+      "independent_units": 90000,
+      "paths": 90000,
+      "pilot_paths": 10000,
+      "total_generated_paths": 100000,
+      "control_coefficient": 1.075874526926452,
+      "method": "control",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.20377166697289795,
+      "contract": {
+        "kind": "asian",
+        "strike": 110,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 0.005336404535426169,
+      "standard_error": 0.0004911160871025985,
+      "ci95": [
+        0.00437383469247684,
+        0.006298974378375498
+      ],
+      "half_width": 0.0009625698429493291,
+      "sample_variance": 0.024119501101096705,
+      "independent_units": 100000,
+      "paths": 100000,
+      "pilot_paths": 0,
+      "total_generated_paths": 100000,
+      "control_coefficient": 0.0,
+      "method": "plain",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.20994749991223216,
+      "contract": {
+        "kind": "asian",
+        "strike": 120,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 0.005152098847163544,
+      "standard_error": 0.0004854866187629796,
+      "ci95": [
+        0.0042005625594119765,
+        0.006103635134915112
+      ],
+      "half_width": 0.0009515362877515676,
+      "sample_variance": 0.011784862849895533,
+      "independent_units": 50000,
+      "paths": 100000,
+      "pilot_paths": 0,
+      "total_generated_paths": 100000,
+      "control_coefficient": 0.0,
+      "method": "antithetic",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.15029925003182143,
+      "contract": {
+        "kind": "asian",
+        "strike": 120,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 0.005269892553102654,
+      "standard_error": 5.7711133224423806e-05,
+      "ci95": [
+        0.00515678081047579,
+        0.0053830042957295175
+      ],
+      "half_width": 0.00011311174262686358,
+      "sample_variance": 0.0002997517408242474,
+      "independent_units": 90000,
+      "paths": 90000,
+      "pilot_paths": 10000,
+      "total_generated_paths": 100000,
+      "control_coefficient": 1.1581519052314688,
+      "method": "control",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.20389866700861603,
+      "contract": {
+        "kind": "asian",
+        "strike": 120,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 0.10713899921794985,
+      "standard_error": 0.002872901561773606,
+      "ci95": [
+        0.1015082156257447,
+        0.112769782810155
+      ],
+      "half_width": 0.005630783592205141,
+      "sample_variance": 0.8253563383641224,
+      "independent_units": 100000,
+      "paths": 100000,
+      "pilot_paths": 0,
+      "total_generated_paths": 100000,
+      "control_coefficient": 0.0,
+      "method": "plain",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.20420375000685453,
+      "contract": {
+        "kind": "asian",
+        "strike": 120,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 0.10552725665793138,
+      "standard_error": 0.002820725354976721,
+      "ci95": [
+        0.09999873655189805,
+        0.1110557767639647
+      ],
+      "half_width": 0.005528520106033332,
+      "sample_variance": 0.39782457641042734,
+      "independent_units": 50000,
+      "paths": 100000,
+      "pilot_paths": 0,
+      "total_generated_paths": 100000,
+      "control_coefficient": 0.0,
+      "method": "antithetic",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.14813850005157292,
+      "contract": {
+        "kind": "asian",
+        "strike": 120,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 0.10788039239753029,
+      "standard_error": 0.00024170707591300531,
+      "ci95": [
+        0.10740665523393231,
+        0.10835412956112828
+      ],
+      "half_width": 0.0004737371635979792,
+      "sample_variance": 0.0052580079491773785,
+      "independent_units": 90000,
+      "paths": 90000,
+      "pilot_paths": 10000,
+      "total_generated_paths": 100000,
+      "control_coefficient": 1.1179182936528955,
+      "method": "control",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.20634287502616644,
+      "contract": {
+        "kind": "asian",
+        "strike": 120,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.15,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 0.49569425413806734,
+      "standard_error": 0.007931170909286295,
+      "ci95": [
+        0.48014944480063443,
+        0.5112390634755003
+      ],
+      "half_width": 0.01554480933743293,
+      "sample_variance": 6.290347199230919,
+      "independent_units": 100000,
+      "paths": 100000,
+      "pilot_paths": 0,
+      "total_generated_paths": 100000,
+      "control_coefficient": 0.0,
+      "method": "plain",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.2059087910456583,
+      "contract": {
+        "kind": "asian",
+        "strike": 120,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 0.49417738441868975,
+      "standard_error": 0.00771526429728908,
+      "ci95": [
+        0.4790557442647954,
+        0.509299024572584
+      ],
+      "half_width": 0.015121640153894325,
+      "sample_variance": 2.9762651588511777,
+      "independent_units": 50000,
+      "paths": 100000,
+      "pilot_paths": 0,
+      "total_generated_paths": 100000,
+      "control_coefficient": 0.0,
+      "method": "antithetic",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.14514383394271135,
+      "contract": {
+        "kind": "asian",
+        "strike": 120,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 0.4987245178999516,
+      "standard_error": 0.0005766226599973792,
+      "ci95": [
+        0.49759435825368703,
+        0.49985467754621615
+      ],
+      "half_width": 0.001130159646264548,
+      "sample_variance": 0.029924432282020786,
+      "independent_units": 90000,
+      "paths": 90000,
+      "pilot_paths": 10000,
+      "total_generated_paths": 100000,
+      "control_coefficient": 1.1087700384781505,
+      "method": "control",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.20294045796617866,
+      "contract": {
+        "kind": "asian",
+        "strike": 120,
+        "maturity": 0.5,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 1.744574524276523,
+      "standard_error": 0.01884731744568322,
+      "ci95": [
+        1.7076344608777905,
+        1.7815145876752554
+      ],
+      "half_width": 0.036940063398732556,
+      "sample_variance": 35.52213748983551,
+      "independent_units": 100000,
+      "paths": 100000,
+      "pilot_paths": 0,
+      "total_generated_paths": 100000,
+      "control_coefficient": 0.0,
+      "method": "plain",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.20298820897005498,
+      "contract": {
+        "kind": "asian",
+        "strike": 120,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 1.7507815495721561,
+      "standard_error": 0.01793927223183436,
+      "ci95": [
+        1.7156212220889013,
+        1.785941877055411
+      ],
+      "half_width": 0.03516032748325482,
+      "sample_variance": 16.090874410393166,
+      "independent_units": 50000,
+      "paths": 100000,
+      "pilot_paths": 0,
+      "total_generated_paths": 100000,
+      "control_coefficient": 0.0,
+      "method": "antithetic",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.14487970899790525,
+      "contract": {
+        "kind": "asian",
+        "strike": 120,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    },
+    {
+      "estimate": 1.747195251125889,
+      "standard_error": 0.0013640424274567592,
+      "ci95": [
+        1.7445217770946893,
+        1.7498687251570888
+      ],
+      "half_width": 0.0026734740311998373,
+      "sample_variance": 0.16745505695119156,
+      "independent_units": 90000,
+      "paths": 90000,
+      "pilot_paths": 10000,
+      "total_generated_paths": 100000,
+      "control_coefficient": 1.1107669636999458,
+      "method": "control",
+      "seed": 42,
+      "batch_size": 10000,
+      "seconds": 0.20370412501506507,
+      "contract": {
+        "kind": "asian",
+        "strike": 120,
+        "maturity": 1.0,
+        "fixings": 252,
+        "call": true
+      },
+      "model": {
+        "spot": 100.0,
+        "volatility": 0.3,
+        "rate": 0.03,
+        "dividend": 0.0
+      },
+      "interval_note": "Normal-approximation Monte Carlo interval; excludes model error."
+    }
+  ],
+  "scenario_count": 20,
+  "budget_note": "100,000 total generated paths/method; control uses 10,000 pilot + 90,000 main."
+}
