@@ -6,7 +6,7 @@ Monte Carlo error shrinks like 1/√N. To halve your error bar you need 4x the p
 instead of buying more CPU, you get clever about *which* random numbers you draw. I wanted to measure how much each
 trick buys, check everything against an independent library (QuantLib), and find where the tricks break.
 
-(Built with AI pair-programming help. Every number below is in [`../results/`](../results/); see [RESULTS.md](../RESULTS.md).)
+Every number below is in [`../results/`](../results/); see [RESULTS.md](../RESULTS.md).
 
 ## TL;DR
 
@@ -209,7 +209,6 @@ risklab/
   barrier.py       knock-outs + bridge fix      heston.py      full-truncation Euler
   validation.py    QuantLib references          studies.py     all v2 experiments
   experiments.py   original experiments         cli.py, dashboard.py
-  INTERVIEW_NOTES.md
 ```
 
 ## What this isn't
@@ -221,7 +220,3 @@ risklab/
 - The arithmetic-Asian "truth" is itself an RQMC estimate (SE 5.5e-5), cross-checked against QuantLib MC, not a closed form.
 - Heston uses plain full-truncation Euler, not the Andersen QE scheme a desk would use. No American or path-dependent Greeks beyond the above.
 - Timings are a single shared Apple M2 laptop. Load averages are recorded in the JSON.
-
-## Interview notes
-
-Design decisions, a 2-minute walkthrough and likely follow-ups: [INTERVIEW_NOTES.md](INTERVIEW_NOTES.md).

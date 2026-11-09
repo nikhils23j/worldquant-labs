@@ -7,7 +7,7 @@ a toy exchange, made sure its matching was actually correct, then put robots on 
 
 Short answer from my sim: **it depends entirely on who you're racing.**
 
-(Built with AI pair-programming help. All numbers below come from [`../results/`](../results/); see [RESULTS.md](../RESULTS.md).)
+All numbers below come from [`../results/`](../results/); see [RESULTS.md](../RESULTS.md).
 
 ## TL;DR
 
@@ -207,7 +207,6 @@ exchangelab/
   experiments.py   workloads, differential check, benchmark, original ms-latency demo
   agents.py        the original demo's maker / background / probe agents
   cli.py           `exchangelab` command    dashboard.py            Streamlit dashboard
-  INTERVIEW_NOTES.md
 ```
 
 ## What this isn't
@@ -220,7 +219,3 @@ exchangelab/
 - "Microseconds" are simulated clock units. Wall-clock speed of the Python engine (~541k commands/s) is a separate,
   much less impressive story than a C++ engine's.
 - The oracle comparison shows the fast and slow engines agree on 1.6M random commands. That's strong evidence, not a proof.
-
-## Interview notes
-
-Design decisions, a 2-minute walkthrough and likely follow-ups: [INTERVIEW_NOTES.md](INTERVIEW_NOTES.md).

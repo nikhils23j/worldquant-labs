@@ -31,7 +31,7 @@ More headline numbers (engine speed, million-path runs) are in the project READM
 
 Being slower costs nothing until you're slower than the person you're racing, and then about half the PnL disappears
 within ~30 µs. Against a slow (500 µs) competitor, the same extra latency cost nothing I could detect.
-→ [ExchangeLab README](exchangelab/README.md) · [interview notes](exchangelab/INTERVIEW_NOTES.md)
+→ [ExchangeLab README](exchangelab/README.md)
 
 ### [RiskLab](risklab/): how much each variance-reduction trick buys
 
@@ -39,7 +39,7 @@ within ~30 µs. Against a slow (500 µs) competitor, the same extra latency cost
 
 Same budget, wildly different error bars: the control variate alone is worth ~740x, and the Brownian bridge is what
 makes Sobol points actually help (29x without it, 2,529x with it).
-→ [RiskLab README](risklab/README.md) · [interview notes](risklab/INTERVIEW_NOTES.md)
+→ [RiskLab README](risklab/README.md)
 
 ## How the repo fits together
 
@@ -144,11 +144,6 @@ tests/        pytest suite
 
 Each project README has a longer, specific list.
 
-## Interview notes
-
-- [ExchangeLab interview notes](exchangelab/INTERVIEW_NOTES.md)
-- [RiskLab interview notes](risklab/INTERVIEW_NOTES.md)
-
 ## References
 
 - ABIDES market simulator (inspiration for the agent market): https://github.com/abides-sim/abides
@@ -160,4 +155,4 @@ None of the upstream projects are affiliated with this repo, and I don't claim c
 
 ---
 
-Built with AI pair-programming help (Claude / Codex). I've read, run and poked at everything here.
+I've read and run the projects in this repository.
