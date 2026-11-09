@@ -1,0 +1,177 @@
+{
+  "steps": {
+    "exchange-benchmark": {
+      "command": "python -m exchangelab.cli benchmark --count 1000000 --repetitions 5 --output results/exchange-benchmark.json",
+      "seconds": 32.45592062501237,
+      "load_before": [
+        2.18896484375,
+        3.81640625,
+        5.10986328125
+      ],
+      "load_after": [
+        2.22802734375,
+        3.67333984375,
+        5.01171875
+      ]
+    },
+    "exchange-differential": {
+      "command": "python -m exchangelab.cli validate --count 100000 --output results/exchange-differential.json",
+      "seconds": 3.4068884170264937,
+      "load_before": [
+        2.22802734375,
+        3.67333984375,
+        5.01171875
+      ],
+      "load_after": [
+        2.20947265625,
+        3.6455078125,
+        4.99365234375
+      ]
+    },
+    "exchange-differential-suite": {
+      "command": "python -m exchangelab.cli validate-suite --count 1000000 --v2-count 200000 --output results/exchange-differential-suite.json",
+      "seconds": 101.15355624997756,
+      "load_before": [
+        2.20947265625,
+        3.6455078125,
+        4.99365234375
+      ],
+      "load_after": [
+        2.42431640625,
+        3.27001953125,
+        4.69189453125
+      ]
+    },
+    "exchange-latency": {
+      "command": "python -m exchangelab.cli compare-latency --output results/exchange-latency.json",
+      "seconds": 0.66098145901924,
+      "load_before": [
+        2.42431640625,
+        3.27001953125,
+        4.69189453125
+      ],
+      "load_after": [
+        2.42431640625,
+        3.27001953125,
+        4.69189453125
+      ]
+    },
+    "exchange-demo-0ms": {
+      "command": "python -m exchangelab.cli demo --latency 0 --seed 1 --output results/exchange-demo-0ms.json",
+      "seconds": 0.10880979202920571,
+      "load_before": [
+        2.42431640625,
+        3.27001953125,
+        4.69189453125
+      ],
+      "load_after": [
+        2.42431640625,
+        3.27001953125,
+        4.69189453125
+      ]
+    },
+    "exchange-demo-50ms": {
+      "command": "python -m exchangelab.cli demo --latency 50 --seed 1 --output results/exchange-demo-50ms.json",
+      "seconds": 0.10957062500528991,
+      "load_before": [
+        2.42431640625,
+        3.27001953125,
+        4.69189453125
+      ],
+      "load_after": [
+        2.42431640625,
+        3.27001953125,
+        4.69189453125
+      ]
+    },
+    "exchange-latency-study": {
+      "command": "python -m exchangelab.cli latency-study --seeds 30 --output results/exchange-latency-study.json",
+      "seconds": 36.449867792020086,
+      "load_before": [
+        2.42431640625,
+        3.27001953125,
+        4.69189453125
+      ],
+      "load_after": [
+        2.3896484375,
+        3.15576171875,
+        4.58349609375
+      ]
+    },
+    "risk-benchmark": {
+      "command": "python -m risklab.cli benchmark --output results/risk-benchmark.json",
+      "seconds": 20.422498500032816,
+      "load_before": [
+        2.3896484375,
+        3.15576171875,
+        4.58349609375
+      ],
+      "load_after": [
+        2.494140625,
+        3.12841796875,
+        4.5400390625
+      ]
+    },
+    "risk-validation": {
+      "command": "python -m risklab.cli validate --output results/risk-validation.json",
+      "seconds": 27.89147937501548,
+      "load_before": [
+        2.494140625,
+        3.12841796875,
+        4.5400390625
+      ],
+      "load_after": [
+        2.40478515625,
+        3.05322265625,
+        4.47119140625
+      ]
+    },
+    "risk-grid": {
+      "command": "python -m risklab.cli sweep --output results/risk-grid.json",
+      "seconds": 18.21446124999784,
+      "load_before": [
+        2.40478515625,
+        3.05322265625,
+        4.47119140625
+      ],
+      "load_after": [
+        3.31689453125,
+        3.22607421875,
+        4.49951171875
+      ]
+    },
+    "risk-estimators": {
+      "command": "python -m risklab.cli compare --output results/risk-estimators.json",
+      "seconds": 11.714260666980408,
+      "load_before": [
+        3.31689453125,
+        3.22607421875,
+        4.49951171875
+      ],
+      "load_after": [
+        3.34814453125,
+        3.23486328125,
+        4.48779296875
+      ]
+    },
+    "risk-study": {
+      "command": "python -m risklab.cli study --output results/risk-study.json",
+      "seconds": 122.58744212501915,
+      "load_before": [
+        3.34814453125,
+        3.23486328125,
+        4.48779296875
+      ],
+      "load_after": [
+        2.91552734375,
+        3.23193359375,
+        4.322265625
+      ]
+    }
+  },
+  "python": "3.11.18 (main, Oct 25 2026, 19:41:29) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "platform": "macOS-27.2-arm64-arm-64bit",
+  "started": "2026-11-09T18:14:37",
+  "total_seconds_this_invocation": 375.17763895797543,
+  "finished": "2026-11-09T18:20:52"
+}

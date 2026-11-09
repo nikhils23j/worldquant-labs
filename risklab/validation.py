@@ -44,3 +44,70 @@ def quantlib_reference(c, m, paths=200000, seed=71):
                 "convention": "Exact equivalent GBM via rescaled r,q,sigma on equally spaced calendar dates"}
     finally:
         ql.Settings.instance().evaluationDate = old
+
+
+def _ql_setup(maturity, rate, dividend):
+    import QuantLib as ql
+    days = maturity * 365
+    if abs(days - round(days)) > 1e-12:
+        raise ValueError("maturity must be a whole number of days on Actual/365 Fixed")
+    today = ql.Date(1, 1, 2026)
+    dc = ql.Actual365Fixed()
+    expiry = today + int(round(days))
+    rate_h = ql.YieldTermStructureHandle(ql.FlatForward(today, rate, dc))
+    div_h = ql.YieldTermStructureHandle(ql.FlatForward(today, dividend, dc))
+    return ql, today, dc, expiry, rate_h, div_h
+
+
+def _with_date(today, fn):
+    import QuantLib as ql
+    old = ql.Settings.instance().evaluationDate
+    ql.Settings.instance().evaluationDate = today
+    try:
+        return fn()
+    finally:
+        ql.Settings.instance().evaluationDate = old
+
+
+def quantlib_european_greeks(c, m):
+    """QuantLib analytic European price, delta and vega (vega per 1 vol point)."""
+    ql, today, dc, expiry, r, q = _ql_setup(c.maturity, m.rate, m.dividend)
+
+    def run():
+        vol = ql.BlackVolTermStructureHandle(ql.BlackConstantVol(today, ql.NullCalendar(), m.volatility, dc))
+        proc = ql.BlackScholesMertonProcess(ql.QuoteHandle(ql.SimpleQuote(m.spot)), q, r, vol)
+        opt = ql.VanillaOption(ql.PlainVanillaPayoff(ql.Option.Call if c.call else ql.Option.Put, c.strike),
+                               ql.EuropeanExercise(expiry))
+        opt.setPricingEngine(ql.AnalyticEuropeanEngine(proc))
+        return {"price": opt.NPV(), "delta": opt.delta(), "vega_per_vol_point": opt.vega() / 100,
+                "QuantLib_version": ql.__version__}
+    return _with_date(today, run)
+
+
+def quantlib_barrier(spot, strike, barrier, maturity, rate, vol, direction="down", call=True, dividend=0.0):
+    """QuantLib AnalyticBarrierEngine: continuously monitored knock-out, zero rebate."""
+    ql, today, dc, expiry, r, q = _ql_setup(maturity, rate, dividend)
+
+    def run():
+        v = ql.BlackVolTermStructureHandle(ql.BlackConstantVol(today, ql.NullCalendar(), vol, dc))
+        proc = ql.BlackScholesMertonProcess(ql.QuoteHandle(ql.SimpleQuote(spot)), q, r, v)
+        kind = ql.Barrier.DownOut if direction == "down" else ql.Barrier.UpOut
+        opt = ql.BarrierOption(kind, barrier, 0.0,
+                               ql.PlainVanillaPayoff(ql.Option.Call if call else ql.Option.Put, strike),
+                               ql.EuropeanExercise(expiry))
+        opt.setPricingEngine(ql.AnalyticBarrierEngine(proc))
+        return opt.NPV()
+    return _with_date(today, run)
+
+
+def quantlib_heston(spot, strike, maturity, rate, p, dividend=0.0, call=True):
+    """QuantLib AnalyticHestonEngine (semi-analytic Fourier integral) European price."""
+    ql, today, dc, expiry, r, q = _ql_setup(maturity, rate, dividend)
+
+    def run():
+        proc = ql.HestonProcess(r, q, ql.QuoteHandle(ql.SimpleQuote(spot)), p.v0, p.kappa, p.theta, p.xi, p.rho)
+        opt = ql.VanillaOption(ql.PlainVanillaPayoff(ql.Option.Call if call else ql.Option.Put, strike),
+                               ql.EuropeanExercise(expiry))
+        opt.setPricingEngine(ql.AnalyticHestonEngine(ql.HestonModel(proc)))
+        return opt.NPV()
+    return _with_date(today, run)

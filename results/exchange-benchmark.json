@@ -1,139 +1,323 @@
 {
   "environment": {
-    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
-    "platform": "macOS-27.0.1-arm64-arm-64bit",
-    "numpy": "2.5.4",
-    "cpu": "Apple M2"
+    "python": "3.11.18 (main, Oct 25 2026, 19:41:29) [Clang 21.0.0 (clang-2100.3.34.2)]",
+    "platform": "macOS-27.2-arm64-arm-64bit",
+    "numpy": "2.4.6",
+    "cpu": "Apple M2",
+    "load_average_1_5_15": [
+      2.22802734375,
+      3.67333984375,
+      5.01171875
+    ]
   },
   "seed": 42,
-  "generation_seconds": 1.6043757499428466,
-  "warmup": {
-    "commands": 1000000,
-    "seconds": 2.347654957906343,
-    "commands_per_second": 425956.973205214,
-    "p95_us": null,
-    "rejections": {
-      "unknown_order": 178787
-    },
-    "command_mix": {
-      "market": 199664,
-      "limit": 600193,
-      "cancel": 200143
-    },
-    "trades": 697820,
-    "volume": 2124639,
-    "state_sha256": "fe5aa05d638d37a21fe4c1c46f7304ef1ce04cd22c673b65b8e96b59c9e4a949",
-    "peak_live_orders_sampled": 1000,
-    "peak_price_levels_sampled": 143,
-    "peak_process_rss_mib": 285.515625
+  "count": 1000000,
+  "repetitions": 5,
+  "quiet_wait": {
+    "waited_seconds": 0,
+    "load_after_wait": [
+      2.18896484375,
+      3.81640625,
+      5.10986328125
+    ],
+    "threshold": 2.5
   },
-  "runs": [
-    {
-      "commands": 1000000,
-      "seconds": 2.5316602080129087,
-      "commands_per_second": 394997.7160579921,
-      "p95_us": null,
-      "rejections": {
-        "unknown_order": 178787
-      },
-      "command_mix": {
-        "market": 199664,
-        "limit": 600193,
-        "cancel": 200143
-      },
-      "trades": 697820,
-      "volume": 2124639,
-      "state_sha256": "fe5aa05d638d37a21fe4c1c46f7304ef1ce04cd22c673b65b8e96b59c9e4a949",
-      "peak_live_orders_sampled": 1000,
-      "peak_price_levels_sampled": 143,
-      "peak_process_rss_mib": 286.8125
-    },
-    {
-      "commands": 1000000,
-      "seconds": 2.450480292085558,
-      "commands_per_second": 408083.26564786147,
-      "p95_us": null,
-      "rejections": {
-        "unknown_order": 178787
-      },
-      "command_mix": {
-        "market": 199664,
-        "limit": 600193,
-        "cancel": 200143
-      },
-      "trades": 697820,
-      "volume": 2124639,
-      "state_sha256": "fe5aa05d638d37a21fe4c1c46f7304ef1ce04cd22c673b65b8e96b59c9e4a949",
-      "peak_live_orders_sampled": 1000,
-      "peak_price_levels_sampled": 143,
-      "peak_process_rss_mib": 286.8125
-    },
-    {
-      "commands": 1000000,
-      "seconds": 2.365328833926469,
-      "commands_per_second": 422774.19767465914,
-      "p95_us": null,
-      "rejections": {
-        "unknown_order": 178787
-      },
-      "command_mix": {
-        "market": 199664,
-        "limit": 600193,
-        "cancel": 200143
-      },
-      "trades": 697820,
-      "volume": 2124639,
-      "state_sha256": "fe5aa05d638d37a21fe4c1c46f7304ef1ce04cd22c673b65b8e96b59c9e4a949",
-      "peak_live_orders_sampled": 1000,
-      "peak_price_levels_sampled": 143,
-      "peak_process_rss_mib": 286.8125
-    },
-    {
-      "commands": 1000000,
-      "seconds": 2.353685958078131,
-      "commands_per_second": 424865.51639052806,
-      "p95_us": null,
-      "rejections": {
-        "unknown_order": 178787
-      },
-      "command_mix": {
-        "market": 199664,
-        "limit": 600193,
-        "cancel": 200143
-      },
-      "trades": 697820,
-      "volume": 2124639,
-      "state_sha256": "fe5aa05d638d37a21fe4c1c46f7304ef1ce04cd22c673b65b8e96b59c9e4a949",
-      "peak_live_orders_sampled": 1000,
-      "peak_price_levels_sampled": 143,
-      "peak_process_rss_mib": 286.8125
-    },
-    {
-      "commands": 1000000,
-      "seconds": 2.370794582995586,
-      "commands_per_second": 421799.51277620316,
-      "p95_us": null,
-      "rejections": {
-        "unknown_order": 178787
-      },
-      "command_mix": {
-        "market": 199664,
-        "limit": 600193,
-        "cancel": 200143
-      },
-      "trades": 697820,
-      "volume": 2124639,
-      "state_sha256": "fe5aa05d638d37a21fe4c1c46f7304ef1ce04cd22c673b65b8e96b59c9e4a949",
-      "peak_live_orders_sampled": 1000,
-      "peak_price_levels_sampled": 143,
-      "peak_process_rss_mib": 286.8125
-    }
+  "load_average_before": [
+    2.18896484375,
+    3.81640625,
+    5.10986328125
   ],
-  "median_seconds": 2.370794582995586,
+  "load_average_after": [
+    2.248046875,
+    3.70166015625,
+    5.02978515625
+  ],
+  "generation_seconds": 1.5599151669885032,
+  "runs": {
+    "v0": [
+      {
+        "engine": "v0",
+        "commands": 1000000,
+        "seconds": 2.3253046669997275,
+        "commands_per_second": 430051.17316100805,
+        "p95_us": null,
+        "rejections": {
+          "unknown_order": 178787
+        },
+        "command_mix": {
+          "market": 199664,
+          "limit": 600193,
+          "cancel": 200143
+        },
+        "trades": 697820,
+        "volume": 2124639,
+        "state_sha256": "fe5aa05d638d37a21fe4c1c46f7304ef1ce04cd22c673b65b8e96b59c9e4a949",
+        "peak_live_orders_sampled": 0,
+        "peak_price_levels_sampled": 0,
+        "peak_process_rss_mib": 344.15625,
+        "load_average_after": [
+          2.31982421875,
+          3.78955078125,
+          5.08447265625
+        ]
+      },
+      {
+        "engine": "v0",
+        "commands": 1000000,
+        "seconds": 2.322074458003044,
+        "commands_per_second": 430649.4120175577,
+        "p95_us": null,
+        "rejections": {
+          "unknown_order": 178787
+        },
+        "command_mix": {
+          "market": 199664,
+          "limit": 600193,
+          "cancel": 200143
+        },
+        "trades": 697820,
+        "volume": 2124639,
+        "state_sha256": "fe5aa05d638d37a21fe4c1c46f7304ef1ce04cd22c673b65b8e96b59c9e4a949",
+        "peak_live_orders_sampled": 0,
+        "peak_price_levels_sampled": 0,
+        "peak_process_rss_mib": 344.15625,
+        "load_average_after": [
+          2.31982421875,
+          3.78955078125,
+          5.08447265625
+        ]
+      },
+      {
+        "engine": "v0",
+        "commands": 1000000,
+        "seconds": 2.3386409590020776,
+        "commands_per_second": 427598.77105150436,
+        "p95_us": null,
+        "rejections": {
+          "unknown_order": 178787
+        },
+        "command_mix": {
+          "market": 199664,
+          "limit": 600193,
+          "cancel": 200143
+        },
+        "trades": 697820,
+        "volume": 2124639,
+        "state_sha256": "fe5aa05d638d37a21fe4c1c46f7304ef1ce04cd22c673b65b8e96b59c9e4a949",
+        "peak_live_orders_sampled": 0,
+        "peak_price_levels_sampled": 0,
+        "peak_process_rss_mib": 344.171875,
+        "load_average_after": [
+          2.2939453125,
+          3.759765625,
+          5.06591796875
+        ]
+      },
+      {
+        "engine": "v0",
+        "commands": 1000000,
+        "seconds": 2.33622487494722,
+        "commands_per_second": 428040.9864322637,
+        "p95_us": null,
+        "rejections": {
+          "unknown_order": 178787
+        },
+        "command_mix": {
+          "market": 199664,
+          "limit": 600193,
+          "cancel": 200143
+        },
+        "trades": 697820,
+        "volume": 2124639,
+        "state_sha256": "fe5aa05d638d37a21fe4c1c46f7304ef1ce04cd22c673b65b8e96b59c9e4a949",
+        "peak_live_orders_sampled": 0,
+        "peak_price_levels_sampled": 0,
+        "peak_process_rss_mib": 344.171875,
+        "load_average_after": [
+          2.27001953125,
+          3.73046875,
+          5.0478515625
+        ]
+      },
+      {
+        "engine": "v0",
+        "commands": 1000000,
+        "seconds": 2.339184209005907,
+        "commands_per_second": 427499.46590353147,
+        "p95_us": null,
+        "rejections": {
+          "unknown_order": 178787
+        },
+        "command_mix": {
+          "market": 199664,
+          "limit": 600193,
+          "cancel": 200143
+        },
+        "trades": 697820,
+        "volume": 2124639,
+        "state_sha256": "fe5aa05d638d37a21fe4c1c46f7304ef1ce04cd22c673b65b8e96b59c9e4a949",
+        "peak_live_orders_sampled": 0,
+        "peak_price_levels_sampled": 0,
+        "peak_process_rss_mib": 344.171875,
+        "load_average_after": [
+          2.248046875,
+          3.70166015625,
+          5.02978515625
+        ]
+      }
+    ],
+    "fast": [
+      {
+        "engine": "fast",
+        "commands": 1000000,
+        "seconds": 1.8457625830196775,
+        "commands_per_second": 541781.4886917876,
+        "p95_us": null,
+        "rejections": {
+          "unknown_order": 178787
+        },
+        "command_mix": {
+          "market": 199664,
+          "limit": 600193,
+          "cancel": 200143
+        },
+        "trades": 697820,
+        "volume": 2124639,
+        "state_sha256": "fe5aa05d638d37a21fe4c1c46f7304ef1ce04cd22c673b65b8e96b59c9e4a949",
+        "peak_live_orders_sampled": 1000,
+        "peak_price_levels_sampled": 143,
+        "peak_process_rss_mib": 344.15625,
+        "load_average_after": [
+          2.31982421875,
+          3.78955078125,
+          5.08447265625
+        ]
+      },
+      {
+        "engine": "fast",
+        "commands": 1000000,
+        "seconds": 1.8501816249918193,
+        "commands_per_second": 540487.4778196014,
+        "p95_us": null,
+        "rejections": {
+          "unknown_order": 178787
+        },
+        "command_mix": {
+          "market": 199664,
+          "limit": 600193,
+          "cancel": 200143
+        },
+        "trades": 697820,
+        "volume": 2124639,
+        "state_sha256": "fe5aa05d638d37a21fe4c1c46f7304ef1ce04cd22c673b65b8e96b59c9e4a949",
+        "peak_live_orders_sampled": 1000,
+        "peak_price_levels_sampled": 143,
+        "peak_process_rss_mib": 344.171875,
+        "load_average_after": [
+          2.2939453125,
+          3.759765625,
+          5.06591796875
+        ]
+      },
+      {
+        "engine": "fast",
+        "commands": 1000000,
+        "seconds": 1.8493882500333712,
+        "commands_per_second": 540719.3432649719,
+        "p95_us": null,
+        "rejections": {
+          "unknown_order": 178787
+        },
+        "command_mix": {
+          "market": 199664,
+          "limit": 600193,
+          "cancel": 200143
+        },
+        "trades": 697820,
+        "volume": 2124639,
+        "state_sha256": "fe5aa05d638d37a21fe4c1c46f7304ef1ce04cd22c673b65b8e96b59c9e4a949",
+        "peak_live_orders_sampled": 1000,
+        "peak_price_levels_sampled": 143,
+        "peak_process_rss_mib": 344.171875,
+        "load_average_after": [
+          2.27001953125,
+          3.73046875,
+          5.0478515625
+        ]
+      },
+      {
+        "engine": "fast",
+        "commands": 1000000,
+        "seconds": 1.8438461250043474,
+        "commands_per_second": 542344.6058968952,
+        "p95_us": null,
+        "rejections": {
+          "unknown_order": 178787
+        },
+        "command_mix": {
+          "market": 199664,
+          "limit": 600193,
+          "cancel": 200143
+        },
+        "trades": 697820,
+        "volume": 2124639,
+        "state_sha256": "fe5aa05d638d37a21fe4c1c46f7304ef1ce04cd22c673b65b8e96b59c9e4a949",
+        "peak_live_orders_sampled": 1000,
+        "peak_price_levels_sampled": 143,
+        "peak_process_rss_mib": 344.171875,
+        "load_average_after": [
+          2.27001953125,
+          3.73046875,
+          5.0478515625
+        ]
+      },
+      {
+        "engine": "fast",
+        "commands": 1000000,
+        "seconds": 1.848325249971822,
+        "commands_per_second": 541030.3192120787,
+        "p95_us": null,
+        "rejections": {
+          "unknown_order": 178787
+        },
+        "command_mix": {
+          "market": 199664,
+          "limit": 600193,
+          "cancel": 200143
+        },
+        "trades": 697820,
+        "volume": 2124639,
+        "state_sha256": "fe5aa05d638d37a21fe4c1c46f7304ef1ce04cd22c673b65b8e96b59c9e4a949",
+        "peak_live_orders_sampled": 1000,
+        "peak_price_levels_sampled": 143,
+        "peak_process_rss_mib": 344.171875,
+        "load_average_after": [
+          2.248046875,
+          3.70166015625,
+          5.02978515625
+        ]
+      }
+    ]
+  },
+  "median_seconds": {
+    "v0": 2.33622487494722,
+    "fast": 1.848325249971822
+  },
+  "min_seconds": {
+    "v0": 2.322074458003044,
+    "fast": 1.8438461250043474
+  },
+  "max_seconds": {
+    "v0": 2.339184209005907,
+    "fast": 1.8501816249918193
+  },
+  "speedup_median": 1.2639684898438932,
+  "identical_final_state_sha256": "fe5aa05d638d37a21fe4c1c46f7304ef1ce04cd22c673b65b8e96b59c9e4a949",
   "stress": {
+    "engine": "fast",
     "commands": 1000000,
-    "seconds": 2.7285633329302073,
-    "commands_per_second": 366493.2339782265,
+    "seconds": 2.057374374999199,
+    "commands_per_second": 486056.4086691268,
     "p95_us": null,
     "rejections": {
       "unknown_order": 178787
@@ -148,13 +332,14 @@
     "state_sha256": "fe5aa05d638d37a21fe4c1c46f7304ef1ce04cd22c673b65b8e96b59c9e4a949",
     "peak_live_orders_sampled": 1000,
     "peak_price_levels_sampled": 143,
-    "peak_process_rss_mib": 286.8125
+    "peak_process_rss_mib": 344.1875
   },
   "instrumented": {
+    "engine": "fast",
     "commands": 100000,
-    "seconds": 0.25042687507811934,
-    "commands_per_second": 399318.16411000426,
-    "p95_us": 5.25,
+    "seconds": 0.2031409590272233,
+    "commands_per_second": 492269.0159526067,
+    "p95_us": 3.458,
     "rejections": {
       "unknown_order": 17803
     },
@@ -168,14 +353,15 @@
     "state_sha256": "9c3821459c8a143a159867d60fcb49f4f0ac2f80296abc970ab3c3e2c02cc922",
     "peak_live_orders_sampled": 505,
     "peak_price_levels_sampled": 130,
-    "peak_process_rss_mib": 286.8125
+    "peak_process_rss_mib": 345.5
   },
   "comparison": {
     "10000": {
-      "indexed": {
+      "fast": {
+        "engine": "fast",
         "commands": 10000,
-        "seconds": 0.02486600005067885,
-        "commands_per_second": 402155.55294857314,
+        "seconds": 0.018124874972272664,
+        "commands_per_second": 551727.9437953611,
         "p95_us": null,
         "rejections": {
           "unknown_order": 1728
@@ -190,12 +376,13 @@
         "state_sha256": "e1d369583ca249cf7efb3e1055348b9af47c78525f0b48da25c1390f1651feb5",
         "peak_live_orders_sampled": 287,
         "peak_price_levels_sampled": 121,
-        "peak_process_rss_mib": 286.8125
+        "peak_process_rss_mib": 344.1875
       },
       "reference": {
+        "engine": "reference",
         "commands": 10000,
-        "seconds": 0.14302399998996407,
-        "commands_per_second": 69918.33538917731,
+        "seconds": 0.14060400001471862,
+        "commands_per_second": 71121.73194897149,
         "p95_us": null,
         "rejections": {
           "unknown_order": 1728
@@ -210,14 +397,15 @@
         "state_sha256": "e1d369583ca249cf7efb3e1055348b9af47c78525f0b48da25c1390f1651feb5",
         "peak_live_orders_sampled": 0,
         "peak_price_levels_sampled": 0,
-        "peak_process_rss_mib": 286.8125
+        "peak_process_rss_mib": 344.1875
       }
     },
     "100000": {
-      "indexed": {
+      "fast": {
+        "engine": "fast",
         "commands": 100000,
-        "seconds": 0.2919871669728309,
-        "commands_per_second": 342480.8050187524,
+        "seconds": 0.1847301660454832,
+        "commands_per_second": 541330.1040144064,
         "p95_us": null,
         "rejections": {
           "unknown_order": 17803
@@ -232,12 +420,13 @@
         "state_sha256": "9c3821459c8a143a159867d60fcb49f4f0ac2f80296abc970ab3c3e2c02cc922",
         "peak_live_orders_sampled": 505,
         "peak_price_levels_sampled": 130,
-        "peak_process_rss_mib": 286.8125
+        "peak_process_rss_mib": 344.21875
       },
       "reference": {
+        "engine": "reference",
         "commands": 100000,
-        "seconds": 2.995233832974918,
-        "commands_per_second": 33386.37501322501,
+        "seconds": 3.02334208303364,
+        "commands_per_second": 33075.979248653,
         "p95_us": null,
         "rejections": {
           "unknown_order": 17803
@@ -252,9 +441,9 @@
         "state_sha256": "9c3821459c8a143a159867d60fcb49f4f0ac2f80296abc970ab3c3e2c02cc922",
         "peak_live_orders_sampled": 0,
         "peak_price_levels_sampled": 0,
-        "peak_process_rss_mib": 286.8125
+        "peak_process_rss_mib": 344.234375
       }
     }
   },
-  "end_to_end_seconds": 22.57751550001558
+  "end_to_end_seconds": 32.332355791993905
 }

@@ -1,0 +1,10 @@
+{
+  "paths": 10000,
+  "batch_size": 10000,
+  "materialize": false,
+  "estimate": 7.414725414326237,
+  "standard_error": 0.11552766724299679,
+  "seconds": 0.020417332998476923,
+  "rss_before_mib": 92.046875,
+  "peak_rss_mib": 92.046875
+}

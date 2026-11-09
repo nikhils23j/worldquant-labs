@@ -15,7 +15,7 @@
   "method": "control",
   "seed": 43,
   "batch_size": 10000,
-  "seconds": 2.1203190840315074,
+  "seconds": 2.038477791007608,
   "contract": {
     "kind": "asian",
     "strike": 80.0,
@@ -30,7 +30,7 @@
     "dividend": 0.0
   },
   "interval_note": "Normal-approximation Monte Carlo interval; excludes model error.",
-  "peak_rss_mib": 54.75,
+  "peak_rss_mib": 51.375,
   "precision_target_met": true,
   "memory_target_met": true
 }

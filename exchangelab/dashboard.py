@@ -28,3 +28,27 @@ st.json(e)
 st.subheader("Probe decisions and fills")
 st.dataframe(r['decisions'])
 st.download_button("Download reproducible run", __import__('json').dumps(r, indent=2), "exchange-demo.json")
+
+st.divider()
+st.header("Agent market: race for stale quotes")
+st.caption("Microsecond simulation from exchangelab/market.py: market maker with inventory skew, noise, momentum, "
+           "queue joiners, a competitor arb at 50 us, and the probe at the latency you pick.")
+probe_latency = st.select_slider("Probe one-way latency (us)", [0, 25, 50, 75, 100, 500, 2000], value=25)
+probe_mode = st.radio("Probe mode", ["taker", "passive"], horizontal=True)
+
+@st.cache_data
+def market_run(seed, latency, mode):
+    from exchangelab.market import run_market
+    return run_market(int(seed), duration_us=2_000_000, probe_latency_us=latency, probe_mode=mode)
+
+m = market_run(seed, probe_latency, probe_mode)
+p = m["probe"]
+x, y, z = st.columns(3)
+x.metric("Probe lots filled", p["filled_qty"])
+y.metric("PnL @1ms (ticks)", p["pnl_ticks"]["1000"])
+z.metric("Lots picked off by arbs", p["fills_by_counterparty"].get("competitor_arb", 0))
+mk = go.Figure(go.Bar(x=["+1 ms", "+10 ms", "+100 ms"],
+                      y=[p["markout_ticks_per_lot"][k] or 0 for k in ("1000", "10000", "100000")]))
+mk.update_layout(yaxis_title="Markout per lot (ticks, vs hidden fundamental)", height=300)
+st.plotly_chart(mk, width="stretch")
+st.caption("One seed, 2 simulated seconds: noisy. See RESULTS.md for 30-seed curves with confidence intervals.")

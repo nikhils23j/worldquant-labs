@@ -4,7 +4,15 @@ import sys
 from pathlib import Path
 import pytest
 
-@pytest.mark.parametrize('module,args',[('exchangelab.cli',['demo']),('exchangelab.cli',['validate','--count','500']),('risklab.cli',['price','--paths','1000','--fixings','12'])])
+@pytest.mark.parametrize('module,args',[('exchangelab.cli',['demo']),('exchangelab.cli',['validate','--count','500']),('risklab.cli',['price','--paths','1000','--fixings','12']),
+    ('exchangelab.cli',['validate','--count','500','--mix','v2','--stp','cancel_taker']),
+    ('exchangelab.cli',['market','--latency','50','--mode','passive','--seed','2']),
+    ('risklab.cli',['price','--paths','4000','--fixings','12','--method','antithetic_control']),
+    ('risklab.cli',['barrier','--paths','2000','--steps','12']),
+    ('risklab.cli',['heston','--paths','2000','--steps','12']),
+    ('risklab.cli',['greeks-compare','--kind','european','--paths','2000']),
+    ('risklab.cli',['scale-case','--paths','2000','--batch','500']),
+    ('risklab.cli',['qmc','--reps','2','--fixings','8','--max-log2','10'])])
 def test_cli_artifact(tmp_path,module,args):
     output=tmp_path/'result.json'
     subprocess.run([sys.executable,'-m',module,*args,'--output',str(output)],check=True,capture_output=True,text=True)

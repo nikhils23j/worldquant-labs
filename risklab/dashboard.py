@@ -18,12 +18,12 @@ put=st.sidebar.checkbox('Put option')
 c,m=Contract(kind,strike,1.,fixings,not put),Model(spot,vol)
 @st.cache_data
 def evaluate(c,m):
-    methods=['plain','antithetic']+(['control'] if c.kind=='asian' else [])
+    methods=['plain','antithetic']+(['control','antithetic_control'] if c.kind=='asian' else [])
     results=[]
     for total in [10000,30000,100000]:
         for method in methods:
             pilot=1000
-            n=total-pilot if method=='control' else total
+            n=total-pilot if 'control' in method else total
             r=price(c,m,method,n,42,pilot_paths=pilot)
             r['budget']=total
             results.append(r)

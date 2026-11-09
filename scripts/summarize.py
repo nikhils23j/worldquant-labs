@@ -1,3 +1,4 @@
+"""Build RESULTS.md and CSV exports from results/*.json. Every number printed comes from those files."""
 from pathlib import Path
 import csv
 import hashlib
@@ -5,77 +6,283 @@ import json
 import statistics
 import xml.etree.ElementTree as ET
 
-root=Path(__file__).resolve().parents[1]
-p=root/'results'
-e=json.loads((p/'exchange-benchmark.json').read_text())
-d=json.loads((p/'exchange-differential.json').read_text())
-r=json.loads((p/'risk-benchmark.json').read_text())
-v=json.loads((p/'risk-validation.json').read_text())
-m=json.loads((p/'risk-estimators.json').read_text())
-l=json.loads((p/'exchange-latency.json').read_text())
-g=json.loads((p/'risk-grid.json').read_text())
-with (p/'exchange-latency.csv').open('w') as f:
-    w=csv.DictWriter(f,fieldnames=list(l[0]));w.writeheader();w.writerows(l)
-with (p/'risk-grid.csv').open('w') as f:
-    fields=['strike','volatility','maturity','method','total_paths','estimate','half_width','seconds']
-    w=csv.DictWriter(f,fieldnames=fields);w.writeheader()
-    for x in g['rows']:
-        w.writerow(dict(strike=x['contract']['strike'],volatility=x['model']['volatility'],maturity=x['contract']['maturity'],method=x['method'],total_paths=x['total_generated_paths'],estimate=x['estimate'],half_width=x['half_width'],seconds=x['seconds']))
-tree=ET.parse(p/'tests.xml');suite=tree.getroot().find('testsuite')
-tests=int(suite.attrib['tests'])
-timings = ', '.join(format(x['seconds'], '.6f') for x in e['runs'])
-assert int(suite.attrib['failures'])==int(suite.attrib['errors'])==0
-lines=[
-'# Recorded results',
-'',
-'Validated 23 October 2026. Generated implementation and executed experiments by Codex for Nikhil Jain. Synthetic workloads; no live market or production deployment claim. All numbers below are measured, not proposal targets.',
-'',
-f"{tests} tests passed, including CLI roundtrips and Streamlit controls/surface calculation. Both dashboards were also opened and visually inspected in a real browser.",
-'',
-'## ExchangeLab',
-'',
-f"- Independent matching oracle: {d['commands']:,} commands, {d['mismatches']} mismatches.",
-f"- Million-command replay: median {e['median_seconds']:.6f} s over five timed runs after warm-up; {1000000/e['median_seconds']:,.0f} commands/s. Apple M2, 10 symbols, seed 42.",
-f"- Timings (s): {timings}.",
-f"- Separately instrumented 100,000-command p95: {e['instrumented']['p95_us']:.3f} microseconds. Do not treat this as network or client latency.",
-f"- Stress run checked book/ledger invariants every 1,000 events and at the end; local fill quantities checked on every match. Sampled peak live orders: {e['stress']['peak_live_orders_sampled']:,}; sampled peak price levels: {e['stress']['peak_price_levels_sampled']:,}.",
-f"- Actual mix: {e['stress']['command_mix']}; rejected commands: {e['stress']['rejections']}. All commands count in throughput.",
-f"- Process RSS high-water mark across warm-up and repetitions: {max(x['peak_process_rss_mib'] for x in e['runs']):.2f} MiB, including the pre-generated workload. This is not isolated order-book memory.",
-'- All five timed runs produced identical final-state hashes. Equal-size list/reference timing and state comparisons are in exchange-benchmark.json.',
-'',
-'| One-way delay (ms) | Mean fill rate | Mean execution cost (bps) |',
-'| --- | ---: | ---: |',
-]
-for delay in (0,1,10,50):
-    data=[x for x in l if x['latency_ms']==delay]
-    lines.append(f"| {delay} | {statistics.mean(x['fill_rate'] for x in data):.4f} | {statistics.mean(x['execution_cost_bps'] for x in data):.4f} |")
-lines += [
-'',
-'Five paired seeds per delay, three synthetic symbols. Cost excludes unfilled orders. Differences reflect this model and flow, not guaranteed benefits from faster real-world trading.',
-'',
-'## RiskLab',
-'',
-f"- {len(v['analytic_checks'])} European/geometric-Asian checks against QuantLib; maximum absolute discrepancy {max(x['error'] for x in v['analytic_checks']):.3g} currency units.",
-f"- Four independent arithmetic-Asian checks: maximum discrepancy {max(x['difference_in_combined_se'] for x in v['asian_checks']):.3f} combined standard errors (acceptance threshold 5). Includes a put case.",
-f"- Empirical nominal-95% interval coverage: {v['coverage']['covered']}/100 seeded geometric-Asian replications at 10,000 paths. This finite experiment is not a coverage guarantee.",
-'- 20-scenario grid × 3 estimators; each has 100,000 generated paths including control pilot. Three sensitivities/bump-size comparisons passed against analytic European Greeks.',
-'- Nine fresh-process stress runs: strikes 80/100/120 × seeds 42/43/44; S0=100, volatility=30%, rate=3%, T=1, 252 future fixings. Each uses 1,000,000 main paths plus 10,000 independent pilot paths.',
-f"- Maximum 95% interval half-width: {r['max_half_width']:.8f} currency units; proposal target ≤0.05.",
-f"- Maximum process RSS: {r['max_peak_rss_mib']:.4f} MiB; proposal target <1,024 MiB. Fresh CLI process including libraries, excluding dashboard.",
-f"- Median price runtimes by strike (seconds): {r['median_seconds_by_strike']}.",
-f"- Identical-shock scalar/vectorized check: 10,000 paths × 252 steps; max absolute discrepancy {max(v['scalar_vector']['max_errors']):.3g}. Scalar {v['scalar_vector']['scalar_seconds']:.4f}s; vectorized {v['scalar_vector']['vector_seconds']:.4f}s on that equal workload.",
-'',
-'| Estimator | Variance of estimates across 20 seeds | Median seconds | Total paths/run |',
-'| --- | ---: | ---: | ---: |',
-]
-for name,x in m['summary'].items():
-    lines.append(f"| {name} | {x['variance_across_20_seeds']:.8g} | {x['median_seconds']:.4f} | {x['generated_paths_per_run']:,} |")
-lines += ['', 'Intervals measure sampling uncertainty under the stated constant-volatility model. They exclude model risk. Antithetic pair averages are independent units; controls use a separate pilot. Reproduce with the same seed, batching and versions. See README.md for exact contracts, conventions and benchmark exclusions.', '', '## Reproduction', '', 'Run `python scripts/evaluate.py`, then `pytest -q --junitxml=results/tests.xml`, then `python scripts/summarize.py`. See raw JSON and CSV in results/ and environment metadata within each numerical report.', '']
-(root/'RESULTS.md').write_text('\n'.join(lines))
-manifest={}
+root = Path(__file__).resolve().parents[1]
+p = root / 'results'
+J = lambda name: json.loads((p / f'{name}.json').read_text())
+eb, ed, eds = J('exchange-benchmark'), J('exchange-differential'), J('exchange-differential-suite')
+el, ls = J('exchange-latency'), J('exchange-latency-study')
+rb, rv, rg, rm, rs = J('risk-benchmark'), J('risk-validation'), J('risk-grid'), J('risk-estimators'), J('risk-study')
+log = J('eval-log')
+
+
+def pm(ci, digits=1):
+    if ci['mean'] is None:
+        return 'n/a'
+    if ci['half_width'] is None:
+        return f"{ci['mean']:.{digits}f}"
+    return f"{ci['mean']:.{digits}f} ± {ci['half_width']:.{digits}f}"
+
+
+def fx(v):
+    return f'{v:.1f}x' if v < 10 else f'{v:,.0f}x'
+
+
+def la(x):
+    return '/'.join(f'{v:.2f}' for v in x) if x else 'n/a'
+
+
+# ------------------------------------------------------------------ CSV exports ---------------
+with (p / 'exchange-latency.csv').open('w') as f:
+    w = csv.DictWriter(f, fieldnames=list(el[0])); w.writeheader(); w.writerows(el)
+with (p / 'risk-grid.csv').open('w') as f:
+    fields = ['strike', 'volatility', 'maturity', 'method', 'total_paths', 'estimate', 'half_width', 'seconds']
+    w = csv.DictWriter(f, fieldnames=fields); w.writeheader()
+    for x in rg['rows']:
+        w.writerow(dict(strike=x['contract']['strike'], volatility=x['model']['volatility'],
+                        maturity=x['contract']['maturity'], method=x['method'], total_paths=x['total_generated_paths'],
+                        estimate=x['estimate'], half_width=x['half_width'], seconds=x['seconds']))
+for mode in ('taker', 'passive'):
+    with (p / f'exchange-latency-curve-{mode}.csv').open('w') as f:
+        rows = ls[mode]['summary']
+        keys = [k for k in rows[0] if k != 'latency_us']
+        w = csv.writer(f)
+        w.writerow(['latency_us'] + [f'{k}_{s}' for k in keys for s in ('mean', 'ci95_half_width', 'n')])
+        for r in rows:
+            w.writerow([r['latency_us']] + [r[k][s] for k in keys for s in ('mean', 'half_width', 'n')])
+with (p / 'risk-qmc-convergence.csv').open('w') as f:
+    w = csv.writer(f)
+    w.writerow(['target', 'method', 'paths', 'rmse', 'bias', 'std', 'variance_reduction_vs_plain', 'efficiency_gain_vs_plain'])
+    for tn, t in rs['qmc_convergence']['targets'].items():
+        for mn, m in t['methods'].items():
+            for r in m['rows']:
+                w.writerow([tn, mn, r['paths'], r['rmse'], r['bias'], r['std'], r['variance_reduction_vs_plain'],
+                            r['efficiency_gain_vs_plain']])
+
+# ------------------------------------------------------------------ tests ----------------------
+suite = ET.parse(p / 'tests.xml').getroot()
+suite = suite if suite.tag == 'testsuite' else suite.find('testsuite')
+tests = int(suite.attrib['tests'])
+assert int(suite.attrib['failures']) == int(suite.attrib['errors']) == 0
+env = eb['environment']
+L = []
+add = L.append
+add('# Recorded results')
+add('')
+add(f"Regenerated by `scripts/summarize.py` from the JSON in `results/`. Runs started {log['started']} on "
+    f"{env['cpu']} (8 GB), {env['platform']}, Python {env['python'].split()[0]}, numpy {env['numpy']}, "
+    f"scipy {rs['environment']['scipy']}, QuantLib {rs['environment']['QuantLib']}. "
+    f"Full evaluation wall time: {sum(s['seconds'] for s in log['steps'].values()):.0f} s. "
+    "Synthetic workloads and models only: nothing here is live trading or production data. "
+    "Built with AI pair-programming help.")
+add('')
+add(f"**Tests:** {tests} passed, 0 failed (`pytest -q --junitxml=results/tests.xml`).")
+add('')
+add('Load average (1/5/15 min) before each step, because this laptop is shared with other jobs:')
+add('')
+add('| Step | Seconds | Load before |')
+add('| --- | ---: | --- |')
+for name, s in log['steps'].items():
+    add(f"| {name} | {s['seconds']:.1f} | {la(s['load_before'])} |")
+add('')
+
+# ------------------------------------------------------------------ ExchangeLab ---------------
+add('## ExchangeLab')
+add('')
+add('### Correctness: fast engine vs independent list-scan oracle')
+add('')
+add('| Workload | STP mode | Commands | Mismatches | Trades | STP cancels | Mix |')
+add('| --- | --- | ---: | ---: | ---: | ---: | --- |')
+for r in eds['runs']:
+    add(f"| {r['mix']} (seed {r['seed']}) | {r['stp']} | {r['commands']:,} | {r['mismatches']} | {r['trades']:,} | "
+        f"{r['stp_cancellations']:,} | {r['command_mix']} |")
+add('')
+add(f"Total: {eds['total_commands']:,} commands, {eds['total_mismatches']} mismatches. Every response (accept/reject reason, "
+    "every trade, residual, STP cancels) compared; full resting state compared every 1,000 commands. "
+    f"The original 100,000-command check (v1, seed 42) was also rerun: {ed['commands']:,} commands, {ed['mismatches']} mismatches.")
+add('')
+add('### Speed: original engine (v0) vs optimised engine, 1,000,000 commands, 10 symbols')
+add('')
+med, mn, mx = eb['median_seconds'], eb['min_seconds'], eb['max_seconds']
+add('| Engine | Median s | Min s | Max s | Commands/s (median) | Individual runs (s) |')
+add('| --- | ---: | ---: | ---: | ---: | --- |')
+for k in ('v0', 'fast'):
+    runs = ', '.join(f"{r['seconds']:.3f}" for r in eb['runs'][k])
+    add(f"| {k} | {med[k]:.3f} | {mn[k]:.3f} | {mx[k]:.3f} | {eb['count']/med[k]:,.0f} | {runs} |")
+add('')
+add(f"Median speedup {eb['speedup_median']:.2f}x. Runs interleaved v0/fast after one warm-up each; both engines produced the "
+    f"identical final-state hash on all runs. Load average before timing: {la(eb['load_average_before'])}; after: "
+    f"{la(eb['load_average_after'])} (waited {eb['quiet_wait']['waited_seconds']} s for 1-min load <= "
+    f"{eb['quiet_wait']['threshold']}). Timed loop = dispatch + matching + per-command metrics; workload generation excluded.")
+add(f"Instrumented 100,000-command p95 per-command time (fast engine): {eb['instrumented']['p95_us']:.2f} us. "
+    f"Stress replay with full invariant checks every 1,000 commands passed; sampled peak live orders "
+    f"{eb['stress']['peak_live_orders_sampled']:,}, peak price levels {eb['stress']['peak_price_levels_sampled']:,}. "
+    f"Process RSS high-water {max(r['peak_process_rss_mib'] for r in eb['runs']['fast']):.0f} MiB (includes the pre-generated workload).")
+add('')
+add('### Latency study: does being 50 microseconds slower cost anything?')
+add('')
+cfg = ls['base_config']
+add(f"Agent market (market.py), {cfg['duration_us']/1e6:.0f} simulated seconds per run, {len(ls['taker']['seeds'])} seeds per latency, same seeds "
+    f"at every latency (common random numbers). Competitor arb one-way latency {cfg['competitor_latency_us']} us; market maker "
+    f"{cfg['mm_latency_us']} us; exponential jitter mean {cfg['jitter_us']} us per message leg. Values are mean ± t-based 95% CI "
+    "over seeds; PnL is in ticks (1 tick = 1 bp at the starting price), marked to the hidden fundamental 1 ms after each fill.")
+add('')
+add('**Taker probe (races stale quotes with IOC orders)**')
+add('')
+add('| Probe one-way latency (us) | Lots filled / run | PnL / run @1ms (ticks) | PnL change vs 0 us (paired) | Markout / lot @1ms | Competitor lots / run |')
+add('| ---: | ---: | ---: | ---: | ---: | ---: |')
+for r in ls['taker']['summary']:
+    add(f"| {r['latency_us']} | {pm(r['filled_qty'])} | {pm(r['pnl_ticks_1000us'])} | "
+        f"{pm(r['pnl_ticks_1000us_paired_diff_vs_fastest'])} | {pm(r['markout_ticks_per_lot_1000us'], 2)} | "
+        f"{pm(r['competitor_filled_qty'])} |")
+add('')
+add('**Passive probe (rests 1-lot quotes at the touch, cancels the stale side on a jump)**')
+add('')
+add('| Latency (us) | Lots filled / run | Lots picked off by arbs / run | Markout/lot @1ms | @10ms | @100ms | Rested orders filled | Queue ahead on arrival (lots) |')
+add('| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |')
+for r in ls['passive']['summary']:
+    add(f"| {r['latency_us']} | {pm(r['filled_qty'])} | {pm(r['picked_off_by_arbs_qty'])} | "
+        f"{pm(r['markout_ticks_per_lot_1000us'], 2)} | {pm(r['markout_ticks_per_lot_10000us'], 2)} | "
+        f"{pm(r['markout_ticks_per_lot_100000us'], 2)} | {pm(r['rested_fill_fraction'], 3)} | {pm(r['mean_queue_ahead_on_arrival'], 2)} |")
+add('')
+add('**Control: same taker race when the competitor is slow (500 us)**')
+add('')
+add('| Probe latency (us) | PnL / run @1ms | Paired change vs 0 us |')
+add('| ---: | ---: | ---: |')
+for r in ls['competitor_latency_check']['summary']:
+    add(f"| {r['latency_us']} | {pm(r['pnl_ticks_1000us'])} | {pm(r['pnl_ticks_1000us_paired_diff_vs_fastest'])} |")
+add(f"({len(ls['competitor_latency_check']['seeds'])} seeds.)")
+add('')
+add('**Market-maker inventory skew (probe off)**')
+add('')
+add('| Skew (ticks per lot) | Mean abs inventory | Max abs inventory | MM PnL (ticks, marked to final value) | MM markout/lot @1ms |')
+add('| ---: | ---: | ---: | ---: | ---: |')
+for r in ls['inventory_skew']:
+    add(f"| {r['inventory_skew']} | {pm(r['mean_abs_inventory'])} | {pm(r['max_abs_inventory'])} | {pm(r['pnl_ticks'], 0)} | "
+        f"{pm(r['markout_1ms_ticks_per_lot'], 2)} |")
+add('')
+add('### Original latency demo (kept for reproducibility)')
+add('')
+add('| One-way delay (ms) | Mean fill rate | Mean execution cost (bps) |')
+add('| --- | ---: | ---: |')
+for delay in (0, 1, 10, 50):
+    data = [x for x in el if x['latency_ms'] == delay]
+    add(f"| {delay} | {statistics.mean(x['fill_rate'] for x in data):.4f} | {statistics.mean(x['execution_cost_bps'] for x in data):.4f} |")
+add('')
+add('Five paired seeds, three synthetic symbols, the original simple maker/background/probe. Cost excludes unfilled orders.')
+add('')
+
+# ------------------------------------------------------------------ RiskLab ---------------------
+add('## RiskLab')
+add('')
+add('### Original claims, rerun')
+add('')
+add(f"- {len(rv['analytic_checks'])} European/geometric-Asian prices vs QuantLib: max abs difference {max(x['error'] for x in rv['analytic_checks']):.3g}.")
+add(f"- {len(rv['asian_checks'])} arithmetic-Asian prices vs independent QuantLib Monte Carlo: max difference "
+    f"{max(x['difference_in_combined_se'] for x in rv['asian_checks']):.3f} combined standard errors.")
+add(f"- Nominal-95% interval coverage: {rv['coverage']['covered']}/100 seeded replications.")
+add(f"- Nine fresh-process 1,000,000-path (+10,000 pilot) control-variate runs, 252 fixings: max 95% half-width "
+    f"{rb['max_half_width']:.5f}; max peak RSS {rb['max_peak_rss_mib']:.1f} MiB; median seconds by strike "
+    + ', '.join(f"K={k}: {v:.2f}" for k, v in rb['median_seconds_by_strike'].items()) + '.')
+add(f"- Grid: {rg['scenario_count']} scenarios x 3 estimators at 100,000 total paths each.")
+add('')
+add('### Variance reduction at an equal 100,000-path budget (arithmetic Asian, ATM, 252 fixings)')
+add('')
+vr = rs['variance_reduction']
+add('| Estimator | Variance of estimate across seeds | Variance reduction vs plain | Median s |')
+add('| --- | ---: | ---: | ---: |')
+for k, v in vr['summary'].items():
+    add(f"| {k} | {v['variance_across_seeds']:.3g} | {v['variance_reduction_vs_plain']:.1f}x | {v['median_seconds']:.3f} |")
+add(f"({vr['seeds']} seeds; control budgets include the 10,000-path pilot.)")
+add('')
+add('### Quasi-Monte Carlo convergence (252 fixings, ATM call, S0=100, vol 30%, r 3%, T=1)')
+add('')
+q = rs['qmc_convergence']
+add(f"RMSE over {q['reps']} independent replications (seeds / Sobol scramblings) against the truth; estimates at each N are prefixes of one stream. "
+    "Variance reduction = (RMSE_plain / RMSE)^2 at the same N, i.e. how many times fewer paths. Efficiency also divides by CPU time per path.")
+add('')
+for tn, t in q['targets'].items():
+    tr = t['truth']
+    extra = ''
+    if 'quantlib_mc_check' in tr:
+        qc = tr['quantlib_mc_check']
+        extra = f"; QuantLib MC (200k, control variate) gives {qc['estimate']:.4f} ± {1.96*qc['standard_error']:.4f}"
+    add(f"**{tn.replace('_', ' ')}**: truth {tr['estimate']:.6f} ({tr['source']}"
+        + (f", SE {tr['standard_error']:.1e}" if tr['standard_error'] else '') + extra + ')')
+    add('')
+    sizes = [r['paths'] for r in next(iter(t['methods'].values()))['rows']]
+    pick = [sizes[0], sizes[len(sizes)//2], sizes[-1]]
+    add('| Method | ' + ' | '.join(f'RMSE N={n:,}' for n in pick) + ' | log-log slope | Var. reduction @max N | Efficiency gain @max N |')
+    add('| --- | ' + ' | '.join('---:' for _ in pick) + ' | ---: | ---: | ---: |')
+    for mn, m in t['methods'].items():
+        rows = {r['paths']: r for r in m['rows']}
+        add(f"| {mn} | " + ' | '.join(f"{rows[n]['rmse']:.2e}" for n in pick)
+            + f" | {m['loglog_slope']:.2f} | {fx(rows[pick[-1]]['variance_reduction_vs_plain'])} | {fx(rows[pick[-1]]['efficiency_gain_vs_plain'])} |")
+    add('')
+add('### Greeks: pathwise vs likelihood ratio vs bump-and-revalue with common random numbers')
+add('')
+g = rs['greeks']
+add('| Contract | Truth delta | Pathwise | LR | CRN bump | Truth vega/pt | Pathwise | LR | CRN bump |')
+add('| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |')
+for kind in ('european', 'geometric', 'asian'):
+    r = g[kind]
+    t = r.get('truth', {})
+    f = lambda k: f"{r[k]['estimate']:.4f} ± {1.96*r[k]['standard_error']:.4f}"
+    add(f"| {kind} | {t.get('delta', float('nan')):.4f} | {f('pathwise_delta')} | {f('lr_delta')} | {f('crn_bump_delta')} | "
+        f"{t.get('vega_per_vol_point', float('nan')):.4f} | {f('pathwise_vega')} | {f('lr_vega')} | {f('crn_bump_vega')} |")
+add('')
+add(f"{g['european']['configuration']['paths']:,} paths each, ±95% intervals. European truth = QuantLib AnalyticEuropeanEngine "
+    f"(agrees with our closed form); geometric truth = central difference of the closed form; arithmetic has no truth (nan). "
+    f"Seconds for 200k paths, 252 fixings, Asian: pathwise+LR together {g['asian']['pathwise_lr_seconds_shared']:.2f} s; "
+    f"CRN bump (4 revaluations) {g['asian']['bump_seconds']:.2f} s.")
+d = g['digital']
+add(f"Digital call delta: analytic {d['analytic']:.5f}; pathwise 0 (wrong by construction); LR {d['likelihood_ratio']['estimate']:.5f} ± "
+    f"{1.96*d['likelihood_ratio']['standard_error']:.5f}; CRN bump {d['crn_bump']['estimate']:.5f} ± {1.96*d['crn_bump']['standard_error']:.5f}.")
+add('')
+add('### Barrier options: discrete monitoring bias and the Brownian-bridge correction')
+add('')
+add('| Case | QuantLib (continuous) | Own closed form | Steps | Naive MC (error, z) | Bridge-corrected MC (error, z) |')
+add('| --- | ---: | ---: | ---: | --- | --- |')
+for case in rs['barrier']:
+    by = {(r['steps'], r['correction']): r for r in case['runs']}
+    for n in sorted({r['steps'] for r in case['runs']}):
+        a, b = by[(n, False)], by[(n, True)]
+        own = f"{case['own_closed_form']:.4f}" if case['own_closed_form'] is not None else '-'
+        add(f"| {case['name']} | {case['quantlib_continuous']:.4f} | {own} | {n} | {a['error_vs_quantlib']:+.4f} ({a['z_vs_quantlib']:+.1f}) | "
+            f"{b['error_vs_quantlib']:+.4f} ({b['z_vs_quantlib']:+.1f}) |")
+add('')
+add(f"{rs['barrier'][0]['runs'][0]['paths']:,} paths per cell, S0=100, vol 30%, r 3%, T=1. z = error / MC standard error.")
+add('')
+add('### Heston (full-truncation Euler) vs QuantLib AnalyticHestonEngine')
+add('')
+add('| Case | Feller holds | Strike | QuantLib | Steps | MC bias | z | Steps with v<0 |')
+add('| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |')
+for r in rs['heston']:
+    add(f"| {r['case']} | {r['feller']} | {r['spec']['strike']:.0f} | {r['quantlib_analytic']:.4f} | {r['steps']} | {r['bias']:+.4f} | "
+        f"{r['z_vs_quantlib']:+.1f} | {100*r['negative_variance_fraction']:.1f}% |")
+add('')
+hp = {r['case']: r['params'] for r in rs['heston']}
+add(f"{rs['heston'][0]['paths']:,} paths per cell. Parameters: " + '; '.join(f"{k}: {v}" for k, v in hp.items()) + '.')
+add('')
+add('### Time and memory scaling (fresh process each, arithmetic Asian plain MC, 252 fixings)')
+add('')
+add('| Paths | Mode | Batch | Seconds | Peak RSS (MiB) | Load before |')
+add('| ---: | --- | ---: | ---: | ---: | --- |')
+for r in rs['scaling']:
+    add(f"| {r['paths']:,} | {'materialised' if r['materialize'] else 'streaming'} | {r['batch_size'] or '-'} | {r['seconds']:.2f} | "
+        f"{r['peak_rss_mib']:.0f} | {la(r['load_average_before'])} |")
+add('')
+add('## Reproduction')
+add('')
+add('`python scripts/evaluate.py`, then `pytest -q --junitxml=results/tests.xml`, then `python scripts/summarize.py`. '
+    'Raw JSON (with environment, seeds, and load averages) and CSV exports are in `results/`; `results/eval-log.json` has the exact commands.')
+add('')
+(root / 'RESULTS.md').write_text('\n'.join(L))
+
+manifest = {}
 for path in sorted(root.rglob('*')):
-    rel=path.relative_to(root)
-    if path.is_file() and not any(x in {'.venv','__pycache__','.pytest_cache','results'} or x.endswith('.egg-info') for x in rel.parts):
-        manifest[str(rel)]=hashlib.sha256(path.read_bytes()).hexdigest()
-(p/'source-manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
-print(f'Saved report and CSV exports; {tests} passing tests, {len(manifest)} source/document hashes.')
+    rel = path.relative_to(root)
+    if path.is_file() and not any(x in {'.venv', '__pycache__', '.pytest_cache', 'results', '.git'} or x.endswith('.egg-info')
+                                  for x in rel.parts):
+        manifest[str(rel)] = hashlib.sha256(path.read_bytes()).hexdigest()
+(p / 'source-manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')
+print(f'Saved RESULTS.md and CSV exports; {tests} passing tests, {len(manifest)} source/document hashes.')

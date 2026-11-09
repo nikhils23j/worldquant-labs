@@ -149,7 +149,9 @@
         "side": "B",
         "qty": 15,
         "price": 9990,
-        "time": 0
+        "time": 0,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -178,7 +180,9 @@
         "side": "S",
         "qty": 15,
         "price": 9994,
-        "time": 0
+        "time": 0,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -212,7 +216,9 @@
         "side": "S",
         "qty": 6,
         "price": 10000,
-        "time": 1000
+        "time": 1000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -257,7 +263,9 @@
         "side": "B",
         "qty": 7,
         "price": 10000,
-        "time": 2000
+        "time": 2000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -302,7 +310,9 @@
         "side": "S",
         "qty": 2,
         "price": 10000,
-        "time": 3000
+        "time": 3000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -347,7 +357,9 @@
         "side": "B",
         "qty": 3,
         "price": 10000,
-        "time": 4000
+        "time": 4000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -392,7 +404,9 @@
         "side": "S",
         "qty": 2,
         "price": 10000,
-        "time": 5000
+        "time": 5000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -437,7 +451,9 @@
         "side": "B",
         "qty": 4,
         "price": 9994,
-        "time": 5000
+        "time": 5000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -482,7 +498,9 @@
         "side": "S",
         "qty": 3,
         "price": 10000,
-        "time": 6000
+        "time": 6000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -527,7 +545,9 @@
         "side": "B",
         "qty": 7,
         "price": 10000,
-        "time": 7000
+        "time": 7000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -567,7 +587,9 @@
         "side": "S",
         "qty": 6,
         "price": 10000,
-        "time": 8000
+        "time": 8000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -602,7 +624,9 @@
         "side": "B",
         "qty": 4,
         "price": 10000,
-        "time": 9000
+        "time": 9000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -626,7 +650,9 @@
         "side": "B",
         "qty": 15,
         "price": 9990,
-        "time": 10000
+        "time": 10000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -655,7 +681,9 @@
         "side": "S",
         "qty": 15,
         "price": 9994,
-        "time": 10000
+        "time": 10000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -689,7 +717,9 @@
         "side": "B",
         "qty": 6,
         "price": 10000,
-        "time": 10000
+        "time": 10000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -734,7 +764,9 @@
         "side": "B",
         "qty": 7,
         "price": 10000,
-        "time": 11000
+        "time": 11000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -779,7 +811,9 @@
         "side": "B",
         "qty": 1,
         "price": 10000,
-        "time": 12000
+        "time": 12000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -824,7 +858,9 @@
         "side": "B",
         "qty": 4,
         "price": 10000,
-        "time": 13000
+        "time": 13000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -864,7 +900,9 @@
         "side": "S",
         "qty": 2,
         "price": 10000,
-        "time": 14000
+        "time": 14000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -904,7 +942,9 @@
         "side": "B",
         "qty": 4,
         "price": 10000,
-        "time": 15000
+        "time": 15000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -933,7 +973,9 @@
         "side": "S",
         "qty": 4,
         "price": 10000,
-        "time": 16000
+        "time": 16000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -973,7 +1015,9 @@
         "side": "S",
         "qty": 1,
         "price": 10000,
-        "time": 17000
+        "time": 17000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -1013,7 +1057,9 @@
         "side": "S",
         "qty": 6,
         "price": 10000,
-        "time": 18000
+        "time": 18000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -1053,7 +1099,9 @@
         "side": "B",
         "qty": 6,
         "price": 10000,
-        "time": 19000
+        "time": 19000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -1082,7 +1130,9 @@
         "side": "B",
         "qty": 15,
         "price": 9990,
-        "time": 20000
+        "time": 20000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -1111,7 +1161,9 @@
         "side": "S",
         "qty": 15,
         "price": 9994,
-        "time": 20000
+        "time": 20000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -1145,7 +1197,9 @@
         "side": "S",
         "qty": 2,
         "price": 10000,
-        "time": 20000
+        "time": 20000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -1190,7 +1244,9 @@
         "side": "S",
         "qty": 3,
         "price": 10000,
-        "time": 21000
+        "time": 21000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -1235,7 +1291,9 @@
         "side": "S",
         "qty": 1,
         "price": 10000,
-        "time": 22000
+        "time": 22000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -1280,7 +1338,9 @@
         "side": "S",
         "qty": 3,
         "price": 10000,
-        "time": 23000
+        "time": 23000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -1325,7 +1385,9 @@
         "side": "S",
         "qty": 5,
         "price": 10000,
-        "time": 24000
+        "time": 24000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -1370,7 +1432,9 @@
         "side": "B",
         "qty": 6,
         "price": 10000,
-        "time": 25000
+        "time": 25000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -1415,7 +1479,9 @@
         "side": "B",
         "qty": 4,
         "price": 10000,
-        "time": 26000
+        "time": 26000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -1460,7 +1526,9 @@
         "side": "B",
         "qty": 4,
         "price": 10000,
-        "time": 27000
+        "time": 27000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -1505,7 +1573,9 @@
         "side": "S",
         "qty": 5,
         "price": 10000,
-        "time": 28000
+        "time": 28000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -1545,7 +1615,9 @@
         "side": "S",
         "qty": 6,
         "price": 10000,
-        "time": 29000
+        "time": 29000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -1574,7 +1646,9 @@
         "side": "B",
         "qty": 15,
         "price": 9992,
-        "time": 30000
+        "time": 30000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -1608,7 +1682,9 @@
         "side": "S",
         "qty": 15,
         "price": 9996,
-        "time": 30000
+        "time": 30000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -1646,7 +1722,9 @@
         "side": "S",
         "qty": 2,
         "price": 10000,
-        "time": 30000
+        "time": 30000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -1695,7 +1773,9 @@
         "side": "S",
         "qty": 5,
         "price": 10000,
-        "time": 31000
+        "time": 31000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -1744,7 +1824,9 @@
         "side": "S",
         "qty": 4,
         "price": 10000,
-        "time": 32000
+        "time": 32000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -1793,7 +1875,9 @@
         "side": "B",
         "qty": 4,
         "price": 10000,
-        "time": 33000
+        "time": 33000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -1848,7 +1932,9 @@
         "side": "S",
         "qty": 6,
         "price": 10000,
-        "time": 34000
+        "time": 34000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -1888,7 +1974,9 @@
         "side": "S",
         "qty": 7,
         "price": 10000,
-        "time": 35000
+        "time": 35000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -1917,7 +2005,9 @@
         "side": "S",
         "qty": 2,
         "price": 10000,
-        "time": 36000
+        "time": 36000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -1946,7 +2036,9 @@
         "side": "B",
         "qty": 4,
         "price": 10000,
-        "time": 37000
+        "time": 37000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -1986,7 +2078,9 @@
         "side": "S",
         "qty": 1,
         "price": 10000,
-        "time": 38000
+        "time": 38000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -2015,7 +2109,9 @@
         "side": "S",
         "qty": 6,
         "price": 10000,
-        "time": 39000
+        "time": 39000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -2044,7 +2140,9 @@
         "side": "B",
         "qty": 15,
         "price": 9990,
-        "time": 40000
+        "time": 40000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -2073,7 +2171,9 @@
         "side": "S",
         "qty": 15,
         "price": 9994,
-        "time": 40000
+        "time": 40000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -2102,7 +2202,9 @@
         "side": "B",
         "qty": 15,
         "price": 9992,
-        "time": 40000
+        "time": 40000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -2136,7 +2238,9 @@
         "side": "S",
         "qty": 15,
         "price": 9996,
-        "time": 40000
+        "time": 40000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -2170,7 +2274,9 @@
         "side": "B",
         "qty": 7,
         "price": 10000,
-        "time": 40000
+        "time": 40000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -2215,7 +2321,9 @@
         "side": "B",
         "qty": 7,
         "price": 10000,
-        "time": 41000
+        "time": 41000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -2270,7 +2378,9 @@
         "side": "S",
         "qty": 1,
         "price": 10000,
-        "time": 42000
+        "time": 42000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -2315,7 +2425,9 @@
         "side": "S",
         "qty": 3,
         "price": 10000,
-        "time": 43000
+        "time": 43000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -2360,7 +2472,9 @@
         "side": "B",
         "qty": 6,
         "price": 10000,
-        "time": 44000
+        "time": 44000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -2405,7 +2519,9 @@
         "side": "B",
         "qty": 5,
         "price": 10000,
-        "time": 45000
+        "time": 45000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -2445,7 +2561,9 @@
         "side": "S",
         "qty": 5,
         "price": 10000,
-        "time": 46000
+        "time": 46000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -2485,7 +2603,9 @@
         "side": "S",
         "qty": 7,
         "price": 10000,
-        "time": 47000
+        "time": 47000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -2520,7 +2640,9 @@
         "side": "B",
         "qty": 2,
         "price": 10000,
-        "time": 48000
+        "time": 48000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -2544,7 +2666,9 @@
         "side": "S",
         "qty": 6,
         "price": 10000,
-        "time": 49000
+        "time": 49000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -2568,7 +2692,9 @@
         "side": "B",
         "qty": 15,
         "price": 9990,
-        "time": 50000
+        "time": 50000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -2592,7 +2718,9 @@
         "side": "S",
         "qty": 15,
         "price": 9994,
-        "time": 50000
+        "time": 50000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -2616,7 +2744,9 @@
         "side": "B",
         "qty": 15,
         "price": 9992,
-        "time": 50000
+        "time": 50000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -2645,7 +2775,9 @@
         "side": "S",
         "qty": 15,
         "price": 9996,
-        "time": 50000
+        "time": 50000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -2679,7 +2811,9 @@
         "side": "S",
         "qty": 3,
         "price": 10000,
-        "time": 50000
+        "time": 50000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -2724,7 +2858,9 @@
         "side": "B",
         "qty": 4,
         "price": 10000,
-        "time": 51000
+        "time": 51000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -2769,7 +2905,9 @@
         "side": "S",
         "qty": 5,
         "price": 10000,
-        "time": 52000
+        "time": 52000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -2814,7 +2952,9 @@
         "side": "S",
         "qty": 4,
         "price": 10000,
-        "time": 53000
+        "time": 53000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -2859,7 +2999,9 @@
         "side": "S",
         "qty": 7,
         "price": 10000,
-        "time": 54000
+        "time": 54000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -2899,7 +3041,9 @@
         "side": "B",
         "qty": 5,
         "price": 10000,
-        "time": 55000
+        "time": 55000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -2939,7 +3083,9 @@
         "side": "B",
         "qty": 6,
         "price": 10000,
-        "time": 56000
+        "time": 56000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -2974,7 +3120,9 @@
         "side": "S",
         "qty": 3,
         "price": 10000,
-        "time": 57000
+        "time": 57000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -2998,7 +3146,9 @@
         "side": "S",
         "qty": 1,
         "price": 10000,
-        "time": 58000
+        "time": 58000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -3022,7 +3172,9 @@
         "side": "B",
         "qty": 2,
         "price": 10000,
-        "time": 59000
+        "time": 59000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -3046,7 +3198,9 @@
         "side": "B",
         "qty": 15,
         "price": 9990,
-        "time": 60000
+        "time": 60000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -3070,7 +3224,9 @@
         "side": "S",
         "qty": 15,
         "price": 9994,
-        "time": 60000
+        "time": 60000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -3094,7 +3250,9 @@
         "side": "B",
         "qty": 15,
         "price": 9994,
-        "time": 60000
+        "time": 60000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -3123,7 +3281,9 @@
         "side": "S",
         "qty": 15,
         "price": 9998,
-        "time": 60000
+        "time": 60000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -3157,7 +3317,9 @@
         "side": "B",
         "qty": 3,
         "price": 10000,
-        "time": 60000
+        "time": 60000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -3202,7 +3364,9 @@
         "side": "S",
         "qty": 6,
         "price": 10000,
-        "time": 61000
+        "time": 61000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -3247,7 +3411,9 @@
         "side": "B",
         "qty": 2,
         "price": 10000,
-        "time": 62000
+        "time": 62000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -3292,7 +3458,9 @@
         "side": "B",
         "qty": 5,
         "price": 10000,
-        "time": 63000
+        "time": 63000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -3337,7 +3505,9 @@
         "side": "B",
         "qty": 2,
         "price": 10000,
-        "time": 64000
+        "time": 64000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -3382,7 +3552,9 @@
         "side": "B",
         "qty": 3,
         "price": 10000,
-        "time": 65000
+        "time": 65000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -3422,7 +3594,9 @@
         "side": "B",
         "qty": 4,
         "price": 9994,
-        "time": 65000
+        "time": 65000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -3451,7 +3625,9 @@
         "side": "B",
         "qty": 4,
         "price": 9998,
-        "time": 65000
+        "time": 65000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -3484,7 +3660,9 @@
         "side": "B",
         "qty": 5,
         "price": 10000,
-        "time": 66000
+        "time": 66000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -3517,7 +3695,9 @@
         "side": "S",
         "qty": 4,
         "price": 10000,
-        "time": 67000
+        "time": 67000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -3557,7 +3737,9 @@
         "side": "B",
         "qty": 5,
         "price": 10000,
-        "time": 68000
+        "time": 68000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -3586,7 +3768,9 @@
         "side": "S",
         "qty": 3,
         "price": 10000,
-        "time": 69000
+        "time": 69000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -3626,7 +3810,9 @@
         "side": "B",
         "qty": 15,
         "price": 9992,
-        "time": 70000
+        "time": 70000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -3655,7 +3841,9 @@
         "side": "S",
         "qty": 15,
         "price": 9996,
-        "time": 70000
+        "time": 70000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -3684,7 +3872,9 @@
         "side": "B",
         "qty": 15,
         "price": 9994,
-        "time": 70000
+        "time": 70000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -3713,7 +3903,9 @@
         "side": "S",
         "qty": 15,
         "price": 9998,
-        "time": 70000
+        "time": 70000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -3747,7 +3939,9 @@
         "side": "S",
         "qty": 5,
         "price": 10000,
-        "time": 70000
+        "time": 70000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -3792,7 +3986,9 @@
         "side": "B",
         "qty": 7,
         "price": 10000,
-        "time": 71000
+        "time": 71000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -3837,7 +4033,9 @@
         "side": "B",
         "qty": 4,
         "price": 10000,
-        "time": 72000
+        "time": 72000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -3882,7 +4080,9 @@
         "side": "S",
         "qty": 1,
         "price": 10000,
-        "time": 73000
+        "time": 73000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -3927,7 +4127,9 @@
         "side": "B",
         "qty": 2,
         "price": 10000,
-        "time": 74000
+        "time": 74000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -3972,7 +4174,9 @@
         "side": "B",
         "qty": 7,
         "price": 10000,
-        "time": 75000
+        "time": 75000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -4012,7 +4216,9 @@
         "side": "S",
         "qty": 2,
         "price": 10000,
-        "time": 76000
+        "time": 76000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -4052,7 +4258,9 @@
         "side": "S",
         "qty": 6,
         "price": 10000,
-        "time": 77000
+        "time": 77000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -4092,7 +4300,9 @@
         "side": "B",
         "qty": 1,
         "price": 10000,
-        "time": 78000
+        "time": 78000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -4121,7 +4331,9 @@
         "side": "B",
         "qty": 4,
         "price": 10000,
-        "time": 79000
+        "time": 79000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -4150,7 +4362,9 @@
         "side": "B",
         "qty": 15,
         "price": 9992,
-        "time": 80000
+        "time": 80000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -4179,7 +4393,9 @@
         "side": "S",
         "qty": 15,
         "price": 9996,
-        "time": 80000
+        "time": 80000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -4208,7 +4424,9 @@
         "side": "B",
         "qty": 15,
         "price": 9994,
-        "time": 80000
+        "time": 80000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -4237,7 +4455,9 @@
         "side": "S",
         "qty": 15,
         "price": 9998,
-        "time": 80000
+        "time": 80000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -4271,7 +4491,9 @@
         "side": "B",
         "qty": 5,
         "price": 10000,
-        "time": 80000
+        "time": 80000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -4316,7 +4538,9 @@
         "side": "S",
         "qty": 4,
         "price": 10000,
-        "time": 81000
+        "time": 81000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -4361,7 +4585,9 @@
         "side": "S",
         "qty": 6,
         "price": 10000,
-        "time": 82000
+        "time": 82000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -4416,7 +4642,9 @@
         "side": "B",
         "qty": 2,
         "price": 10000,
-        "time": 83000
+        "time": 83000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -4461,7 +4689,9 @@
         "side": "B",
         "qty": 4,
         "price": 10000,
-        "time": 84000
+        "time": 84000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -4506,7 +4736,9 @@
         "side": "B",
         "qty": 1,
         "price": 10000,
-        "time": 85000
+        "time": 85000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -4551,7 +4783,9 @@
         "side": "B",
         "qty": 2,
         "price": 10000,
-        "time": 86000
+        "time": 86000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -4596,7 +4830,9 @@
         "side": "B",
         "qty": 6,
         "price": 10000,
-        "time": 87000
+        "time": 87000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -4636,7 +4872,9 @@
         "side": "S",
         "qty": 3,
         "price": 10000,
-        "time": 88000
+        "time": 88000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -4676,7 +4914,9 @@
         "side": "S",
         "qty": 7,
         "price": 10000,
-        "time": 89000
+        "time": 89000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -4716,7 +4956,9 @@
         "side": "B",
         "qty": 15,
         "price": 9992,
-        "time": 90000
+        "time": 90000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -4745,7 +4987,9 @@
         "side": "S",
         "qty": 15,
         "price": 9996,
-        "time": 90000
+        "time": 90000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -4774,7 +5018,9 @@
         "side": "B",
         "qty": 15,
         "price": 9996,
-        "time": 90000
+        "time": 90000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -4807,7 +5053,9 @@
         "side": "S",
         "qty": 15,
         "price": 10000,
-        "time": 90000
+        "time": 90000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -4845,7 +5093,9 @@
         "side": "S",
         "qty": 6,
         "price": 10000,
-        "time": 90000
+        "time": 90000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -4894,7 +5144,9 @@
         "side": "S",
         "qty": 5,
         "price": 10000,
-        "time": 91000
+        "time": 91000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -4943,7 +5195,9 @@
         "side": "S",
         "qty": 5,
         "price": 10000,
-        "time": 92000
+        "time": 92000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -4998,7 +5252,9 @@
         "side": "S",
         "qty": 3,
         "price": 10000,
-        "time": 93000
+        "time": 93000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -5038,7 +5294,9 @@
         "side": "B",
         "qty": 4,
         "price": 10000,
-        "time": 94000
+        "time": 94000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -5078,7 +5336,9 @@
         "side": "B",
         "qty": 4,
         "price": 10000,
-        "time": 95000
+        "time": 95000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -5118,7 +5378,9 @@
         "side": "B",
         "qty": 2,
         "price": 10000,
-        "time": 96000
+        "time": 96000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -5158,7 +5420,9 @@
         "side": "S",
         "qty": 2,
         "price": 10000,
-        "time": 97000
+        "time": 97000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -5187,7 +5451,9 @@
         "side": "B",
         "qty": 6,
         "price": 10000,
-        "time": 98000
+        "time": 98000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -5222,7 +5488,9 @@
         "side": "S",
         "qty": 6,
         "price": 10000,
-        "time": 99000
+        "time": 99000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -5246,7 +5514,9 @@
         "side": "B",
         "qty": 15,
         "price": 9994,
-        "time": 100000
+        "time": 100000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -5270,7 +5540,9 @@
         "side": "S",
         "qty": 15,
         "price": 9998,
-        "time": 100000
+        "time": 100000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -5294,7 +5566,9 @@
         "side": "B",
         "qty": 15,
         "price": 9996,
-        "time": 100000
+        "time": 100000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -5323,7 +5597,9 @@
         "side": "S",
         "qty": 15,
         "price": 10000,
-        "time": 100000
+        "time": 100000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -5357,7 +5633,9 @@
         "side": "B",
         "qty": 4,
         "price": 10000,
-        "time": 100000
+        "time": 100000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -5402,7 +5680,9 @@
         "side": "S",
         "qty": 4,
         "price": 10000,
-        "time": 101000
+        "time": 101000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -5447,7 +5727,9 @@
         "side": "B",
         "qty": 3,
         "price": 10000,
-        "time": 102000
+        "time": 102000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -5492,7 +5774,9 @@
         "side": "S",
         "qty": 6,
         "price": 10000,
-        "time": 103000
+        "time": 103000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -5537,7 +5821,9 @@
         "side": "S",
         "qty": 1,
         "price": 10000,
-        "time": 104000
+        "time": 104000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -5582,7 +5868,9 @@
         "side": "B",
         "qty": 7,
         "price": 10000,
-        "time": 105000
+        "time": 105000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -5627,7 +5915,9 @@
         "side": "B",
         "qty": 3,
         "price": 10000,
-        "time": 106000
+        "time": 106000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -5667,7 +5957,9 @@
         "side": "S",
         "qty": 5,
         "price": 10000,
-        "time": 107000
+        "time": 107000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -5702,7 +5994,9 @@
         "side": "S",
         "qty": 3,
         "price": 10000,
-        "time": 108000
+        "time": 108000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -5726,7 +6020,9 @@
         "side": "S",
         "qty": 6,
         "price": 10000,
-        "time": 109000
+        "time": 109000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -5750,7 +6046,9 @@
         "side": "B",
         "qty": 15,
         "price": 9994,
-        "time": 110000
+        "time": 110000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -5774,7 +6072,9 @@
         "side": "S",
         "qty": 15,
         "price": 9998,
-        "time": 110000
+        "time": 110000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -5798,7 +6098,9 @@
         "side": "B",
         "qty": 15,
         "price": 9996,
-        "time": 110000
+        "time": 110000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -5827,7 +6129,9 @@
         "side": "S",
         "qty": 15,
         "price": 10000,
-        "time": 110000
+        "time": 110000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -5861,7 +6165,9 @@
         "side": "S",
         "qty": 5,
         "price": 10000,
-        "time": 110000
+        "time": 110000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -5906,7 +6212,9 @@
         "side": "B",
         "qty": 2,
         "price": 10000,
-        "time": 111000
+        "time": 111000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -5951,7 +6259,9 @@
         "side": "S",
         "qty": 3,
         "price": 10000,
-        "time": 112000
+        "time": 112000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -5996,7 +6306,9 @@
         "side": "B",
         "qty": 1,
         "price": 10000,
-        "time": 113000
+        "time": 113000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -6041,7 +6353,9 @@
         "side": "S",
         "qty": 7,
         "price": 10000,
-        "time": 114000
+        "time": 114000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -6081,7 +6395,9 @@
         "side": "B",
         "qty": 7,
         "price": 10000,
-        "time": 115000
+        "time": 115000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -6121,7 +6437,9 @@
         "side": "B",
         "qty": 5,
         "price": 10000,
-        "time": 116000
+        "time": 116000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -6156,7 +6474,9 @@
         "side": "B",
         "qty": 5,
         "price": 10000,
-        "time": 117000
+        "time": 117000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -6180,7 +6500,9 @@
         "side": "B",
         "qty": 4,
         "price": 10000,
-        "time": 118000
+        "time": 118000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -6204,7 +6526,9 @@
         "side": "B",
         "qty": 5,
         "price": 10000,
-        "time": 119000
+        "time": 119000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -6228,7 +6552,9 @@
         "side": "B",
         "qty": 15,
         "price": 9994,
-        "time": 120000
+        "time": 120000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -6252,7 +6578,9 @@
         "side": "S",
         "qty": 15,
         "price": 9998,
-        "time": 120000
+        "time": 120000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -6276,7 +6604,9 @@
         "side": "B",
         "qty": 15,
         "price": 9998,
-        "time": 120000
+        "time": 120000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -6305,7 +6635,9 @@
         "side": "S",
         "qty": 15,
         "price": 10002,
-        "time": 120000
+        "time": 120000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -6339,7 +6671,9 @@
         "side": "B",
         "qty": 7,
         "price": 10000,
-        "time": 120000
+        "time": 120000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -6384,7 +6718,9 @@
         "side": "S",
         "qty": 7,
         "price": 10000,
-        "time": 121000
+        "time": 121000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -6429,7 +6765,9 @@
         "side": "B",
         "qty": 4,
         "price": 10000,
-        "time": 122000
+        "time": 122000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -6474,7 +6812,9 @@
         "side": "S",
         "qty": 3,
         "price": 10000,
-        "time": 123000
+        "time": 123000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -6519,7 +6859,9 @@
         "side": "B",
         "qty": 1,
         "price": 10000,
-        "time": 124000
+        "time": 124000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -6564,7 +6906,9 @@
         "side": "S",
         "qty": 3,
         "price": 10000,
-        "time": 125000
+        "time": 125000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -6609,7 +6953,9 @@
         "side": "B",
         "qty": 4,
         "price": 9998,
-        "time": 125000
+        "time": 125000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -6643,7 +6989,9 @@
         "side": "B",
         "qty": 4,
         "price": 10002,
-        "time": 125000
+        "time": 125000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -6687,7 +7035,9 @@
         "side": "S",
         "qty": 2,
         "price": 10000,
-        "time": 126000
+        "time": 126000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -6737,7 +7087,9 @@
         "side": "S",
         "qty": 2,
         "price": 10000,
-        "time": 127000
+        "time": 127000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -6772,7 +7124,9 @@
         "side": "S",
         "qty": 6,
         "price": 10000,
-        "time": 128000
+        "time": 128000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -6796,7 +7150,9 @@
         "side": "B",
         "qty": 7,
         "price": 10000,
-        "time": 129000
+        "time": 129000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -6820,7 +7176,9 @@
         "side": "B",
         "qty": 15,
         "price": 9996,
-        "time": 130000
+        "time": 130000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -6844,7 +7202,9 @@
         "side": "S",
         "qty": 15,
         "price": 10000,
-        "time": 130000
+        "time": 130000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -6868,7 +7228,9 @@
         "side": "B",
         "qty": 15,
         "price": 9998,
-        "time": 130000
+        "time": 130000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -6897,7 +7259,9 @@
         "side": "S",
         "qty": 15,
         "price": 10002,
-        "time": 130000
+        "time": 130000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -6931,7 +7295,9 @@
         "side": "B",
         "qty": 6,
         "price": 10000,
-        "time": 130000
+        "time": 130000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -6976,7 +7342,9 @@
         "side": "B",
         "qty": 4,
         "price": 10000,
-        "time": 131000
+        "time": 131000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -7021,7 +7389,9 @@
         "side": "B",
         "qty": 3,
         "price": 10000,
-        "time": 132000
+        "time": 132000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -7066,7 +7436,9 @@
         "side": "B",
         "qty": 3,
         "price": 10000,
-        "time": 133000
+        "time": 133000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -7106,7 +7478,9 @@
         "side": "S",
         "qty": 2,
         "price": 10000,
-        "time": 134000
+        "time": 134000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -7146,7 +7520,9 @@
         "side": "B",
         "qty": 5,
         "price": 10000,
-        "time": 135000
+        "time": 135000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -7175,7 +7551,9 @@
         "side": "S",
         "qty": 6,
         "price": 10000,
-        "time": 136000
+        "time": 136000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -7215,7 +7593,9 @@
         "side": "S",
         "qty": 2,
         "price": 10000,
-        "time": 137000
+        "time": 137000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -7255,7 +7635,9 @@
         "side": "S",
         "qty": 6,
         "price": 10000,
-        "time": 138000
+        "time": 138000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -7290,7 +7672,9 @@
         "side": "B",
         "qty": 3,
         "price": 10000,
-        "time": 139000
+        "time": 139000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -7314,7 +7698,9 @@
         "side": "B",
         "qty": 15,
         "price": 9996,
-        "time": 140000
+        "time": 140000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -7338,7 +7724,9 @@
         "side": "S",
         "qty": 15,
         "price": 10000,
-        "time": 140000
+        "time": 140000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -7362,7 +7750,9 @@
         "side": "B",
         "qty": 15,
         "price": 9998,
-        "time": 140000
+        "time": 140000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -7391,7 +7781,9 @@
         "side": "S",
         "qty": 15,
         "price": 10002,
-        "time": 140000
+        "time": 140000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -7425,7 +7817,9 @@
         "side": "B",
         "qty": 6,
         "price": 10000,
-        "time": 140000
+        "time": 140000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -7470,7 +7864,9 @@
         "side": "B",
         "qty": 7,
         "price": 10000,
-        "time": 141000
+        "time": 141000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -7515,7 +7911,9 @@
         "side": "S",
         "qty": 7,
         "price": 10000,
-        "time": 142000
+        "time": 142000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -7560,7 +7958,9 @@
         "side": "S",
         "qty": 1,
         "price": 10000,
-        "time": 143000
+        "time": 143000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -7605,7 +8005,9 @@
         "side": "S",
         "qty": 4,
         "price": 10000,
-        "time": 144000
+        "time": 144000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -7650,7 +8052,9 @@
         "side": "B",
         "qty": 7,
         "price": 10000,
-        "time": 145000
+        "time": 145000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -7690,7 +8094,9 @@
         "side": "S",
         "qty": 2,
         "price": 10000,
-        "time": 146000
+        "time": 146000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -7730,7 +8136,9 @@
         "side": "S",
         "qty": 5,
         "price": 10000,
-        "time": 147000
+        "time": 147000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -7765,7 +8173,9 @@
         "side": "S",
         "qty": 2,
         "price": 10000,
-        "time": 148000
+        "time": 148000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -7789,7 +8199,9 @@
         "side": "B",
         "qty": 5,
         "price": 10000,
-        "time": 149000
+        "time": 149000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -7813,7 +8225,9 @@
         "side": "B",
         "qty": 15,
         "price": 9996,
-        "time": 150000
+        "time": 150000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -7837,7 +8251,9 @@
         "side": "S",
         "qty": 15,
         "price": 10000,
-        "time": 150000
+        "time": 150000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -7861,7 +8277,9 @@
         "side": "B",
         "qty": 15,
         "price": 10000,
-        "time": 150000
+        "time": 150000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -7890,7 +8308,9 @@
         "side": "S",
         "qty": 15,
         "price": 10004,
-        "time": 150000
+        "time": 150000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -7924,7 +8344,9 @@
         "side": "B",
         "qty": 4,
         "price": 10000,
-        "time": 150000
+        "time": 150000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -7969,7 +8391,9 @@
         "side": "S",
         "qty": 7,
         "price": 10000,
-        "time": 151000
+        "time": 151000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -8014,7 +8438,9 @@
         "side": "B",
         "qty": 2,
         "price": 10000,
-        "time": 152000
+        "time": 152000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -8059,7 +8485,9 @@
         "side": "B",
         "qty": 4,
         "price": 10000,
-        "time": 153000
+        "time": 153000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -8104,7 +8532,9 @@
         "side": "B",
         "qty": 2,
         "price": 10000,
-        "time": 154000
+        "time": 154000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -8149,7 +8579,9 @@
         "side": "S",
         "qty": 3,
         "price": 10000,
-        "time": 155000
+        "time": 155000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -8194,7 +8626,9 @@
         "side": "S",
         "qty": 4,
         "price": 10000,
-        "time": 155000
+        "time": 155000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -8239,7 +8673,9 @@
         "side": "S",
         "qty": 4,
         "price": 10000,
-        "time": 156000
+        "time": 156000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -8279,7 +8715,9 @@
         "side": "S",
         "qty": 2,
         "price": 10000,
-        "time": 157000
+        "time": 157000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -8308,7 +8746,9 @@
         "side": "S",
         "qty": 6,
         "price": 10000,
-        "time": 158000
+        "time": 158000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -8337,7 +8777,9 @@
         "side": "S",
         "qty": 3,
         "price": 10000,
-        "time": 159000
+        "time": 159000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -8366,7 +8808,9 @@
         "side": "B",
         "qty": 15,
         "price": 9998,
-        "time": 160000
+        "time": 160000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -8395,7 +8839,9 @@
         "side": "S",
         "qty": 15,
         "price": 10002,
-        "time": 160000
+        "time": 160000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -8424,7 +8870,9 @@
         "side": "B",
         "qty": 15,
         "price": 10000,
-        "time": 160000
+        "time": 160000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -8458,7 +8906,9 @@
         "side": "S",
         "qty": 15,
         "price": 10004,
-        "time": 160000
+        "time": 160000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -8492,7 +8942,9 @@
         "side": "B",
         "qty": 7,
         "price": 10000,
-        "time": 160000
+        "time": 160000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -8547,7 +8999,9 @@
         "side": "B",
         "qty": 5,
         "price": 10000,
-        "time": 161000
+        "time": 161000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -8592,7 +9046,9 @@
         "side": "B",
         "qty": 3,
         "price": 10000,
-        "time": 162000
+        "time": 162000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -8637,7 +9093,9 @@
         "side": "S",
         "qty": 1,
         "price": 10000,
-        "time": 163000
+        "time": 163000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -8682,7 +9140,9 @@
         "side": "B",
         "qty": 2,
         "price": 10000,
-        "time": 164000
+        "time": 164000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -8727,7 +9187,9 @@
         "side": "B",
         "qty": 5,
         "price": 10000,
-        "time": 165000
+        "time": 165000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -8767,7 +9229,9 @@
         "side": "S",
         "qty": 1,
         "price": 10000,
-        "time": 166000
+        "time": 166000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -8807,7 +9271,9 @@
         "side": "S",
         "qty": 1,
         "price": 10000,
-        "time": 167000
+        "time": 167000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -8847,7 +9313,9 @@
         "side": "B",
         "qty": 5,
         "price": 10000,
-        "time": 168000
+        "time": 168000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -8876,7 +9344,9 @@
         "side": "B",
         "qty": 6,
         "price": 10000,
-        "time": 169000
+        "time": 169000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -8905,7 +9375,9 @@
         "side": "B",
         "qty": 15,
         "price": 9998,
-        "time": 170000
+        "time": 170000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -8934,7 +9406,9 @@
         "side": "S",
         "qty": 15,
         "price": 10002,
-        "time": 170000
+        "time": 170000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -8963,7 +9437,9 @@
         "side": "B",
         "qty": 15,
         "price": 10000,
-        "time": 170000
+        "time": 170000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -8992,7 +9468,9 @@
         "side": "S",
         "qty": 15,
         "price": 10004,
-        "time": 170000
+        "time": 170000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -9026,7 +9504,9 @@
         "side": "B",
         "qty": 5,
         "price": 10000,
-        "time": 170000
+        "time": 170000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -9071,7 +9551,9 @@
         "side": "B",
         "qty": 1,
         "price": 10000,
-        "time": 171000
+        "time": 171000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -9116,7 +9598,9 @@
         "side": "B",
         "qty": 1,
         "price": 10000,
-        "time": 172000
+        "time": 172000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -9161,7 +9645,9 @@
         "side": "B",
         "qty": 3,
         "price": 10000,
-        "time": 173000
+        "time": 173000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -9206,7 +9692,9 @@
         "side": "B",
         "qty": 3,
         "price": 10000,
-        "time": 174000
+        "time": 174000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -9251,7 +9739,9 @@
         "side": "S",
         "qty": 1,
         "price": 10000,
-        "time": 175000
+        "time": 175000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -9296,7 +9786,9 @@
         "side": "B",
         "qty": 3,
         "price": 10000,
-        "time": 176000
+        "time": 176000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -9336,7 +9828,9 @@
         "side": "S",
         "qty": 6,
         "price": 10000,
-        "time": 177000
+        "time": 177000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -9376,7 +9870,9 @@
         "side": "B",
         "qty": 1,
         "price": 10000,
-        "time": 178000
+        "time": 178000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -9405,7 +9901,9 @@
         "side": "S",
         "qty": 6,
         "price": 10000,
-        "time": 179000
+        "time": 179000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -9455,7 +9953,9 @@
         "side": "B",
         "qty": 15,
         "price": 9998,
-        "time": 180000
+        "time": 180000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -9484,7 +9984,9 @@
         "side": "S",
         "qty": 15,
         "price": 10002,
-        "time": 180000
+        "time": 180000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -9513,7 +10015,9 @@
         "side": "B",
         "qty": 15,
         "price": 10002,
-        "time": 180000
+        "time": 180000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -9546,7 +10050,9 @@
         "side": "S",
         "qty": 15,
         "price": 10006,
-        "time": 180000
+        "time": 180000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -9584,7 +10090,9 @@
         "side": "B",
         "qty": 6,
         "price": 10000,
-        "time": 180000
+        "time": 180000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -9633,7 +10141,9 @@
         "side": "B",
         "qty": 1,
         "price": 10000,
-        "time": 181000
+        "time": 181000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -9682,7 +10192,9 @@
         "side": "B",
         "qty": 3,
         "price": 10000,
-        "time": 182000
+        "time": 182000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -9731,7 +10243,9 @@
         "side": "S",
         "qty": 4,
         "price": 10000,
-        "time": 183000
+        "time": 183000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -9780,7 +10294,9 @@
         "side": "B",
         "qty": 3,
         "price": 10000,
-        "time": 184000
+        "time": 184000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -9829,7 +10345,9 @@
         "side": "S",
         "qty": 1,
         "price": 10000,
-        "time": 185000
+        "time": 185000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -9878,7 +10396,9 @@
         "side": "B",
         "qty": 4,
         "price": 10002,
-        "time": 185000
+        "time": 185000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -9916,7 +10436,9 @@
         "side": "B",
         "qty": 4,
         "price": 10006,
-        "time": 185000
+        "time": 185000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -9964,7 +10486,9 @@
         "side": "B",
         "qty": 5,
         "price": 10000,
-        "time": 186000
+        "time": 186000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -10001,7 +10525,9 @@
         "side": "B",
         "qty": 7,
         "price": 10000,
-        "time": 187000
+        "time": 187000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -10038,7 +10564,9 @@
         "side": "B",
         "qty": 4,
         "price": 10000,
-        "time": 188000
+        "time": 188000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -10075,7 +10603,9 @@
         "side": "S",
         "qty": 4,
         "price": 10000,
-        "time": 189000
+        "time": 189000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -10129,7 +10659,9 @@
         "side": "B",
         "qty": 15,
         "price": 10000,
-        "time": 190000
+        "time": 190000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -10162,7 +10694,9 @@
         "side": "S",
         "qty": 15,
         "price": 10004,
-        "time": 190000
+        "time": 190000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -10195,7 +10729,9 @@
         "side": "B",
         "qty": 15,
         "price": 10002,
-        "time": 190000
+        "time": 190000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -10228,7 +10764,9 @@
         "side": "S",
         "qty": 15,
         "price": 10006,
-        "time": 190000
+        "time": 190000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -10266,7 +10804,9 @@
         "side": "B",
         "qty": 5,
         "price": 10000,
-        "time": 190000
+        "time": 190000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -10315,7 +10855,9 @@
         "side": "S",
         "qty": 7,
         "price": 10000,
-        "time": 191000
+        "time": 191000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -10364,7 +10906,9 @@
         "side": "S",
         "qty": 6,
         "price": 10000,
-        "time": 192000
+        "time": 192000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -10423,7 +10967,9 @@
         "side": "S",
         "qty": 4,
         "price": 10000,
-        "time": 193000
+        "time": 193000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -10472,7 +11018,9 @@
         "side": "B",
         "qty": 5,
         "price": 10000,
-        "time": 194000
+        "time": 194000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -10521,7 +11069,9 @@
         "side": "B",
         "qty": 4,
         "price": 10000,
-        "time": 195000
+        "time": 195000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -10570,7 +11120,9 @@
         "side": "S",
         "qty": 1,
         "price": 10000,
-        "time": 196000
+        "time": 196000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -10619,7 +11171,9 @@
         "side": "S",
         "qty": 7,
         "price": 10000,
-        "time": 197000
+        "time": 197000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -10674,7 +11228,9 @@
         "side": "B",
         "qty": 7,
         "price": 10000,
-        "time": 198000
+        "time": 198000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -10714,7 +11270,9 @@
         "side": "S",
         "qty": 3,
         "price": 10000,
-        "time": 199000
+        "time": 199000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -10754,7 +11312,9 @@
         "side": "B",
         "qty": 15,
         "price": 10000,
-        "time": 200000
+        "time": 200000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -10783,7 +11343,9 @@
         "side": "S",
         "qty": 15,
         "price": 10004,
-        "time": 200000
+        "time": 200000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -10812,7 +11374,9 @@
         "side": "B",
         "qty": 15,
         "price": 10002,
-        "time": 200000
+        "time": 200000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -10845,7 +11409,9 @@
         "side": "S",
         "qty": 15,
         "price": 10006,
-        "time": 200000
+        "time": 200000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -10883,7 +11449,9 @@
         "side": "B",
         "qty": 1,
         "price": 10000,
-        "time": 200000
+        "time": 200000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -10932,7 +11500,9 @@
         "side": "B",
         "qty": 4,
         "price": 10000,
-        "time": 201000
+        "time": 201000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -10981,7 +11551,9 @@
         "side": "S",
         "qty": 4,
         "price": 10000,
-        "time": 202000
+        "time": 202000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -11030,7 +11602,9 @@
         "side": "B",
         "qty": 3,
         "price": 10000,
-        "time": 203000
+        "time": 203000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -11079,7 +11653,9 @@
         "side": "S",
         "qty": 3,
         "price": 10000,
-        "time": 204000
+        "time": 204000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -11128,7 +11704,9 @@
         "side": "S",
         "qty": 2,
         "price": 10000,
-        "time": 205000
+        "time": 205000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -11177,7 +11755,9 @@
         "side": "S",
         "qty": 4,
         "price": 10000,
-        "time": 206000
+        "time": 206000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -11226,7 +11806,9 @@
         "side": "B",
         "qty": 4,
         "price": 10000,
-        "time": 207000
+        "time": 207000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -11275,7 +11857,9 @@
         "side": "S",
         "qty": 3,
         "price": 10000,
-        "time": 208000
+        "time": 208000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -11330,7 +11914,9 @@
         "side": "S",
         "qty": 3,
         "price": 10000,
-        "time": 209000
+        "time": 209000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -11375,7 +11961,9 @@
         "side": "B",
         "qty": 15,
         "price": 10000,
-        "time": 210000
+        "time": 210000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "cancelled",
@@ -11404,7 +11992,9 @@
         "side": "S",
         "qty": 15,
         "price": 10004,
-        "time": 210000
+        "time": 210000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -11433,7 +12023,9 @@
         "side": "B",
         "qty": 15,
         "price": 10004,
-        "time": 210000
+        "time": 210000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -11467,7 +12059,9 @@
         "side": "S",
         "qty": 15,
         "price": 10008,
-        "time": 210000
+        "time": 210000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -11505,7 +12099,9 @@
         "side": "B",
         "qty": 2,
         "price": 10000,
-        "time": 210000
+        "time": 210000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -11554,7 +12150,9 @@
         "side": "S",
         "qty": 4,
         "price": 10000,
-        "time": 211000
+        "time": 211000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -11603,7 +12201,9 @@
         "side": "S",
         "qty": 5,
         "price": 10000,
-        "time": 212000
+        "time": 212000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -11652,7 +12252,9 @@
         "side": "B",
         "qty": 2,
         "price": 10000,
-        "time": 213000
+        "time": 213000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -11707,7 +12309,9 @@
         "side": "B",
         "qty": 1,
         "price": 10000,
-        "time": 214000
+        "time": 214000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -11752,7 +12356,9 @@
         "side": "B",
         "qty": 5,
         "price": 10000,
-        "time": 215000
+        "time": 215000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -11797,7 +12403,9 @@
         "side": "S",
         "qty": 4,
         "price": 10000,
-        "time": 215000
+        "time": 215000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -11831,7 +12439,9 @@
         "side": "B",
         "qty": 7,
         "price": 10000,
-        "time": 216000
+        "time": 216000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -11876,7 +12486,9 @@
         "side": "B",
         "qty": 4,
         "price": 10000,
-        "time": 217000
+        "time": 217000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -11916,7 +12528,9 @@
         "side": "S",
         "qty": 1,
         "price": 10000,
-        "time": 218000
+        "time": 218000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -11956,7 +12570,9 @@
         "side": "B",
         "qty": 3,
         "price": 10000,
-        "time": 219000
+        "time": 219000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -11985,7 +12601,9 @@
         "side": "B",
         "qty": 15,
         "price": 10002,
-        "time": 220000
+        "time": 220000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -12014,7 +12632,9 @@
         "side": "S",
         "qty": 15,
         "price": 10006,
-        "time": 220000
+        "time": 220000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -12043,7 +12663,9 @@
         "side": "B",
         "qty": 15,
         "price": 10004,
-        "time": 220000
+        "time": 220000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -12072,7 +12694,9 @@
         "side": "S",
         "qty": 15,
         "price": 10008,
-        "time": 220000
+        "time": 220000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -12106,7 +12730,9 @@
         "side": "B",
         "qty": 1,
         "price": 10000,
-        "time": 220000
+        "time": 220000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -12151,7 +12777,9 @@
         "side": "B",
         "qty": 6,
         "price": 10000,
-        "time": 221000
+        "time": 221000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -12196,7 +12824,9 @@
         "side": "S",
         "qty": 5,
         "price": 10000,
-        "time": 222000
+        "time": 222000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -12241,7 +12871,9 @@
         "side": "B",
         "qty": 1,
         "price": 10000,
-        "time": 223000
+        "time": 223000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -12286,7 +12918,9 @@
         "side": "S",
         "qty": 2,
         "price": 10000,
-        "time": 224000
+        "time": 224000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -12331,7 +12965,9 @@
         "side": "S",
         "qty": 6,
         "price": 10000,
-        "time": 225000
+        "time": 225000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -12376,7 +13012,9 @@
         "side": "S",
         "qty": 1,
         "price": 10000,
-        "time": 226000
+        "time": 226000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -12421,7 +13059,9 @@
         "side": "S",
         "qty": 6,
         "price": 10000,
-        "time": 227000
+        "time": 227000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -12461,7 +13101,9 @@
         "side": "S",
         "qty": 2,
         "price": 10000,
-        "time": 228000
+        "time": 228000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -12490,7 +13132,9 @@
         "side": "B",
         "qty": 7,
         "price": 10000,
-        "time": 229000
+        "time": 229000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -12525,7 +13169,9 @@
         "side": "B",
         "qty": 15,
         "price": 10002,
-        "time": 230000
+        "time": 230000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -12549,7 +13195,9 @@
         "side": "S",
         "qty": 15,
         "price": 10006,
-        "time": 230000
+        "time": 230000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -12573,7 +13221,9 @@
         "side": "B",
         "qty": 15,
         "price": 10004,
-        "time": 230000
+        "time": 230000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -12602,7 +13252,9 @@
         "side": "S",
         "qty": 15,
         "price": 10008,
-        "time": 230000
+        "time": 230000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -12636,7 +13288,9 @@
         "side": "B",
         "qty": 2,
         "price": 10000,
-        "time": 230000
+        "time": 230000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -12681,7 +13335,9 @@
         "side": "S",
         "qty": 3,
         "price": 10000,
-        "time": 231000
+        "time": 231000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -12726,7 +13382,9 @@
         "side": "S",
         "qty": 4,
         "price": 10000,
-        "time": 232000
+        "time": 232000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -12771,7 +13429,9 @@
         "side": "B",
         "qty": 3,
         "price": 10000,
-        "time": 233000
+        "time": 233000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -12816,7 +13476,9 @@
         "side": "B",
         "qty": 6,
         "price": 10000,
-        "time": 234000
+        "time": 234000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -12861,7 +13523,9 @@
         "side": "S",
         "qty": 2,
         "price": 10000,
-        "time": 235000
+        "time": 235000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -12906,7 +13570,9 @@
         "side": "B",
         "qty": 4,
         "price": 10000,
-        "time": 236000
+        "time": 236000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -12946,7 +13612,9 @@
         "side": "B",
         "qty": 4,
         "price": 10000,
-        "time": 237000
+        "time": 237000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -12975,7 +13643,9 @@
         "side": "B",
         "qty": 4,
         "price": 10000,
-        "time": 238000
+        "time": 238000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -13004,7 +13674,9 @@
         "side": "S",
         "qty": 6,
         "price": 10000,
-        "time": 239000
+        "time": 239000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -13039,7 +13711,9 @@
         "side": "B",
         "qty": 15,
         "price": 10002,
-        "time": 240000
+        "time": 240000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -13063,7 +13737,9 @@
         "side": "S",
         "qty": 15,
         "price": 10006,
-        "time": 240000
+        "time": 240000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -13087,7 +13763,9 @@
         "side": "B",
         "qty": 15,
         "price": 10006,
-        "time": 240000
+        "time": 240000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -13116,7 +13794,9 @@
         "side": "S",
         "qty": 15,
         "price": 10010,
-        "time": 240000
+        "time": 240000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -13150,7 +13830,9 @@
         "side": "B",
         "qty": 4,
         "price": 10000,
-        "time": 240000
+        "time": 240000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -13195,7 +13877,9 @@
         "side": "S",
         "qty": 5,
         "price": 10000,
-        "time": 241000
+        "time": 241000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -13240,7 +13924,9 @@
         "side": "S",
         "qty": 1,
         "price": 10000,
-        "time": 242000
+        "time": 242000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -13285,7 +13971,9 @@
         "side": "S",
         "qty": 2,
         "price": 10000,
-        "time": 243000
+        "time": 243000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -13330,7 +14018,9 @@
         "side": "S",
         "qty": 7,
         "price": 10000,
-        "time": 244000
+        "time": 244000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -13370,7 +14060,9 @@
         "side": "B",
         "qty": 3,
         "price": 10000,
-        "time": 245000
+        "time": 245000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -13410,7 +14102,9 @@
         "side": "B",
         "qty": 4,
         "price": 10006,
-        "time": 245000
+        "time": 245000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -13439,7 +14133,9 @@
         "side": "B",
         "qty": 4,
         "price": 10000,
-        "time": 246000
+        "time": 246000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -13479,7 +14175,9 @@
         "side": "S",
         "qty": 7,
         "price": 10000,
-        "time": 247000
+        "time": 247000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -13508,7 +14206,9 @@
         "side": "S",
         "qty": 3,
         "price": 10000,
-        "time": 248000
+        "time": 248000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -13537,7 +14237,9 @@
         "side": "B",
         "qty": 2,
         "price": 10000,
-        "time": 249000
+        "time": 249000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -13577,7 +14279,9 @@
         "side": "B",
         "qty": 15,
         "price": 10004,
-        "time": 250000
+        "time": 250000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -13606,7 +14310,9 @@
         "side": "S",
         "qty": 15,
         "price": 10008,
-        "time": 250000
+        "time": 250000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -13635,7 +14341,9 @@
         "side": "B",
         "qty": 15,
         "price": 10006,
-        "time": 250000
+        "time": 250000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -13669,7 +14377,9 @@
         "side": "S",
         "qty": 15,
         "price": 10010,
-        "time": 250000
+        "time": 250000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -13703,7 +14413,9 @@
         "side": "S",
         "qty": 3,
         "price": 10000,
-        "time": 250000
+        "time": 250000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -13748,7 +14460,9 @@
         "side": "B",
         "qty": 7,
         "price": 10000,
-        "time": 251000
+        "time": 251000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -13803,7 +14517,9 @@
         "side": "S",
         "qty": 1,
         "price": 10000,
-        "time": 252000
+        "time": 252000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -13848,7 +14564,9 @@
         "side": "S",
         "qty": 4,
         "price": 10000,
-        "time": 253000
+        "time": 253000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -13893,7 +14611,9 @@
         "side": "B",
         "qty": 6,
         "price": 10000,
-        "time": 254000
+        "time": 254000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -13938,7 +14658,9 @@
         "side": "S",
         "qty": 5,
         "price": 10000,
-        "time": 255000
+        "time": 255000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -13983,7 +14705,9 @@
         "side": "S",
         "qty": 6,
         "price": 10000,
-        "time": 256000
+        "time": 256000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -14023,7 +14747,9 @@
         "side": "B",
         "qty": 5,
         "price": 10000,
-        "time": 257000
+        "time": 257000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -14058,7 +14784,9 @@
         "side": "B",
         "qty": 4,
         "price": 10000,
-        "time": 258000
+        "time": 258000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -14082,7 +14810,9 @@
         "side": "S",
         "qty": 7,
         "price": 10000,
-        "time": 259000
+        "time": 259000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -14106,7 +14836,9 @@
         "side": "B",
         "qty": 15,
         "price": 10004,
-        "time": 260000
+        "time": 260000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -14130,7 +14862,9 @@
         "side": "S",
         "qty": 15,
         "price": 10008,
-        "time": 260000
+        "time": 260000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -14154,7 +14888,9 @@
         "side": "B",
         "qty": 15,
         "price": 10006,
-        "time": 260000
+        "time": 260000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -14183,7 +14919,9 @@
         "side": "S",
         "qty": 15,
         "price": 10010,
-        "time": 260000
+        "time": 260000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -14217,7 +14955,9 @@
         "side": "B",
         "qty": 2,
         "price": 10000,
-        "time": 260000
+        "time": 260000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -14262,7 +15002,9 @@
         "side": "B",
         "qty": 1,
         "price": 10000,
-        "time": 261000
+        "time": 261000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -14307,7 +15049,9 @@
         "side": "B",
         "qty": 5,
         "price": 10000,
-        "time": 262000
+        "time": 262000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -14352,7 +15096,9 @@
         "side": "S",
         "qty": 7,
         "price": 10000,
-        "time": 263000
+        "time": 263000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -14397,7 +15143,9 @@
         "side": "B",
         "qty": 3,
         "price": 10000,
-        "time": 264000
+        "time": 264000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -14442,7 +15190,9 @@
         "side": "S",
         "qty": 3,
         "price": 10000,
-        "time": 265000
+        "time": 265000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -14487,7 +15237,9 @@
         "side": "B",
         "qty": 4,
         "price": 10000,
-        "time": 266000
+        "time": 266000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -14527,7 +15279,9 @@
         "side": "B",
         "qty": 1,
         "price": 10000,
-        "time": 267000
+        "time": 267000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -14556,7 +15310,9 @@
         "side": "S",
         "qty": 7,
         "price": 10000,
-        "time": 268000
+        "time": 268000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -14591,7 +15347,9 @@
         "side": "S",
         "qty": 7,
         "price": 10000,
-        "time": 269000
+        "time": 269000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -14615,7 +15373,9 @@
         "side": "B",
         "qty": 15,
         "price": 10004,
-        "time": 270000
+        "time": 270000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -14639,7 +15399,9 @@
         "side": "S",
         "qty": 15,
         "price": 10008,
-        "time": 270000
+        "time": 270000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -14663,7 +15425,9 @@
         "side": "B",
         "qty": 15,
         "price": 9990,
-        "time": 270000
+        "time": 270000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -14692,7 +15456,9 @@
         "side": "S",
         "qty": 15,
         "price": 9994,
-        "time": 270000
+        "time": 270000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -14726,7 +15492,9 @@
         "side": "S",
         "qty": 2,
         "price": 10000,
-        "time": 270000
+        "time": 270000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -14771,7 +15539,9 @@
         "side": "B",
         "qty": 7,
         "price": 10000,
-        "time": 271000
+        "time": 271000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -14816,7 +15586,9 @@
         "side": "S",
         "qty": 3,
         "price": 10000,
-        "time": 272000
+        "time": 272000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -14861,7 +15633,9 @@
         "side": "B",
         "qty": 1,
         "price": 10000,
-        "time": 273000
+        "time": 273000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -14906,7 +15680,9 @@
         "side": "S",
         "qty": 3,
         "price": 10000,
-        "time": 274000
+        "time": 274000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -14951,7 +15727,9 @@
         "side": "B",
         "qty": 5,
         "price": 10000,
-        "time": 275000
+        "time": 275000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -14996,7 +15774,9 @@
         "side": "B",
         "qty": 5,
         "price": 10000,
-        "time": 276000
+        "time": 276000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -15036,7 +15816,9 @@
         "side": "B",
         "qty": 6,
         "price": 10000,
-        "time": 277000
+        "time": 277000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -15065,7 +15847,9 @@
         "side": "S",
         "qty": 2,
         "price": 10000,
-        "time": 278000
+        "time": 278000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -15105,7 +15889,9 @@
         "side": "S",
         "qty": 3,
         "price": 10000,
-        "time": 279000
+        "time": 279000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -15145,7 +15931,9 @@
         "side": "B",
         "qty": 15,
         "price": 10006,
-        "time": 280000
+        "time": 280000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -15174,7 +15962,9 @@
         "side": "S",
         "qty": 15,
         "price": 10010,
-        "time": 280000
+        "time": 280000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -15203,7 +15993,9 @@
         "side": "B",
         "qty": 15,
         "price": 9990,
-        "time": 280000
+        "time": 280000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -15232,7 +16024,9 @@
         "side": "S",
         "qty": 15,
         "price": 9994,
-        "time": 280000
+        "time": 280000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -15266,7 +16060,9 @@
         "side": "B",
         "qty": 7,
         "price": 10000,
-        "time": 280000
+        "time": 280000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -15311,7 +16107,9 @@
         "side": "S",
         "qty": 4,
         "price": 10000,
-        "time": 281000
+        "time": 281000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -15366,7 +16164,9 @@
         "side": "B",
         "qty": 4,
         "price": 10000,
-        "time": 282000
+        "time": 282000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -15411,7 +16211,9 @@
         "side": "S",
         "qty": 3,
         "price": 10000,
-        "time": 283000
+        "time": 283000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -15456,7 +16258,9 @@
         "side": "S",
         "qty": 3,
         "price": 10000,
-        "time": 284000
+        "time": 284000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -15501,7 +16305,9 @@
         "side": "B",
         "qty": 6,
         "price": 10000,
-        "time": 285000
+        "time": 285000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -15541,7 +16347,9 @@
         "side": "S",
         "qty": 3,
         "price": 10000,
-        "time": 286000
+        "time": 286000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -15581,7 +16389,9 @@
         "side": "B",
         "qty": 2,
         "price": 10000,
-        "time": 287000
+        "time": 287000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -15610,7 +16420,9 @@
         "side": "B",
         "qty": 2,
         "price": 10000,
-        "time": 288000
+        "time": 288000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -15639,7 +16451,9 @@
         "side": "B",
         "qty": 2,
         "price": 10000,
-        "time": 289000
+        "time": 289000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -15668,7 +16482,9 @@
         "side": "B",
         "qty": 15,
         "price": 10006,
-        "time": 290000
+        "time": 290000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -15697,7 +16513,9 @@
         "side": "S",
         "qty": 15,
         "price": 10010,
-        "time": 290000
+        "time": 290000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -15726,7 +16544,9 @@
         "side": "B",
         "qty": 15,
         "price": 9990,
-        "time": 290000
+        "time": 290000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -15755,7 +16575,9 @@
         "side": "S",
         "qty": 15,
         "price": 9994,
-        "time": 290000
+        "time": 290000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -15789,7 +16611,9 @@
         "side": "S",
         "qty": 6,
         "price": 10000,
-        "time": 290000
+        "time": 290000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -15844,7 +16668,9 @@
         "side": "S",
         "qty": 6,
         "price": 10000,
-        "time": 291000
+        "time": 291000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -15889,7 +16715,9 @@
         "side": "B",
         "qty": 7,
         "price": 10000,
-        "time": 292000
+        "time": 292000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -15934,7 +16762,9 @@
         "side": "B",
         "qty": 1,
         "price": 10000,
-        "time": 293000
+        "time": 293000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -15979,7 +16809,9 @@
         "side": "B",
         "qty": 3,
         "price": 10000,
-        "time": 294000
+        "time": 294000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -16024,7 +16856,9 @@
         "side": "S",
         "qty": 6,
         "price": 10000,
-        "time": 295000
+        "time": 295000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -16069,7 +16903,9 @@
         "side": "B",
         "qty": 5,
         "price": 10000,
-        "time": 296000
+        "time": 296000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -16109,7 +16945,9 @@
         "side": "S",
         "qty": 2,
         "price": 10000,
-        "time": 297000
+        "time": 297000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -16144,7 +16982,9 @@
         "side": "B",
         "qty": 4,
         "price": 10000,
-        "time": 298000
+        "time": 298000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -16168,7 +17008,9 @@
         "side": "S",
         "qty": 5,
         "price": 10000,
-        "time": 299000
+        "time": 299000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": true,
       "reason": "accepted",
@@ -16192,7 +17034,9 @@
         "side": "B",
         "qty": 15,
         "price": 10006,
-        "time": 300000
+        "time": 300000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -16216,7 +17060,9 @@
         "side": "S",
         "qty": 15,
         "price": 10010,
-        "time": 300000
+        "time": 300000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -16240,7 +17086,9 @@
         "side": "B",
         "qty": 15,
         "price": 9990,
-        "time": 310000
+        "time": 310000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -16264,7 +17112,9 @@
         "side": "S",
         "qty": 15,
         "price": 9994,
-        "time": 310000
+        "time": 310000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -16288,7 +17138,9 @@
         "side": "B",
         "qty": 15,
         "price": 9990,
-        "time": 320000
+        "time": 320000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -16312,7 +17164,9 @@
         "side": "S",
         "qty": 15,
         "price": 9994,
-        "time": 320000
+        "time": 320000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -16336,7 +17190,9 @@
         "side": "B",
         "qty": 15,
         "price": 9990,
-        "time": 330000
+        "time": 330000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -16360,7 +17216,9 @@
         "side": "S",
         "qty": 15,
         "price": 9994,
-        "time": 330000
+        "time": 330000,
+        "tif": "GTC",
+        "post_only": false
       },
       "accepted": false,
       "reason": "unknown_order",
@@ -16375,5 +17233,5 @@
       ]
     }
   ],
-  "sha256": "a956a78ad177540800d702bc598484d9c6822167d77704dcad496f8fa6c1a356"
+  "sha256": "32d18066fa0f36278a5cb6675a3185f6cd369639020c1e8eabbbaa500005d1dc"
 }

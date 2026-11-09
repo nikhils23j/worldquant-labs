@@ -1,9 +1,9 @@
 {
   "environment": {
-    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
-    "platform": "macOS-27.0.1-arm64-arm-64bit",
-    "numpy": "2.5.4",
-    "scipy": "1.18.1",
+    "python": "3.11.18 (main, Oct 25 2026, 19:41:29) [Clang 21.0.0 (clang-2100.3.34.2)]",
+    "platform": "macOS-27.2-arm64-arm-64bit",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
     "QuantLib": "1.44",
     "hardware": "Apple M2, 8 GiB"
   },
@@ -25,7 +25,7 @@
       "method": "plain",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.21372895792592317,
+      "seconds": 0.2871003330219537,
       "contract": {
         "kind": "asian",
         "strike": 80,
@@ -58,7 +58,7 @@
       "method": "antithetic",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.14598441601265222,
+      "seconds": 0.23398079100297764,
       "contract": {
         "kind": "asian",
         "strike": 80,
@@ -91,7 +91,7 @@
       "method": "control",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.20288499991875142,
+      "seconds": 0.2757956249988638,
       "contract": {
         "kind": "asian",
         "strike": 80,
@@ -124,7 +124,7 @@
       "method": "plain",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.2026922079967335,
+      "seconds": 0.2171633749967441,
       "contract": {
         "kind": "asian",
         "strike": 80,
@@ -157,7 +157,7 @@
       "method": "antithetic",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.1492900000885129,
+      "seconds": 0.15857604198390618,
       "contract": {
         "kind": "asian",
         "strike": 80,
@@ -190,7 +190,7 @@
       "method": "control",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.20505187497474253,
+      "seconds": 0.21412554098060355,
       "contract": {
         "kind": "asian",
         "strike": 80,
@@ -223,7 +223,7 @@
       "method": "plain",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.21069704100955278,
+      "seconds": 0.2050017500296235,
       "contract": {
         "kind": "asian",
         "strike": 80,
@@ -256,7 +256,7 @@
       "method": "antithetic",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.1490791660035029,
+      "seconds": 0.1447392079862766,
       "contract": {
         "kind": "asian",
         "strike": 80,
@@ -289,7 +289,7 @@
       "method": "control",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.21084758290089667,
+      "seconds": 0.2026805420173332,
       "contract": {
         "kind": "asian",
         "strike": 80,
@@ -322,7 +322,7 @@
       "method": "plain",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.2092038340633735,
+      "seconds": 0.2054754170239903,
       "contract": {
         "kind": "asian",
         "strike": 80,
@@ -355,7 +355,7 @@
       "method": "antithetic",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.14614237507339567,
+      "seconds": 0.155589375004638,
       "contract": {
         "kind": "asian",
         "strike": 80,
@@ -388,7 +388,7 @@
       "method": "control",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.20330170798115432,
+      "seconds": 0.20906112500233576,
       "contract": {
         "kind": "asian",
         "strike": 80,
@@ -421,7 +421,7 @@
       "method": "plain",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.2041577500058338,
+      "seconds": 0.22254874999634922,
       "contract": {
         "kind": "asian",
         "strike": 90,
@@ -454,7 +454,7 @@
       "method": "antithetic",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.14835862501058728,
+      "seconds": 0.38012929196702316,
       "contract": {
         "kind": "asian",
         "strike": 90,
@@ -487,7 +487,7 @@
       "method": "control",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.20321904204320163,
+      "seconds": 0.5318169580423273,
       "contract": {
         "kind": "asian",
         "strike": 90,
@@ -520,7 +520,7 @@
       "method": "plain",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.21025083307176828,
+      "seconds": 0.6490807500085793,
       "contract": {
         "kind": "asian",
         "strike": 90,
@@ -553,7 +553,7 @@
       "method": "antithetic",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.14915741595905274,
+      "seconds": 0.18813324999064207,
       "contract": {
         "kind": "asian",
         "strike": 90,
@@ -586,7 +586,7 @@
       "method": "control",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.20352604100480676,
+      "seconds": 0.26310470799217,
       "contract": {
         "kind": "asian",
         "strike": 90,
@@ -619,7 +619,7 @@
       "method": "plain",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.21371283300686628,
+      "seconds": 0.2243055840372108,
       "contract": {
         "kind": "asian",
         "strike": 90,
@@ -652,7 +652,7 @@
       "method": "antithetic",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.1461350000463426,
+      "seconds": 0.23760499997297302,
       "contract": {
         "kind": "asian",
         "strike": 90,
@@ -685,7 +685,7 @@
       "method": "control",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.20294916594866663,
+      "seconds": 2.014411124982871,
       "contract": {
         "kind": "asian",
         "strike": 90,
@@ -718,7 +718,7 @@
       "method": "plain",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.20254370907787234,
+      "seconds": 0.6699513329658657,
       "contract": {
         "kind": "asian",
         "strike": 90,
@@ -751,7 +751,7 @@
       "method": "antithetic",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.14605149999260902,
+      "seconds": 0.47124920797068626,
       "contract": {
         "kind": "asian",
         "strike": 90,
@@ -784,7 +784,7 @@
       "method": "control",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.20300941599998623,
+      "seconds": 1.0233170840074308,
       "contract": {
         "kind": "asian",
         "strike": 90,
@@ -817,7 +817,7 @@
       "method": "plain",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.2061435419600457,
+      "seconds": 0.42508908302988857,
       "contract": {
         "kind": "asian",
         "strike": 100,
@@ -850,7 +850,7 @@
       "method": "antithetic",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.1507179168984294,
+      "seconds": 0.31453220802359283,
       "contract": {
         "kind": "asian",
         "strike": 100,
@@ -883,7 +883,7 @@
       "method": "control",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.2046085000038147,
+      "seconds": 0.49112416699063033,
       "contract": {
         "kind": "asian",
         "strike": 100,
@@ -916,7 +916,7 @@
       "method": "plain",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.20619070902466774,
+      "seconds": 0.4234653330058791,
       "contract": {
         "kind": "asian",
         "strike": 100,
@@ -949,7 +949,7 @@
       "method": "antithetic",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.14702079095877707,
+      "seconds": 0.30622462497558445,
       "contract": {
         "kind": "asian",
         "strike": 100,
@@ -982,7 +982,7 @@
       "method": "control",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.2072507090633735,
+      "seconds": 0.44860033300938085,
       "contract": {
         "kind": "asian",
         "strike": 100,
@@ -1015,7 +1015,7 @@
       "method": "plain",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.20331962499767542,
+      "seconds": 0.35414137499174103,
       "contract": {
         "kind": "asian",
         "strike": 100,
@@ -1048,7 +1048,7 @@
       "method": "antithetic",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.14901675004512072,
+      "seconds": 0.25981479103211313,
       "contract": {
         "kind": "asian",
         "strike": 100,
@@ -1081,7 +1081,7 @@
       "method": "control",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.20762200001627207,
+      "seconds": 0.3290602079941891,
       "contract": {
         "kind": "asian",
         "strike": 100,
@@ -1114,7 +1114,7 @@
       "method": "plain",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.21802091703284532,
+      "seconds": 0.24938262498471886,
       "contract": {
         "kind": "asian",
         "strike": 100,
@@ -1147,7 +1147,7 @@
       "method": "antithetic",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.1478749579982832,
+      "seconds": 0.16582258301787078,
       "contract": {
         "kind": "asian",
         "strike": 100,
@@ -1180,7 +1180,7 @@
       "method": "control",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.2079848749563098,
+      "seconds": 0.2240856250282377,
       "contract": {
         "kind": "asian",
         "strike": 100,
@@ -1213,7 +1213,7 @@
       "method": "plain",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.20675058395136148,
+      "seconds": 0.21469145896844566,
       "contract": {
         "kind": "asian",
         "strike": 110,
@@ -1246,7 +1246,7 @@
       "method": "antithetic",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.15073758293874562,
+      "seconds": 0.1523417920107022,
       "contract": {
         "kind": "asian",
         "strike": 110,
@@ -1279,7 +1279,7 @@
       "method": "control",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.2124377079308033,
+      "seconds": 0.20394337497418746,
       "contract": {
         "kind": "asian",
         "strike": 110,
@@ -1312,7 +1312,7 @@
       "method": "plain",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.20787637506145984,
+      "seconds": 0.2020124169648625,
       "contract": {
         "kind": "asian",
         "strike": 110,
@@ -1345,7 +1345,7 @@
       "method": "antithetic",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.1500211659586057,
+      "seconds": 0.14435779204359278,
       "contract": {
         "kind": "asian",
         "strike": 110,
@@ -1378,7 +1378,7 @@
       "method": "control",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.206714375060983,
+      "seconds": 0.20154279202688485,
       "contract": {
         "kind": "asian",
         "strike": 110,
@@ -1411,7 +1411,7 @@
       "method": "plain",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.20537041604984552,
+      "seconds": 0.20203433302231133,
       "contract": {
         "kind": "asian",
         "strike": 110,
@@ -1444,7 +1444,7 @@
       "method": "antithetic",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.14543808298185468,
+      "seconds": 0.14565370796481147,
       "contract": {
         "kind": "asian",
         "strike": 110,
@@ -1477,7 +1477,7 @@
       "method": "control",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.20348741696216166,
+      "seconds": 0.20257958298316225,
       "contract": {
         "kind": "asian",
         "strike": 110,
@@ -1510,7 +1510,7 @@
       "method": "plain",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.2047997919144109,
+      "seconds": 0.21579154103528708,
       "contract": {
         "kind": "asian",
         "strike": 110,
@@ -1543,7 +1543,7 @@
       "method": "antithetic",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.14542083302512765,
+      "seconds": 0.14546766702551395,
       "contract": {
         "kind": "asian",
         "strike": 110,
@@ -1576,7 +1576,7 @@
       "method": "control",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.20377166697289795,
+      "seconds": 0.2035949580022134,
       "contract": {
         "kind": "asian",
         "strike": 110,
@@ -1609,7 +1609,7 @@
       "method": "plain",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.20994749991223216,
+      "seconds": 0.20317166700260714,
       "contract": {
         "kind": "asian",
         "strike": 120,
@@ -1642,7 +1642,7 @@
       "method": "antithetic",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.15029925003182143,
+      "seconds": 0.14453129097819328,
       "contract": {
         "kind": "asian",
         "strike": 120,
@@ -1675,7 +1675,7 @@
       "method": "control",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.20389866700861603,
+      "seconds": 0.20197870896663517,
       "contract": {
         "kind": "asian",
         "strike": 120,
@@ -1708,7 +1708,7 @@
       "method": "plain",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.20420375000685453,
+      "seconds": 0.20147412497317418,
       "contract": {
         "kind": "asian",
         "strike": 120,
@@ -1741,7 +1741,7 @@
       "method": "antithetic",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.14813850005157292,
+      "seconds": 0.1440748749882914,
       "contract": {
         "kind": "asian",
         "strike": 120,
@@ -1774,7 +1774,7 @@
       "method": "control",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.20634287502616644,
+      "seconds": 0.2018836250063032,
       "contract": {
         "kind": "asian",
         "strike": 120,
@@ -1807,7 +1807,7 @@
       "method": "plain",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.2059087910456583,
+      "seconds": 0.2019237499916926,
       "contract": {
         "kind": "asian",
         "strike": 120,
@@ -1840,7 +1840,7 @@
       "method": "antithetic",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.14514383394271135,
+      "seconds": 0.14400212501641363,
       "contract": {
         "kind": "asian",
         "strike": 120,
@@ -1873,7 +1873,7 @@
       "method": "control",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.20294045796617866,
+      "seconds": 0.20161749998806044,
       "contract": {
         "kind": "asian",
         "strike": 120,
@@ -1906,7 +1906,7 @@
       "method": "plain",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.20298820897005498,
+      "seconds": 0.20148500002687797,
       "contract": {
         "kind": "asian",
         "strike": 120,
@@ -1939,7 +1939,7 @@
       "method": "antithetic",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.14487970899790525,
+      "seconds": 0.14365645899670199,
       "contract": {
         "kind": "asian",
         "strike": 120,
@@ -1972,7 +1972,7 @@
       "method": "control",
       "seed": 42,
       "batch_size": 10000,
-      "seconds": 0.20370412501506507,
+      "seconds": 0.20355866599129513,
       "contract": {
         "kind": "asian",
         "strike": 120,

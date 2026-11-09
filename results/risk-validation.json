@@ -1,9 +1,9 @@
 {
   "environment": {
-    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
-    "platform": "macOS-27.0.1-arm64-arm-64bit",
-    "numpy": "2.5.4",
-    "scipy": "1.18.1",
+    "python": "3.11.18 (main, Oct 25 2026, 19:41:29) [Clang 21.0.0 (clang-2100.3.34.2)]",
+    "platform": "macOS-27.2-arm64-arm-64bit",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
     "QuantLib": "1.44",
     "hardware": "Apple M2, 8 GiB"
   },
@@ -988,7 +988,7 @@
         "method": "control",
         "seed": 42,
         "batch_size": 10000,
-        "seconds": 0.4486013340065256,
+        "seconds": 0.424239833955653,
         "contract": {
           "kind": "asian",
           "strike": 80,
@@ -1032,7 +1032,7 @@
         "method": "control",
         "seed": 42,
         "batch_size": 10000,
-        "seconds": 0.4324042910011485,
+        "seconds": 0.42385437502525747,
         "contract": {
           "kind": "asian",
           "strike": 100,
@@ -1076,7 +1076,7 @@
         "method": "control",
         "seed": 42,
         "batch_size": 10000,
-        "seconds": 0.4594354999717325,
+        "seconds": 0.423471458023414,
         "contract": {
           "kind": "asian",
           "strike": 120,
@@ -1120,7 +1120,7 @@
         "method": "control",
         "seed": 42,
         "batch_size": 10000,
-        "seconds": 0.44881658302620053,
+        "seconds": 0.42383637494640425,
         "contract": {
           "kind": "asian",
           "strike": 100,
@@ -2147,7 +2147,7 @@
       0.0,
       0.0
     ],
-    "scalar_seconds": 0.48400650010444224,
-    "vector_seconds": 0.011924457969143987
+    "scalar_seconds": 0.43189362494740635,
+    "vector_seconds": 0.012372625002171844
   }
 }

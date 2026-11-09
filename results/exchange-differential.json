@@ -1,7 +1,22 @@
 {
   "commands": 100000,
   "mismatches": 0,
-  "seconds": 3.1934380000457168,
+  "seconds": 3.316808666975703,
   "seed": 42,
-  "final_orders": 486
+  "mix": "v1",
+  "stp": "none",
+  "final_orders": 486,
+  "trades": 68834,
+  "stp_cancellations": 0,
+  "reasons": {
+    "accepted": 80081,
+    "cancelled": 1993,
+    "unknown_order": 17926
+  },
+  "command_mix": {
+    "market": 20237,
+    "GTC": 59844,
+    "cancel": 19919
+  },
+  "state_compared_every": 1000
 }

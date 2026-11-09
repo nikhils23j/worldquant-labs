@@ -1,0 +1,114 @@
+{
+  "environment": {
+    "python": "3.11.18 (main, Oct 25 2026, 19:41:29) [Clang 21.0.0 (clang-2100.3.34.2)]",
+    "platform": "macOS-27.2-arm64-arm-64bit",
+    "numpy": "2.4.6",
+    "cpu": "Apple M2",
+    "load_average_1_5_15": [
+      2.42431640625,
+      3.27001953125,
+      4.69189453125
+    ]
+  },
+  "runs": [
+    {
+      "commands": 1000000,
+      "mismatches": 0,
+      "seconds": 63.96773633296834,
+      "seed": 42,
+      "mix": "v1",
+      "stp": "none",
+      "final_orders": 695,
+      "trades": 697820,
+      "stp_cancellations": 0,
+      "reasons": {
+        "accepted": 799857,
+        "cancelled": 21356,
+        "unknown_order": 178787
+      },
+      "command_mix": {
+        "market": 199664,
+        "GTC": 600193,
+        "cancel": 200143
+      },
+      "state_compared_every": 1000
+    },
+    {
+      "commands": 200000,
+      "mismatches": 0,
+      "seconds": 7.886433165986091,
+      "seed": 7,
+      "mix": "v2",
+      "stp": "none",
+      "final_orders": 562,
+      "trades": 109230,
+      "stp_cancellations": 0,
+      "reasons": {
+        "accepted": 142443,
+        "cancelled": 6097,
+        "unknown_order": 43982,
+        "post_only_would_cross": 7478
+      },
+      "command_mix": {
+        "market": 30166,
+        "GTC": 79998,
+        "cancel": 50079,
+        "IOC": 19734,
+        "post_only": 20023
+      },
+      "state_compared_every": 1000
+    },
+    {
+      "commands": 200000,
+      "mismatches": 0,
+      "seconds": 2.9495702919666655,
+      "seed": 7,
+      "mix": "v2",
+      "stp": "cancel_resting",
+      "final_orders": 155,
+      "trades": 95035,
+      "stp_cancellations": 13651,
+      "reasons": {
+        "accepted": 142632,
+        "cancelled": 4269,
+        "unknown_order": 45810,
+        "post_only_would_cross": 7289
+      },
+      "command_mix": {
+        "market": 30166,
+        "GTC": 79998,
+        "cancel": 50079,
+        "IOC": 19734,
+        "post_only": 20023
+      },
+      "state_compared_every": 1000
+    },
+    {
+      "commands": 200000,
+      "mismatches": 0,
+      "seconds": 26.23616258299444,
+      "seed": 7,
+      "mix": "v2",
+      "stp": "cancel_taker",
+      "final_orders": 3194,
+      "trades": 94247,
+      "stp_cancellations": 13501,
+      "reasons": {
+        "accepted": 142096,
+        "cancelled": 8193,
+        "unknown_order": 41886,
+        "post_only_would_cross": 7825
+      },
+      "command_mix": {
+        "market": 30166,
+        "GTC": 79998,
+        "cancel": 50079,
+        "IOC": 19734,
+        "post_only": 20023
+      },
+      "state_compared_every": 1000
+    }
+  ],
+  "total_commands": 1600000,
+  "total_mismatches": 0
+}

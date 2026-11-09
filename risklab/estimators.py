@@ -5,6 +5,9 @@ import numpy as np
 from .analytics import analytic_price
 from .paths import payoff_batches
 
+METHODS = ("plain", "antithetic", "control", "antithetic_control")
+
+
 class Moments:
     """Stable parallel-Welford aggregation of independent sampling units."""
     def __init__(self):
@@ -25,23 +28,31 @@ class Moments:
         return self.mean, math.sqrt(variance/self.n), variance
 
 def price(c, m, method="control", paths=100000, seed=42, batch_size=10000, pilot_paths=10000):
-    if method not in {"plain", "antithetic", "control"}:
+    """Monte Carlo price with a 95% normal interval.
+
+    methods: plain | antithetic | control (geometric-Asian control, independent pilot) |
+             antithetic_control (both: antithetic pairs are the sampling units and the
+             control coefficient is fitted on an independent antithetic pilot).
+    """
+    if method not in METHODS:
         raise ValueError("Unknown estimator")
+    anti = method in ("antithetic", "antithetic_control")
+    ctrl = method in ("control", "antithetic_control")
     if type(paths) is not int or paths < 2 or type(batch_size) is not int or batch_size < 1:
         raise ValueError("At least two paths and a positive integer batch_size required")
-    if method == "control" and c.kind != "asian":
+    if ctrl and c.kind != "asian":
         raise ValueError("Geometric-Asian control applies only to arithmetic-Asian contracts")
-    if method == "antithetic" and (paths % 2 or paths < 4):
+    if anti and (paths % 2 or paths < 4):
         raise ValueError("At least two complete antithetic pairs required")
-    if method == "control" and (type(pilot_paths) is not int or pilot_paths < 2):
+    if ctrl and (type(pilot_paths) is not int or pilot_paths < 2 or (anti and pilot_paths % 2)):
         raise ValueError("At least two independent pilot paths required")
     started = time.perf_counter()
     streams = np.random.SeedSequence(seed).spawn(2)
     coefficient, expected, pilot = 0., 0., 0
-    if method == "control":
+    if ctrl:
         pilot = pilot_paths
         ys, xs = [], []
-        for y, x in payoff_batches(c, m, pilot, streams[0], batch_size):
+        for y, x in payoff_batches(c, m, pilot, streams[0], batch_size, anti):
             ys.append(y); xs.append(x)
         y, x = np.concatenate(ys), np.concatenate(xs)
         centered = x-x.mean()
@@ -49,7 +60,7 @@ def price(c, m, method="control", paths=100000, seed=42, batch_size=10000, pilot
         coefficient = float(centered@(y-y.mean())/denominator) if denominator > 1e-20 else 0.
         expected = analytic_price(replace(c, kind="geometric"), m)
     moments = Moments()
-    for y, x in payoff_batches(c, m, paths, streams[1], batch_size, method == "antithetic"):
+    for y, x in payoff_batches(c, m, paths, streams[1], batch_size, anti):
         moments.add(y-coefficient*(x-expected))
     estimate, se, variance = moments.result()
     half = 1.959963984540054*se
